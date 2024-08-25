@@ -7,3 +7,11 @@ def process_excel(filename: str):
     print(f"Starting background task... {filename}")
     asyncio.run(task(filename, "temp/files/output.xlsx"))
     return "temp/files/output.xlsx"
+
+@celery.task
+def process_scholarly(filename: str):
+    from .scraper_scholarly import main as task
+    import asyncio
+    print(f"Starting background task... {filename}")
+    asyncio.run(task(filename, "temp/files/output.xlsx"))
+    return "temp/files/output.xlsx"

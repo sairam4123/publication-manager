@@ -1,4 +1,5 @@
 import json
+import random
 import aiohttp
 import pandas
 import asyncio
@@ -63,6 +64,7 @@ async def main(input_file, output_file):
 
         author_publications = asyncio.create_task(get_author_publications_dblp(name, publication_type, 2020, 2024))
         tasks.append(author_publications)
+        await asyncio.sleep(random.randint(1, 3)) # to avoid getting blocked by the server
     
     author_publications = await asyncio.gather(*tasks)
 
