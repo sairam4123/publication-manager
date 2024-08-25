@@ -1,5 +1,5 @@
 import json
-import requests
+import aiohttp
 import pandas
 import asyncio
 
@@ -17,8 +17,9 @@ def get_publication_type(publication_type):
 async def get_author_publications_dblp(name, publication_type, from_year, to_year):
     print("Fetching publications for", name, publication_type)
     url = f'https://dblp.org/search/publ/api?q={name}{f'%20type{publication_type}' if publication_type != '' else ''}&h=1000&format=json'
-    response = requests.get(url)
-    data = json.loads(response.text)
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url) as response:
+            data = json.loads(await response.text())
     result = data['result']
     hits = int(result['hits']['@sent'])
 
@@ -54,18 +55,17 @@ def post_process_publications(author_dataset, publications: list[list]):
             ])
     return result
 
-async def main():
-    dataset = pandas.read_excel('input.xlsx', 'Sheet1').to_dict('records')
+async def main(input_file, output_file):
+    dataset = pandas.read_excel(input_file, 'Sheet1').to_dict('records')
     tasks: list[asyncio.Task] = []
     for datum in dataset:
         name, publication_type = datum['Name'], get_publication_type(datum['Type'])
 
-        author_publications = asyncio.create_task(get_author_publications_dblp(name, publication_type))
+        author_publications = asyncio.create_task(get_author_publications_dblp(name, publication_type, 2020, 2024))
         tasks.append(author_publications)
     
     author_publications = await asyncio.gather(*tasks)
 
     result = pandas.DataFrame(post_process_publications(dataset, author_publications))
-    result.to_excel('output.xlsx', index=False, header=False)
+    result.to_excel(output_file, index=False, header=False)
  
-asyncio.run(main())
