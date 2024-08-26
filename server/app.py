@@ -1,11 +1,18 @@
+import time
 
-
-from fastapi import FastAPI, UploadFile
+from fastapi import FastAPI, Response, UploadFile
 from fastapi.responses import FileResponse
 from fastapi.middleware.cors import CORSMiddleware
 from celery import Celery
 
-celery = Celery(__name__, broker="redis://localhost:6379/0", backend="redis://localhost:6379/0")
+from supabase import create_client
+
+
+celery = Celery(__name__, broker="redis://redis:6379/0", backend="redis://redis:6379/0")
+celery.conf.broker_connection_retry_on_startup = True
+
+sp_client = create_client("https://xchmpfivomtlnslvbbbk.supabase.co", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhjaG1wZml2b210bG5zbHZiYmJrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjQ2MDI4MDYsImV4cCI6MjA0MDE3ODgwNn0.HBs-xlJW21awsjyS5mje25g3Wu5M_TGFc2T7Q6urXLw")
+sp_client.auth.sign_in_with_password({"email": "sairamkumar2022@gmail.com", "password": "123456"})
 
 app = FastAPI()
 
@@ -25,11 +32,13 @@ app.add_middleware(
 
 @app.post("/tasks")
 def run_task(file: UploadFile):
+    cur_time = int(time.time())
     # download file
-    filename = "temp/files/" + file.filename
-    with open(filename, "wb") as buffer:
-        buffer.write(file.file.read())
-    task = celery.send_task("background_task.main.process_excel", args=[filename])
+    in_filename = f"input-{cur_time}.xlsx"
+    sp_client.storage.from_("excel-storage") \
+        .upload(in_filename, file.file.read())
+
+    task = celery.send_task("main.process_excel", args=[in_filename])
     return {"task_id": task.id}
 
 @app.get("/tasks/{task_id}/status")
@@ -40,8 +49,12 @@ def task_status(task_id: str):
 @app.get("/tasks/{task_id}/result")
 def task_result(task_id: str):
     task = celery.AsyncResult(task_id)
+    out_file = task.result
+    file = sp_client.storage.from_("excel-storage") \
+        .download(out_file)
+    
     # upload file
-    return FileResponse(task.result, media_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", filename="output.xlsx")
+    return Response(file, media_type="application/octet-stream", headers={"Content-Disposition": f"attachment; filename={out_file}"})
 
 
 if __name__ == "__main__":

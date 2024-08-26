@@ -4,6 +4,7 @@ import ArrowDownTray from "../icons/ArrowDownTray";
 import useFileContext from "../contexts/FileContext";
 import xlsx from 'node-xlsx'
 import LoadingPage from "./LoadingPage";
+import { API_SERVER } from "../config/config";
 
 export default function ResultPage() {
 
@@ -17,7 +18,7 @@ export default function ResultPage() {
     if (!taskId) {
       return;
     }
-    const fetchStatus = () => fetch(`http://localhost:8000/tasks/${taskId}/status`)
+    const fetchStatus = () => fetch(`${API_SERVER}/tasks/${taskId}/status`)
       .then((res) => {
         if (res.ok) {
           res.json().then((data) => {
@@ -49,7 +50,7 @@ export default function ResultPage() {
     if (!dataLoaded) {
       return;
     }
-    fetch(`http://localhost:8000/tasks/${taskId}/result`)
+    fetch(`${API_SERVER}/tasks/${taskId}/result`)
       .then((res) => {
         if (res.ok) {
           res.blob().then((data) => {
@@ -68,7 +69,7 @@ export default function ResultPage() {
   
             const reader = new FileReader();
             reader.onload = (e) => {
-              const data = new Uint8Array(e.target.result);
+              const data = new Uint8Array(e.target?.result as ArrayBuffer);
               const workbook = xlsx.parse(data);
               const workbookData = workbook[0].data.slice(1, 50);
               setData(workbookData);

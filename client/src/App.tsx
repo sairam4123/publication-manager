@@ -4,7 +4,8 @@ import './index.css'
 import FrontPage from './pages/FrontPage'
 import ResultPage from './pages/ResultPage'
 import LoadingPage from './pages/LoadingPage'
-import { useRequest } from './hooks/useRequest'
+import { API_SERVER } from './config/config'
+
 function App() {
   const [file, setFile] = useState<File | null>(null)
   const [loading, setLoading] = useState(false)
@@ -16,7 +17,7 @@ function App() {
     const newBody = new FormData()
       newBody.append("file", file as File)
       setLoading(true);
-      fetch('http://localhost:8000/tasks', {method: 'POST', body: newBody}).then((res) => {
+      fetch(`${API_SERVER}/tasks`, {method: 'POST', body: newBody}).then((res) => {
         if (res.ok) {
           setLoading(false)
           res.json().then((data) => {
@@ -38,7 +39,7 @@ function App() {
   }
 
   return (
-    <FileContext.Provider value={{file, setFile}}>
+    <FileContext.Provider value={{file, setFile, taskId: null}}>
       <FrontPage />
     </FileContext.Provider>
     

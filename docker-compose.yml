@@ -1,0 +1,32 @@
+services:
+  redis:
+    image: redis
+    ports:
+      - "6379:6379"
+
+  app:
+    container_name: app
+    build: ./server
+    restart: always
+    ports:
+      - "8000:8000"
+    depends_on:
+      - redis
+  
+  client:
+    container_name: client
+    build: ./client
+    restart: always
+    ports:
+      - "80:80"
+    depends_on:
+      - app
+    environment:
+      - API_SERVER=app:8000
+    
+  celery_worker:
+    container_name: celery_worker
+    build: ./tasks
+    depends_on:
+      - redis
+      

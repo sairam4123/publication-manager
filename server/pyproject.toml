@@ -13,6 +13,7 @@ uvicorn = "^0.30.6"
 python-multipart = "^0.0.9"
 celery = "^5.4.0"
 redis = "^5.0.8"
+supabase = {git = "https://github.com/supabase/supabase-py.git"}
 
 
 [build-system]

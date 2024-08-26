@@ -24,7 +24,7 @@ export default function FrontPage() {
       />
       
       <UploadDocumentModal
-        onFileSelected={(file) => {setFile(file)}}
+        onFileSelected={(file) => {setFile(file as File)}}
         visible={documentModalIsVisible}
         setVisible={setDocumentModalIsVisible}
       />

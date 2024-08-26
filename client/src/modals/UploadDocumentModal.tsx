@@ -25,7 +25,7 @@ export default function UploadDocumentModal({
       ) {
         const reader = new FileReader();
         reader.onload = (e) => {
-          const data = new Uint8Array(e.target.result);
+          const data = new Uint8Array(e.target?.result as ArrayBuffer);
           const workbook = xlsx.parse(data);
           const workbookData = workbook[0].data.slice(0, 5);
           setTableData(workbookData);
