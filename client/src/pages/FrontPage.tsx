@@ -19,7 +19,10 @@ export default function FrontPage() {
       <p className="text-7xl text-white font-bold text-center select-none">
         PUBLICATION EXTRACTOR
       </p>
-      <Button className="text-white" onClick={() => setDocumentModalIsVisible(true)}><ArrowUpTrayIcon className="h-full size-6 text-white" /> Upload Excel Document</Button>
+      <p className="text-2xl text-white text-center p-4 select-none">
+        Get the publication data you need in seconds
+      </p>
+      <Button className="text-white animate-pulse" onClick={() => setDocumentModalIsVisible(true)}><ArrowUpTrayIcon className="h-full size-6 text-white" /> Upload Excel Document</Button>
       
       <Search className="hidden" filterEnabled={filterEnabled} filterIconPressed={() => setFilterModalIsVisible(true)} uploadIconPressed={() => setDocumentModalIsVisible(true)} />
       <UploadDocumentModal

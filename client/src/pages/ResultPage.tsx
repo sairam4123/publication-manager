@@ -13,8 +13,8 @@ const loadingMessages = [
   "Processing...",
   "Analyzing...",
   "Fetching data...",
-  "Packaging data...",
   "Preparing data...",
+  "Packaging data...",
 ];
 
 export default function ResultPage() {
@@ -30,7 +30,6 @@ export default function ResultPage() {
     if (!taskId) {
       return;
     }
-    
     const fetchStatus = () =>
       fetch(`${API_SERVER}/tasks/${taskId}/status`)
         .then((res) => {
@@ -49,7 +48,7 @@ export default function ResultPage() {
               } else {
                 console.log("Task not completed (working)");
                 setLoadingMessageIdx(
-                  (prev) => (prev + 1) % loadingMessages.length
+                  (prev) => (prev + Math.ceil(Math.random() * 1.75)) % loadingMessages.length
                 );
               }
             });
@@ -59,7 +58,7 @@ export default function ResultPage() {
           console.log(err);
           setIsErrored(true);
         });
-    const interval = setInterval(fetchStatus, 2000);
+    const interval = setInterval(fetchStatus, 1500);
     timerRef.current = interval;
     const stopPolling = () => {
       clearInterval(timerRef.current ?? undefined);
@@ -78,6 +77,7 @@ export default function ResultPage() {
         if (res.ok) {
           res.blob().then((data) => {
             console.log(data);
+            setLoadingMessageIdx(loadingMessages.length - 2);
             setSelectedFile(data as Blob);
           });
         }
@@ -103,7 +103,7 @@ export default function ResultPage() {
     }
   }, [selectedFile]);
 
-  if (!dataLoaded && !isErrored) {
+  if ((!dataLoaded && !isErrored) || data.length === 0) {
     return (
       <LoadingPage key="loading" message={loadingMessages[loadingMessageIdx]} />
     );
@@ -130,28 +130,28 @@ export default function ResultPage() {
 
   const headers = ["Author", "Title", "Venue", "Year", "Link", "Type"];
   return (
-    <div className="flex bg-black h-screen w-screen justify-center items-center flex-col gap-4">
+    <div className="transition-all flex bg-black pt-24 h-full w-screen overflow-x-hidden overflow-y-scroll justify-center items-center flex-col gap-4">
       <p className="text-5xl text-white font-bold text-center select-none">
         PUBLICATION RECORDS
       </p>
       <div className="flex h-10 w-11/12 justify-between">
         <button
           onClick={backToHome}
-          className="transition-all flex items-center gap-2 flex-row text-white rounded-xl outline outline-neutral-700 hover:outline-neutral-600 active:bg-neutral-600 px-4"
+          className="transition-all flex items-center gap-2 flex-row text-white rounded-xl outline outline-neutral-700 hover:outline-neutral-400 active:outline-neutral-600 active:bg-neutral-600 px-4"
         >
           <HomeIcon className="size-6" /> Home
         </button>
         <button
           onClick={downloadFile}
-          className="transition-all flex items-center gap-2 flex-row text-white rounded-xl outline outline-neutral-700 hover:outline-neutral-600 active:bg-neutral-600 px-4"
+          className="transition-all flex items-center gap-2 flex-row text-white rounded-xl outline outline-neutral-700 hover:outline-neutral-400 active:outline-neutral-600 active:bg-neutral-600 px-4"
         >
           <ArrowDownTray className="size-6" /> Download as Excel
         </button>
       </div>
-      <div className="w-11/12 h-4/6 overflow-y-scroll p-4">
+      <p className="text-neutral-500 -mb-4 -mt-4">Preview only</p>
+      <div className="w-11/12 p-4">
         {data.length !== 0 && <Table data={data} headers={headers}></Table>}
       </div>
-      <p className="text-neutral-500 mb-4 -mt-4">Preview only</p>
     </div>
   );
 }

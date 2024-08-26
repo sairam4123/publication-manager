@@ -33,6 +33,7 @@ app.add_middleware(
 @app.post("/tasks")
 def run_task(file: UploadFile):
     cur_time = int(time.time())
+    sp_client.auth.get_session()
     # download file
     in_filename = f"input-{cur_time}.xlsx"
     sp_client.storage.from_("excel-storage") \
@@ -48,6 +49,7 @@ def task_status(task_id: str):
 
 @app.get("/tasks/{task_id}/result")
 def task_result(task_id: str):
+    sp_client.auth.get_session()
     task = celery.AsyncResult(task_id)
     out_file = task.result
     file = sp_client.storage.from_("excel-storage") \
