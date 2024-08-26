@@ -1,18 +1,27 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import {FileContext} from './contexts/FileContext'
 import './index.css'
 import FrontPage from './pages/FrontPage'
 import ResultPage from './pages/ResultPage'
 import LoadingPage from './pages/LoadingPage'
 import { API_SERVER } from './config/config'
+import ErrorPage from './pages/ErrorPage'
 
 function App() {
   const [file, setFile] = useState<File | null>(null)
   const [loading, setLoading] = useState(false)
   const [data, setData] = useState(null)
+  const [error, setError] = useState<string | null>(null)
+  const isFirst = useRef(true)
+
   useEffect(() => {
-    if (!file) {
+    if (!file && isFirst.current === false) {
+      alert("No file selected")
       return
+    }
+    if (isFirst.current) {
+      isFirst.current = false
+      console.log("Ignoring alert...")
     }
     const newBody = new FormData()
       newBody.append("file", file as File)
@@ -25,12 +34,16 @@ function App() {
           })
         }}).catch((err) => {
           console.log(err)
+          setError(err)
         }).finally(() => {
           setLoading(false)})
-  }, [file?.name])
+  }, [file])
 
   if (loading) {
-    return <LoadingPage />
+    return <LoadingPage message='Loading...' />
+  }
+  if (error) {
+    return <ErrorPage error={error} />
   }
   if (data) {
     return <FileContext.Provider value={{file, setFile, taskId: data["task_id"]}}>

@@ -27,7 +27,7 @@ export default function UploadDocumentModal({
         reader.onload = (e) => {
           const data = new Uint8Array(e.target?.result as ArrayBuffer);
           const workbook = xlsx.parse(data);
-          const workbookData = workbook[0].data.slice(0, 5);
+          const workbookData = workbook[0].data.slice(1, 6);
           setTableData(workbookData);
         };
         reader.readAsArrayBuffer(selectedFile);
@@ -45,7 +45,7 @@ export default function UploadDocumentModal({
         onClick={() => {setVisible(false)
             setTableData([])
         }}
-        className="transition-all fixed inset-0 text-white bg-black bg-opacity-40 flex justify-center items-center"
+        className="transition-all backdrop-blur-md fixed inset-0 text-white flex justify-center items-center"
       >
         <div
           onClick={(e) => e.stopPropagation()}

@@ -3,6 +3,7 @@ import random
 import aiohttp
 import pandas
 import asyncio
+import datetime
 
 def get_publication_type(publication_type):
     publication_type = publication_type.lower()
@@ -38,7 +39,7 @@ async def get_author_publications_dblp(name, publication_type, from_year, to_yea
                 'url': result['hits']['hit'][i]['info']['url'],
                 'type': result['hits']['hit'][i]['info']['type'],
             }
-                if from_year <= int(publication_record['year']) <= to_year:
+                if int(from_year) <= int(publication_record['year']) <= int(to_year):
                     publication_records.append(publication_record)
     return publication_records
 
@@ -60,9 +61,9 @@ async def main(input_file, output_file):
     dataset = pandas.read_excel(input_file, 'Sheet1').to_dict('records')
     tasks: list[asyncio.Task] = []
     for datum in dataset:
-        name, publication_type = datum['Name'], get_publication_type(datum['Type'])
+        name, publication_type, from_year, to_year = datum['Name'], get_publication_type(datum.get('Type', 'all')), datum.get('From', 1970), datum.get('To', datetime.datetime.now().year)
 
-        author_publications = asyncio.create_task(get_author_publications_dblp(name, publication_type, 2020, 2024))
+        author_publications = asyncio.create_task(get_author_publications_dblp(name, publication_type, from_year, to_year))
         tasks.append(author_publications)
         sleep_time = abs(0.1 + random.uniform(-0.2, 0.5))
         await asyncio.sleep(sleep_time) # to avoid getting blocked by the server
