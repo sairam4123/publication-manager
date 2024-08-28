@@ -5,6 +5,7 @@ from celery import current_app as celery
 from supabase import create_client
 from scraper import main as task_dblp
 from scraper import process_single as task_dblp_single
+from scraper import search_author as task_dblp_search_author
 
 sp_client = create_client("https://xchmpfivomtlnslvbbbk.supabase.co", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhjaG1wZml2b210bG5zbHZiYmJrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjQ2MDI4MDYsImV4cCI6MjA0MDE3ODgwNn0.HBs-xlJW21awsjyS5mje25g3Wu5M_TGFc2T7Q6urXLw")
 
@@ -38,6 +39,11 @@ def process_customized_query(query: dict):
     print(f"Fetching cuztomized {query}")
     return asyncio.run(task_dblp_single(query))
 
+@celery.task
+def process_author_search(query: str):
+    import asyncio
+    print("Fetching author data for {query}")
+    return asyncio.run(task_dblp_search_author(query))
 
 
 @celery.task

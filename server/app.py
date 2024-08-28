@@ -10,7 +10,7 @@ from supabase import create_client
 from models import CustomizedQueryModel
 
 
-celery = Celery(__name__, broker="redis://redis:6379/0", backend="redis://redis:6379/0")
+celery = Celery(__name__, broker="redis://localhost:6379/0", backend="redis://localhost:6379/0")
 celery.conf.broker_connection_retry_on_startup = True
 
 sp_client = create_client("https://xchmpfivomtlnslvbbbk.supabase.co", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhjaG1wZml2b210bG5zbHZiYmJrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjQ2MDI4MDYsImV4cCI6MjA0MDE3ODgwNn0.HBs-xlJW21awsjyS5mje25g3Wu5M_TGFc2T7Q6urXLw")
@@ -63,13 +63,30 @@ def task_result(task_id: str):
 
 @app.post("/tasks/customized")
 def run_customized_query(query: CustomizedQueryModel):
-    task = celery.send_task("main.process_customized_query", args=[query])
+    task = celery.send_task("main.process_customized_query", args=[query.model_dump()])
     return {"task_id": task.id}
 
 @app.get("/tasks/customized/{task_id}/result")
 def run_customized_query_result(task_id: str):
     task = celery.AsyncResult(task_id)
+    print(task.result)
     return task.result
+
+@app.get("/tasks/search/{query}")
+def run_search_author_query(query: str):
+    task = celery.send_task("main.process_author_search", args=[query])
+    return {"task_id": task.id}
+
+@app.get("/tasks/search/{task_id}/result")
+def search_author_query(task_id: str):
+    task = celery.AsyncResult(task_id)
+    print(f"Status: {task.status}")
+    if task.status == "FAILED" or task.status == "PENDING":
+        return {'status': task.status}
+    print(task.result)
+    return task.result
+
+
 
 if __name__ == "__main__":
     import uvicorn
