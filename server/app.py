@@ -7,6 +7,8 @@ from celery import Celery
 
 from supabase import create_client
 
+from models import CustomizedQueryModel
+
 
 celery = Celery(__name__, broker="redis://redis:6379/0", backend="redis://redis:6379/0")
 celery.conf.broker_connection_retry_on_startup = True
@@ -58,6 +60,16 @@ def task_result(task_id: str):
     # upload file
     return Response(file, media_type="application/octet-stream", headers={"Content-Disposition": f"attachment; filename={out_file}"})
 
+
+@app.post("/tasks/customized")
+def run_customized_query(query: CustomizedQueryModel):
+    task = celery.send_task("main.process_customized_query", args=[query])
+    return {"task_id": task.id}
+
+@app.get("/tasks/customized/{task_id}/result")
+def run_customized_query_result(task_id: str):
+    task = celery.AsyncResult(task_id)
+    return task.result
 
 if __name__ == "__main__":
     import uvicorn

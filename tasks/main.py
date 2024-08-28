@@ -4,6 +4,7 @@ import io
 from celery import current_app as celery
 from supabase import create_client
 from scraper import main as task_dblp
+from scraper import process_single as task_dblp_single
 
 sp_client = create_client("https://xchmpfivomtlnslvbbbk.supabase.co", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhjaG1wZml2b210bG5zbHZiYmJrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjQ2MDI4MDYsImV4cCI6MjA0MDE3ODgwNn0.HBs-xlJW21awsjyS5mje25g3Wu5M_TGFc2T7Q6urXLw")
 
@@ -27,6 +28,17 @@ def process_excel(in_file: str):
         asyncio.run(task_dblp(in_buffer, out_buffer))
         sp_client.storage.from_("excel-storage").upload(out_file, out_buffer.getvalue()) # upload requires bytes not bytesIO
     return out_file
+
+@celery.task
+def process_customized_query(query: dict):
+    import asyncio
+    cur_time = int(time.time())
+    # out_file = f"output-{cur_time}.xlsx"
+
+    print(f"Fetching cuztomized {query}")
+    return asyncio.run(task_dblp_single(query))
+
+
 
 @celery.task
 def process_excel_storage(in_filename: str):

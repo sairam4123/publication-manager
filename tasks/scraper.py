@@ -73,3 +73,8 @@ async def main(input_file, output_file):
     result = pandas.DataFrame(post_process_publications(dataset, author_publications))
     result.to_excel(output_file, index=False, header=False)
  
+async def process_single(query: dict):
+    name, publication_type, from_year, to_year = query['Name'], get_publication_type(query.get('Type', 'all')), query.get('From', 1970), query.get('To', datetime.datetime.now().year)
+    author_publications = await get_author_publications_dblp(name, publication_type, from_year, to_year)
+    result = post_process_publications([query], [author_publications])
+    return result
