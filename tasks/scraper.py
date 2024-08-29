@@ -24,10 +24,14 @@ async def get_author_publications_dblp(name, publication_type, from_year, to_yea
             data = json.loads(await response.text())
     result = data['result']
     hits = int(result['hits']['@sent'])
-
+    with open('data.json', 'w') as f:
+        f.write(json.dumps(data, indent=4))
     publication_records = []
     for i in range(hits):
-        author_infos = result['hits']['hit'][i]['info']['authors']['author']
+        try:
+            author_infos = result['hits']['hit'][i]['info']['authors']['author']
+        except KeyError:
+            print(result['hits']['hit'][i]['info'])
         for author_info in author_infos:
             if isinstance(author_info, str):
                 author_info = author_infos

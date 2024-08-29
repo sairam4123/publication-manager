@@ -42,7 +42,7 @@ def process_customized_query(query: dict):
 @celery.task
 def process_author_search(query: str):
     import asyncio
-    print("Fetching author data for {query}")
+    print(f"Fetching author data for {query}")
     return asyncio.run(task_dblp_search_author(query))
 
 

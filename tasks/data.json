@@ -1,0 +1,1742 @@
+{
+    "result": {
+        "query": "Aishwarya* N Reganti*",
+        "status": {
+            "@code": "200",
+            "text": "OK"
+        },
+        "time": {
+            "@unit": "msecs",
+            "text": "23.01"
+        },
+        "completions": {
+            "@total": "1",
+            "@computed": "1",
+            "@sent": "1",
+            "c": {
+                "@sc": "65",
+                "@dc": "33",
+                "@oc": "65",
+                "@id": "56775288",
+                "text": "reganti"
+            }
+        },
+        "hits": {
+            "@total": "33",
+            "@computed": "33",
+            "@sent": "33",
+            "@first": "0",
+            "hit": [
+                {
+                    "@score": "6",
+                    "@id": "170195",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "272/9066",
+                                    "text": "Thilini Wijesiriwardene"
+                                },
+                                {
+                                    "@pid": "87/6880",
+                                    "text": "Ruwan Wickramarachchi"
+                                },
+                                {
+                                    "@pid": "194/4692",
+                                    "text": "Aishwarya Naresh Reganti"
+                                },
+                                {
+                                    "@pid": "298/1294",
+                                    "text": "Vinija Jain"
+                                },
+                                {
+                                    "@pid": "55/10360",
+                                    "text": "Aman Chadha"
+                                },
+                                {
+                                    "@pid": "s/AmitPSheth",
+                                    "text": "Amit P. Sheth"
+                                },
+                                {
+                                    "@pid": "75/5002",
+                                    "text": "Amitava Das"
+                                }
+                            ]
+                        },
+                        "title": "On the Relationship between Sentence Analogy Identification and Sentence Structure Encoding in Large Language Models.",
+                        "venue": "EACL",
+                        "pages": "451-457",
+                        "year": "2024",
+                        "type": "Conference and Workshop Papers",
+                        "access": "open",
+                        "key": "conf/eacl/WijesiriwardeneWRJCSD24",
+                        "ee": "https://aclanthology.org/2024.findings-eacl.31",
+                        "url": "https://dblp.org/rec/conf/eacl/WijesiriwardeneWRJCSD24"
+                    },
+                    "url": "URL#170195"
+                },
+                {
+                    "@score": "6",
+                    "@id": "514701",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "272/9066",
+                                    "text": "Thilini Wijesiriwardene"
+                                },
+                                {
+                                    "@pid": "87/6880",
+                                    "text": "Ruwan Wickramarachchi"
+                                },
+                                {
+                                    "@pid": "346/8218",
+                                    "text": "Bimal G. Gajera"
+                                },
+                                {
+                                    "@pid": "346/9157",
+                                    "text": "Shreeyash Mukul Gowaikar"
+                                },
+                                {
+                                    "@pid": "346/8794",
+                                    "text": "Chandan Gupta"
+                                },
+                                {
+                                    "@pid": "55/10360",
+                                    "text": "Aman Chadha"
+                                },
+                                {
+                                    "@pid": "194/4692",
+                                    "text": "Aishwarya Naresh Reganti"
+                                },
+                                {
+                                    "@pid": "s/AmitPSheth",
+                                    "text": "Amit P. Sheth"
+                                },
+                                {
+                                    "@pid": "75/5002",
+                                    "text": "Amitava Das"
+                                }
+                            ]
+                        },
+                        "title": "ANALOGICAL - A Novel Benchmark for Long Text Analogy Evaluation in Large Language Models.",
+                        "venue": "ACL",
+                        "pages": "3534-3549",
+                        "year": "2023",
+                        "type": "Conference and Workshop Papers",
+                        "access": "open",
+                        "key": "conf/acl/Wijesiriwardene23",
+                        "doi": "10.18653/V1/2023.FINDINGS-ACL.218",
+                        "ee": "https://doi.org/10.18653/v1/2023.findings-acl.218",
+                        "url": "https://dblp.org/rec/conf/acl/Wijesiriwardene23"
+                    },
+                    "url": "URL#514701"
+                },
+                {
+                    "@score": "6",
+                    "@id": "554764",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "328/0996",
+                                    "text": "Shreyash Mishra"
+                                },
+                                {
+                                    "@pid": "328/0765",
+                                    "text": "S. Suryavardan"
+                                },
+                                {
+                                    "@pid": "342/8093",
+                                    "text": "Megha Chakraborty"
+                                },
+                                {
+                                    "@pid": "260/9345",
+                                    "text": "Parth Patwa"
+                                },
+                                {
+                                    "@pid": "294/5245",
+                                    "text": "Anku Rani"
+                                },
+                                {
+                                    "@pid": "55/10360",
+                                    "text": "Aman Chadha"
+                                },
+                                {
+                                    "@pid": "194/4692",
+                                    "text": "Aishwarya Naresh Reganti"
+                                },
+                                {
+                                    "@pid": "75/5002",
+                                    "text": "Amitava Das"
+                                },
+                                {
+                                    "@pid": "s/AmitPSheth",
+                                    "text": "Amit P. Sheth"
+                                },
+                                {
+                                    "@pid": "222/9379",
+                                    "text": "Manoj Chinnakotla"
+                                },
+                                {
+                                    "@pid": "11/3590",
+                                    "text": "Asif Ekbal"
+                                },
+                                {
+                                    "@pid": "131/9628",
+                                    "text": "Srijan Kumar"
+                                }
+                            ]
+                        },
+                        "title": "Overview of Memotion 3: Sentiment and Emotion Analysis of Codemixed Hinglish Memes.",
+                        "venue": "DE-FACTIFY@AAAI",
+                        "year": "2023",
+                        "type": "Conference and Workshop Papers",
+                        "access": "open",
+                        "key": "conf/defactify/MishraSCPRCRDSC23",
+                        "ee": "https://ceur-ws.org/Vol-3555/paper5.pdf",
+                        "url": "https://dblp.org/rec/conf/defactify/MishraSCPRCRDSC23"
+                    },
+                    "url": "URL#554764"
+                },
+                {
+                    "@score": "6",
+                    "@id": "554765",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "328/0996",
+                                    "text": "Shreyash Mishra"
+                                },
+                                {
+                                    "@pid": "328/0765",
+                                    "text": "S. Suryavardan"
+                                },
+                                {
+                                    "@pid": "260/9345",
+                                    "text": "Parth Patwa"
+                                },
+                                {
+                                    "@pid": "342/8093",
+                                    "text": "Megha Chakraborty"
+                                },
+                                {
+                                    "@pid": "294/5245",
+                                    "text": "Anku Rani"
+                                },
+                                {
+                                    "@pid": "194/4692",
+                                    "text": "Aishwarya Naresh Reganti"
+                                },
+                                {
+                                    "@pid": "55/10360",
+                                    "text": "Aman Chadha"
+                                },
+                                {
+                                    "@pid": "75/5002",
+                                    "text": "Amitava Das"
+                                },
+                                {
+                                    "@pid": "s/AmitPSheth",
+                                    "text": "Amit P. Sheth"
+                                },
+                                {
+                                    "@pid": "222/9379",
+                                    "text": "Manoj Chinnakotla"
+                                },
+                                {
+                                    "@pid": "11/3590",
+                                    "text": "Asif Ekbal"
+                                },
+                                {
+                                    "@pid": "131/9628",
+                                    "text": "Srijan Kumar"
+                                }
+                            ]
+                        },
+                        "title": "Memotion 3: Dataset on sentiment and emotion analysis of codemixed Hindi-English Memes.",
+                        "venue": "DE-FACTIFY@AAAI",
+                        "year": "2023",
+                        "type": "Conference and Workshop Papers",
+                        "access": "open",
+                        "key": "conf/defactify/MishraSPCRRCDSC23",
+                        "ee": "https://ceur-ws.org/Vol-3555/paper4.pdf",
+                        "url": "https://dblp.org/rec/conf/defactify/MishraSPCRRCDSC23"
+                    },
+                    "url": "URL#554765"
+                },
+                {
+                    "@score": "6",
+                    "@id": "554766",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "328/0765",
+                                    "text": "S. Suryavardan"
+                                },
+                                {
+                                    "@pid": "328/0996",
+                                    "text": "Shreyash Mishra"
+                                },
+                                {
+                                    "@pid": "342/8093",
+                                    "text": "Megha Chakraborty"
+                                },
+                                {
+                                    "@pid": "260/9345",
+                                    "text": "Parth Patwa"
+                                },
+                                {
+                                    "@pid": "294/5245",
+                                    "text": "Anku Rani"
+                                },
+                                {
+                                    "@pid": "55/10360",
+                                    "text": "Aman Chadha"
+                                },
+                                {
+                                    "@pid": "194/4692",
+                                    "text": "Aishwarya Naresh Reganti"
+                                },
+                                {
+                                    "@pid": "75/5002",
+                                    "text": "Amitava Das"
+                                },
+                                {
+                                    "@pid": "s/AmitPSheth",
+                                    "text": "Amit P. Sheth"
+                                },
+                                {
+                                    "@pid": "222/9379",
+                                    "text": "Manoj Chinnakotla"
+                                },
+                                {
+                                    "@pid": "11/3590",
+                                    "text": "Asif Ekbal"
+                                },
+                                {
+                                    "@pid": "131/9628",
+                                    "text": "Srijan Kumar"
+                                }
+                            ]
+                        },
+                        "title": "Findings of factify 2: multimodal fake news detection.",
+                        "venue": "DE-FACTIFY@AAAI",
+                        "year": "2023",
+                        "type": "Conference and Workshop Papers",
+                        "access": "open",
+                        "key": "conf/defactify/SuryavardanMCPR23",
+                        "ee": "https://ceur-ws.org/Vol-3555/paper11.pdf",
+                        "url": "https://dblp.org/rec/conf/defactify/SuryavardanMCPR23"
+                    },
+                    "url": "URL#554766"
+                },
+                {
+                    "@score": "6",
+                    "@id": "554767",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "328/0765",
+                                    "text": "S. Suryavardan"
+                                },
+                                {
+                                    "@pid": "328/0996",
+                                    "text": "Shreyash Mishra"
+                                },
+                                {
+                                    "@pid": "260/9345",
+                                    "text": "Parth Patwa"
+                                },
+                                {
+                                    "@pid": "342/8093",
+                                    "text": "Megha Chakraborty"
+                                },
+                                {
+                                    "@pid": "294/5245",
+                                    "text": "Anku Rani"
+                                },
+                                {
+                                    "@pid": "194/4692",
+                                    "text": "Aishwarya Naresh Reganti"
+                                },
+                                {
+                                    "@pid": "55/10360",
+                                    "text": "Aman Chadha"
+                                },
+                                {
+                                    "@pid": "75/5002",
+                                    "text": "Amitava Das"
+                                },
+                                {
+                                    "@pid": "s/AmitPSheth",
+                                    "text": "Amit P. Sheth"
+                                },
+                                {
+                                    "@pid": "222/9379",
+                                    "text": "Manoj Chinnakotla"
+                                },
+                                {
+                                    "@pid": "11/3590",
+                                    "text": "Asif Ekbal"
+                                },
+                                {
+                                    "@pid": "131/9628",
+                                    "text": "Srijan Kumar"
+                                }
+                            ]
+                        },
+                        "title": "Factify 2: A multimodal fake news and satire news dataset.",
+                        "venue": "DE-FACTIFY@AAAI",
+                        "year": "2023",
+                        "type": "Conference and Workshop Papers",
+                        "access": "open",
+                        "key": "conf/defactify/SuryavardanMPCR23",
+                        "ee": "https://ceur-ws.org/Vol-3555/paper10.pdf",
+                        "url": "https://dblp.org/rec/conf/defactify/SuryavardanMPCR23"
+                    },
+                    "url": "URL#554767"
+                },
+                {
+                    "@score": "6",
+                    "@id": "725390",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "328/0996",
+                                    "text": "Shreyash Mishra"
+                                },
+                                {
+                                    "@pid": "328/0765",
+                                    "text": "Suryavardan S"
+                                },
+                                {
+                                    "@pid": "260/9345",
+                                    "text": "Parth Patwa"
+                                },
+                                {
+                                    "@pid": "342/8093",
+                                    "text": "Megha Chakraborty"
+                                },
+                                {
+                                    "@pid": "294/5245",
+                                    "text": "Anku Rani"
+                                },
+                                {
+                                    "@pid": "194/4692",
+                                    "text": "Aishwarya Naresh Reganti"
+                                },
+                                {
+                                    "@pid": "55/10360",
+                                    "text": "Aman Chadha"
+                                },
+                                {
+                                    "@pid": "75/5002",
+                                    "text": "Amitava Das"
+                                },
+                                {
+                                    "@pid": "s/AmitPSheth",
+                                    "text": "Amit P. Sheth"
+                                },
+                                {
+                                    "@pid": "222/9379",
+                                    "text": "Manoj Chinnakotla"
+                                },
+                                {
+                                    "@pid": "11/3590",
+                                    "text": "Asif Ekbal"
+                                },
+                                {
+                                    "@pid": "131/9628",
+                                    "text": "Srijan Kumar"
+                                }
+                            ]
+                        },
+                        "title": "Memotion 3: Dataset on Sentiment and Emotion Analysis of Codemixed Hindi-English Memes.",
+                        "venue": "CoRR",
+                        "volume": "abs/2303.09892",
+                        "year": "2023",
+                        "type": "Informal and Other Publications",
+                        "access": "open",
+                        "key": "journals/corr/abs-2303-09892",
+                        "doi": "10.48550/ARXIV.2303.09892",
+                        "ee": "https://doi.org/10.48550/arXiv.2303.09892",
+                        "url": "https://dblp.org/rec/journals/corr/abs-2303-09892"
+                    },
+                    "url": "URL#725390"
+                },
+                {
+                    "@score": "6",
+                    "@id": "731143",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "328/0765",
+                                    "text": "Suryavardan S"
+                                },
+                                {
+                                    "@pid": "328/0996",
+                                    "text": "Shreyash Mishra"
+                                },
+                                {
+                                    "@pid": "260/9345",
+                                    "text": "Parth Patwa"
+                                },
+                                {
+                                    "@pid": "342/8093",
+                                    "text": "Megha Chakraborty"
+                                },
+                                {
+                                    "@pid": "294/5245",
+                                    "text": "Anku Rani"
+                                },
+                                {
+                                    "@pid": "194/4692",
+                                    "text": "Aishwarya Naresh Reganti"
+                                },
+                                {
+                                    "@pid": "55/10360",
+                                    "text": "Aman Chadha"
+                                },
+                                {
+                                    "@pid": "75/5002",
+                                    "text": "Amitava Das"
+                                },
+                                {
+                                    "@pid": "s/AmitPSheth",
+                                    "text": "Amit P. Sheth"
+                                },
+                                {
+                                    "@pid": "222/9379",
+                                    "text": "Manoj Chinnakotla"
+                                },
+                                {
+                                    "@pid": "11/3590",
+                                    "text": "Asif Ekbal"
+                                },
+                                {
+                                    "@pid": "131/9628",
+                                    "text": "Srijan Kumar"
+                                }
+                            ]
+                        },
+                        "title": "Factify 2: A Multimodal Fake News and Satire News Dataset.",
+                        "venue": "CoRR",
+                        "volume": "abs/2304.03897",
+                        "year": "2023",
+                        "type": "Informal and Other Publications",
+                        "access": "open",
+                        "key": "journals/corr/abs-2304-03897",
+                        "doi": "10.48550/ARXIV.2304.03897",
+                        "ee": "https://doi.org/10.48550/arXiv.2304.03897",
+                        "url": "https://dblp.org/rec/journals/corr/abs-2304-03897"
+                    },
+                    "url": "URL#731143"
+                },
+                {
+                    "@score": "6",
+                    "@id": "738787",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "272/9066",
+                                    "text": "Thilini Wijesiriwardene"
+                                },
+                                {
+                                    "@pid": "87/6880",
+                                    "text": "Ruwan Wickramarachchi"
+                                },
+                                {
+                                    "@pid": "346/8218",
+                                    "text": "Bimal G. Gajera"
+                                },
+                                {
+                                    "@pid": "346/9157",
+                                    "text": "Shreeyash Mukul Gowaikar"
+                                },
+                                {
+                                    "@pid": "346/8794",
+                                    "text": "Chandan Gupta"
+                                },
+                                {
+                                    "@pid": "55/10360",
+                                    "text": "Aman Chadha"
+                                },
+                                {
+                                    "@pid": "194/4692",
+                                    "text": "Aishwarya Naresh Reganti"
+                                },
+                                {
+                                    "@pid": "s/AmitPSheth",
+                                    "text": "Amit P. Sheth"
+                                },
+                                {
+                                    "@pid": "75/5002",
+                                    "text": "Amitava Das"
+                                }
+                            ]
+                        },
+                        "title": "ANALOGICAL - A Novel Benchmark for Long Text Analogy Evaluation in Large Language Models.",
+                        "venue": "CoRR",
+                        "volume": "abs/2305.05050",
+                        "year": "2023",
+                        "type": "Informal and Other Publications",
+                        "access": "open",
+                        "key": "journals/corr/abs-2305-05050",
+                        "doi": "10.48550/ARXIV.2305.05050",
+                        "ee": "https://doi.org/10.48550/arXiv.2305.05050",
+                        "url": "https://dblp.org/rec/journals/corr/abs-2305-05050"
+                    },
+                    "url": "URL#738787"
+                },
+                {
+                    "@score": "6",
+                    "@id": "760222",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "328/0765",
+                                    "text": "S. Suryavardan"
+                                },
+                                {
+                                    "@pid": "328/0996",
+                                    "text": "Shreyash Mishra"
+                                },
+                                {
+                                    "@pid": "342/8093",
+                                    "text": "Megha Chakraborty"
+                                },
+                                {
+                                    "@pid": "260/9345",
+                                    "text": "Parth Patwa"
+                                },
+                                {
+                                    "@pid": "294/5245",
+                                    "text": "Anku Rani"
+                                },
+                                {
+                                    "@pid": "55/10360",
+                                    "text": "Aman Chadha"
+                                },
+                                {
+                                    "@pid": "194/4692",
+                                    "text": "Aishwarya Naresh Reganti"
+                                },
+                                {
+                                    "@pid": "75/5002",
+                                    "text": "Amitava Das"
+                                },
+                                {
+                                    "@pid": "s/AmitPSheth",
+                                    "text": "Amit P. Sheth"
+                                },
+                                {
+                                    "@pid": "222/9379",
+                                    "text": "Manoj Chinnakotla"
+                                },
+                                {
+                                    "@pid": "11/3590",
+                                    "text": "Asif Ekbal"
+                                },
+                                {
+                                    "@pid": "131/9628",
+                                    "text": "Srijan Kumar"
+                                }
+                            ]
+                        },
+                        "title": "Findings of Factify 2: Multimodal Fake News Detection.",
+                        "venue": "CoRR",
+                        "volume": "abs/2307.10475",
+                        "year": "2023",
+                        "type": "Informal and Other Publications",
+                        "access": "open",
+                        "key": "journals/corr/abs-2307-10475",
+                        "doi": "10.48550/ARXIV.2307.10475",
+                        "ee": "https://doi.org/10.48550/arXiv.2307.10475",
+                        "url": "https://dblp.org/rec/journals/corr/abs-2307-10475"
+                    },
+                    "url": "URL#760222"
+                },
+                {
+                    "@score": "6",
+                    "@id": "773931",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "328/0996",
+                                    "text": "Shreyash Mishra"
+                                },
+                                {
+                                    "@pid": "328/0765",
+                                    "text": "S. Suryavardan"
+                                },
+                                {
+                                    "@pid": "342/8093",
+                                    "text": "Megha Chakraborty"
+                                },
+                                {
+                                    "@pid": "260/9345",
+                                    "text": "Parth Patwa"
+                                },
+                                {
+                                    "@pid": "294/5245",
+                                    "text": "Anku Rani"
+                                },
+                                {
+                                    "@pid": "55/10360",
+                                    "text": "Aman Chadha"
+                                },
+                                {
+                                    "@pid": "194/4692",
+                                    "text": "Aishwarya Naresh Reganti"
+                                },
+                                {
+                                    "@pid": "75/5002",
+                                    "text": "Amitava Das"
+                                },
+                                {
+                                    "@pid": "s/AmitPSheth",
+                                    "text": "Amit P. Sheth"
+                                },
+                                {
+                                    "@pid": "222/9379",
+                                    "text": "Manoj Chinnakotla"
+                                },
+                                {
+                                    "@pid": "11/3590",
+                                    "text": "Asif Ekbal"
+                                },
+                                {
+                                    "@pid": "131/9628",
+                                    "text": "Srijan Kumar"
+                                }
+                            ]
+                        },
+                        "title": "Overview of Memotion 3: Sentiment and Emotion Analysis of Codemixed Hinglish Memes.",
+                        "venue": "CoRR",
+                        "volume": "abs/2309.06517",
+                        "year": "2023",
+                        "type": "Informal and Other Publications",
+                        "access": "open",
+                        "key": "journals/corr/abs-2309-06517",
+                        "doi": "10.48550/ARXIV.2309.06517",
+                        "ee": "https://doi.org/10.48550/arXiv.2309.06517",
+                        "url": "https://dblp.org/rec/journals/corr/abs-2309-06517"
+                    },
+                    "url": "URL#773931"
+                },
+                {
+                    "@score": "6",
+                    "@id": "1027503",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "328/0996",
+                                    "text": "Shreyash Mishra"
+                                },
+                                {
+                                    "@pid": "328/0765",
+                                    "text": "Suryavardan S"
+                                },
+                                {
+                                    "@pid": "328/0776",
+                                    "text": "Amrit Bhaskar"
+                                },
+                                {
+                                    "@pid": "238/4919",
+                                    "text": "Parul Chopra"
+                                },
+                                {
+                                    "@pid": "194/4692",
+                                    "text": "Aishwarya N. Reganti"
+                                },
+                                {
+                                    "@pid": "260/9345",
+                                    "text": "Parth Patwa"
+                                },
+                                {
+                                    "@pid": "75/5002",
+                                    "text": "Amitava Das"
+                                },
+                                {
+                                    "@pid": "65/2136-2",
+                                    "text": "Tanmoy Chakraborty 0002"
+                                },
+                                {
+                                    "@pid": "s/AmitPSheth",
+                                    "text": "Amit P. Sheth"
+                                },
+                                {
+                                    "@pid": "11/3590",
+                                    "text": "Asif Ekbal"
+                                }
+                            ]
+                        },
+                        "title": "FACTIFY: A Multi-Modal Fact Verification Dataset.",
+                        "venue": "DE-FACTIFY@AAAI",
+                        "year": "2022",
+                        "type": "Conference and Workshop Papers",
+                        "access": "open",
+                        "key": "conf/aaai/MishraSBCRPD0SE22",
+                        "ee": "https://ceur-ws.org/Vol-3199/paper18.pdf",
+                        "url": "https://dblp.org/rec/conf/aaai/MishraSBCRPD0SE22"
+                    },
+                    "url": "URL#1027503"
+                },
+                {
+                    "@score": "6",
+                    "@id": "1027581",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "260/9345",
+                                    "text": "Parth Patwa"
+                                },
+                                {
+                                    "@pid": "328/0996",
+                                    "text": "Shreyash Mishra"
+                                },
+                                {
+                                    "@pid": "328/0765",
+                                    "text": "Suryavardan S"
+                                },
+                                {
+                                    "@pid": "328/0776",
+                                    "text": "Amrit Bhaskar"
+                                },
+                                {
+                                    "@pid": "238/4919",
+                                    "text": "Parul Chopra"
+                                },
+                                {
+                                    "@pid": "194/4692",
+                                    "text": "Aishwarya Naresh Reganti"
+                                },
+                                {
+                                    "@pid": "75/5002",
+                                    "text": "Amitava Das"
+                                },
+                                {
+                                    "@pid": "65/2136-2",
+                                    "text": "Tanmoy Chakraborty 0002"
+                                },
+                                {
+                                    "@pid": "s/AmitPSheth",
+                                    "text": "Amit P. Sheth"
+                                },
+                                {
+                                    "@pid": "11/3590",
+                                    "text": "Asif Ekbal"
+                                },
+                                {
+                                    "@pid": "148/9894",
+                                    "text": "Chaitanya Ahuja"
+                                }
+                            ]
+                        },
+                        "title": "Benchmarking Multi-Modal Entailment for Fact Verification (short paper).",
+                        "venue": "DE-FACTIFY@AAAI",
+                        "year": "2022",
+                        "type": "Conference and Workshop Papers",
+                        "access": "open",
+                        "key": "conf/aaai/PatwaMSBCRDCSEA22",
+                        "ee": "https://ceur-ws.org/Vol-3199/paper19.pdf",
+                        "url": "https://dblp.org/rec/conf/aaai/PatwaMSBCRDCSEA22"
+                    },
+                    "url": "URL#1027581"
+                },
+                {
+                    "@score": "6",
+                    "@id": "1027582",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "260/9345",
+                                    "text": "Parth Patwa"
+                                },
+                                {
+                                    "@pid": "306/1293",
+                                    "text": "Sathyanarayanan Ramamoorthy"
+                                },
+                                {
+                                    "@pid": "306/1433",
+                                    "text": "Nethra Gunti"
+                                },
+                                {
+                                    "@pid": "328/0996",
+                                    "text": "Shreyash Mishra"
+                                },
+                                {
+                                    "@pid": "328/0765",
+                                    "text": "Suryavardan S"
+                                },
+                                {
+                                    "@pid": "194/4692",
+                                    "text": "Aishwarya N. Reganti"
+                                },
+                                {
+                                    "@pid": "75/5002",
+                                    "text": "Amitava Das"
+                                },
+                                {
+                                    "@pid": "65/2136-2",
+                                    "text": "Tanmoy Chakraborty 0002"
+                                },
+                                {
+                                    "@pid": "s/AmitPSheth",
+                                    "text": "Amit P. Sheth"
+                                },
+                                {
+                                    "@pid": "11/3590",
+                                    "text": "Asif Ekbal"
+                                },
+                                {
+                                    "@pid": "148/9894",
+                                    "text": "Chaitanya Ahuja"
+                                }
+                            ]
+                        },
+                        "title": "Findings of Memotion 2: Sentiment and Emotion Analysis of Memes (short paper).",
+                        "venue": "DE-FACTIFY@AAAI",
+                        "year": "2022",
+                        "type": "Conference and Workshop Papers",
+                        "access": "open",
+                        "key": "conf/aaai/PatwaRGMSRD0SEA22",
+                        "ee": "https://ceur-ws.org/Vol-3199/paper21.pdf",
+                        "url": "https://dblp.org/rec/conf/aaai/PatwaRGMSRD0SEA22"
+                    },
+                    "url": "URL#1027582"
+                },
+                {
+                    "@score": "6",
+                    "@id": "1027624",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "306/1293",
+                                    "text": "Sathyanarayanan Ramamoorthy"
+                                },
+                                {
+                                    "@pid": "306/1433",
+                                    "text": "Nethra Gunti"
+                                },
+                                {
+                                    "@pid": "328/0996",
+                                    "text": "Shreyash Mishra"
+                                },
+                                {
+                                    "@pid": "328/0765",
+                                    "text": "Suryavardan S"
+                                },
+                                {
+                                    "@pid": "194/4692",
+                                    "text": "Aishwarya N. Reganti"
+                                },
+                                {
+                                    "@pid": "260/9345",
+                                    "text": "Parth Patwa"
+                                },
+                                {
+                                    "@pid": "75/5002",
+                                    "text": "Amitava Das"
+                                },
+                                {
+                                    "@pid": "65/2136-2",
+                                    "text": "Tanmoy Chakraborty 0002"
+                                },
+                                {
+                                    "@pid": "s/AmitPSheth",
+                                    "text": "Amit P. Sheth"
+                                },
+                                {
+                                    "@pid": "11/3590",
+                                    "text": "Asif Ekbal"
+                                },
+                                {
+                                    "@pid": "148/9894",
+                                    "text": "Chaitanya Ahuja"
+                                }
+                            ]
+                        },
+                        "title": "Memotion 2: Dataset on Sentiment and Emotion Analysis of Memes (short paper).",
+                        "venue": "DE-FACTIFY@AAAI",
+                        "year": "2022",
+                        "type": "Conference and Workshop Papers",
+                        "access": "open",
+                        "key": "conf/aaai/RamamoorthyGMSR22",
+                        "ee": "https://ceur-ws.org/Vol-3199/paper20.pdf",
+                        "url": "https://dblp.org/rec/conf/aaai/RamamoorthyGMSR22"
+                    },
+                    "url": "URL#1027624"
+                },
+                {
+                    "@score": "6",
+                    "@id": "1063490",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "10/2674-13",
+                                    "text": "Feng Gao 0013"
+                                },
+                                {
+                                    "@pid": "160/1577",
+                                    "text": "Qing Ping"
+                                },
+                                {
+                                    "@pid": "279/2880",
+                                    "text": "Govind Thattai"
+                                },
+                                {
+                                    "@pid": "194/4692",
+                                    "text": "Aishwarya N. Reganti"
+                                },
+                                {
+                                    "@pid": "18/568",
+                                    "text": "Ying Nian Wu"
+                                },
+                                {
+                                    "@pid": "40/2362",
+                                    "text": "Prem Natarajan"
+                                }
+                            ]
+                        },
+                        "title": "Transform-Retrieve-Generate: Natural Language-Centric Outside-Knowledge Visual Question Answering.",
+                        "venue": "CVPR",
+                        "pages": "5057-5067",
+                        "year": "2022",
+                        "type": "Conference and Workshop Papers",
+                        "access": "closed",
+                        "key": "conf/cvpr/0013PTRWN22",
+                        "doi": "10.1109/CVPR52688.2022.00501",
+                        "ee": "https://doi.org/10.1109/CVPR52688.2022.00501",
+                        "url": "https://dblp.org/rec/conf/cvpr/0013PTRWN22"
+                    },
+                    "url": "URL#1063490"
+                },
+                {
+                    "@score": "6",
+                    "@id": "1209025",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "239/4098",
+                                    "text": "Shane Storks"
+                                },
+                                {
+                                    "@pid": "173/1986",
+                                    "text": "Qiaozi Gao"
+                                },
+                                {
+                                    "@pid": "194/4692",
+                                    "text": "Aishwarya N. Reganti"
+                                },
+                                {
+                                    "@pid": "279/2880",
+                                    "text": "Govind Thattai"
+                                }
+                            ]
+                        },
+                        "title": "Best of Both Worlds: A Hybrid Approach for Multi-Hop Explanation with Declarative Facts.",
+                        "venue": "CoRR",
+                        "volume": "abs/2201.02740",
+                        "year": "2022",
+                        "type": "Informal and Other Publications",
+                        "access": "open",
+                        "key": "journals/corr/abs-2201-02740",
+                        "ee": "https://arxiv.org/abs/2201.02740",
+                        "url": "https://dblp.org/rec/journals/corr/abs-2201-02740"
+                    },
+                    "url": "URL#1209025"
+                },
+                {
+                    "@score": "6",
+                    "@id": "1209982",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "10/2674-13",
+                                    "text": "Feng Gao 0013"
+                                },
+                                {
+                                    "@pid": "160/1577",
+                                    "text": "Qing Ping"
+                                },
+                                {
+                                    "@pid": "279/2880",
+                                    "text": "Govind Thattai"
+                                },
+                                {
+                                    "@pid": "194/4692",
+                                    "text": "Aishwarya N. Reganti"
+                                },
+                                {
+                                    "@pid": "18/568",
+                                    "text": "Ying Nian Wu"
+                                },
+                                {
+                                    "@pid": "40/2362",
+                                    "text": "Prem Natarajan"
+                                }
+                            ]
+                        },
+                        "title": "A Thousand Words Are Worth More Than a Picture: Natural Language-Centric Outside-Knowledge Visual Question Answering.",
+                        "venue": "CoRR",
+                        "volume": "abs/2201.05299",
+                        "year": "2022",
+                        "type": "Informal and Other Publications",
+                        "access": "open",
+                        "key": "journals/corr/abs-2201-05299",
+                        "ee": "https://arxiv.org/abs/2201.05299",
+                        "url": "https://dblp.org/rec/journals/corr/abs-2201-05299"
+                    },
+                    "url": "URL#1209982"
+                },
+                {
+                    "@score": "6",
+                    "@id": "2182827",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "231/1803",
+                                    "text": "Weixin Liang"
+                                },
+                                {
+                                    "@pid": "279/3254",
+                                    "text": "Feiyang Niu"
+                                },
+                                {
+                                    "@pid": "194/4692",
+                                    "text": "Aishwarya N. Reganti"
+                                },
+                                {
+                                    "@pid": "279/2880",
+                                    "text": "Govind Thattai"
+                                },
+                                {
+                                    "@pid": "24/4469",
+                                    "text": "G\u00f6khan T\u00fcr"
+                                }
+                            ]
+                        },
+                        "title": "LRTA: A Transparent Neural-Symbolic Reasoning Framework with Modular Supervision for Visual Question Answering.",
+                        "venue": "CoRR",
+                        "volume": "abs/2011.10731",
+                        "year": "2020",
+                        "type": "Informal and Other Publications",
+                        "access": "open",
+                        "key": "journals/corr/abs-2011-10731",
+                        "ee": "https://arxiv.org/abs/2011.10731",
+                        "url": "https://dblp.org/rec/journals/corr/abs-2011-10731"
+                    },
+                    "url": "URL#2182827"
+                },
+                {
+                    "@score": "6",
+                    "@id": "2184965",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "160/1577",
+                                    "text": "Qing Ping"
+                                },
+                                {
+                                    "@pid": "279/3254",
+                                    "text": "Feiyang Niu"
+                                },
+                                {
+                                    "@pid": "279/2880",
+                                    "text": "Govind Thattai"
+                                },
+                                {
+                                    "@pid": "280/0379",
+                                    "text": "Joel Chengottusseriyil"
+                                },
+                                {
+                                    "@pid": "173/1986",
+                                    "text": "Qiaozi Gao"
+                                },
+                                {
+                                    "@pid": "194/4692",
+                                    "text": "Aishwarya N. Reganti"
+                                },
+                                {
+                                    "@pid": "280/0497",
+                                    "text": "Prashanth Rajagopal"
+                                },
+                                {
+                                    "@pid": "24/4469",
+                                    "text": "G\u00f6khan T\u00fcr"
+                                },
+                                {
+                                    "@pid": "h/DilekZHakkaniTur",
+                                    "text": "Dilek Hakkani-T\u00fcr"
+                                },
+                                {
+                                    "@pid": "40/2362",
+                                    "text": "Prem Natarajan"
+                                }
+                            ]
+                        },
+                        "title": "Interactive Teaching for Conversational AI.",
+                        "venue": "CoRR",
+                        "volume": "abs/2012.00958",
+                        "year": "2020",
+                        "type": "Informal and Other Publications",
+                        "access": "open",
+                        "key": "journals/corr/abs-2012-00958",
+                        "ee": "https://arxiv.org/abs/2012.00958",
+                        "url": "https://dblp.org/rec/journals/corr/abs-2012-00958"
+                    },
+                    "url": "URL#2184965"
+                },
+                {
+                    "@score": "6",
+                    "@id": "2208767",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "194/4822",
+                                    "text": "Tushar Maheshwari"
+                                },
+                                {
+                                    "@pid": "194/4692",
+                                    "text": "Aishwarya N. Reganti"
+                                },
+                                {
+                                    "@pid": "116/4904",
+                                    "text": "Soujanya Poria"
+                                },
+                                {
+                                    "@pid": "m/RadaMihalcea",
+                                    "text": "Rada Mihalcea"
+                                }
+                            ]
+                        },
+                        "title": "The Nitty-GRITties of Success: Computational Analysis of Grit From Language.",
+                        "venue": "IEEE Access",
+                        "volume": "7",
+                        "pages": "179364-179372",
+                        "year": "2019",
+                        "type": "Journal Articles",
+                        "access": "open",
+                        "key": "journals/access/MaheshwariRPM19",
+                        "doi": "10.1109/ACCESS.2019.2951683",
+                        "ee": "https://doi.org/10.1109/ACCESS.2019.2951683",
+                        "url": "https://dblp.org/rec/journals/access/MaheshwariRPM19"
+                    },
+                    "url": "URL#2208767"
+                },
+                {
+                    "@score": "6",
+                    "@id": "2661600",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "194/4822",
+                                    "text": "Tushar Maheshwari"
+                                },
+                                {
+                                    "@pid": "194/4692",
+                                    "text": "Aishwarya N. Reganti"
+                                },
+                                {
+                                    "@pid": "13/10963",
+                                    "text": "Upendra Kumar"
+                                },
+                                {
+                                    "@pid": "65/2136-2",
+                                    "text": "Tanmoy Chakraborty 0002"
+                                },
+                                {
+                                    "@pid": "75/5002",
+                                    "text": "Amitava Das"
+                                }
+                            ]
+                        },
+                        "title": "Revealing Psycholinguistic Dimensions of Communities in Social Networks.",
+                        "venue": "IEEE Intell. Syst.",
+                        "volume": "33",
+                        "number": "4",
+                        "pages": "36-48",
+                        "year": "2018",
+                        "type": "Journal Articles",
+                        "access": "closed",
+                        "key": "journals/expert/MaheshwariRKCD18",
+                        "doi": "10.1109/MIS.2018.111144400",
+                        "ee": "https://doi.org/10.1109/MIS.2018.111144400",
+                        "url": "https://dblp.org/rec/journals/expert/MaheshwariRKCD18"
+                    },
+                    "url": "URL#2661600"
+                },
+                {
+                    "@score": "6",
+                    "@id": "2686827",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "13/10963",
+                                    "text": "Upendra Kumar"
+                                },
+                                {
+                                    "@pid": "194/4692",
+                                    "text": "Aishwarya N. Reganti"
+                                },
+                                {
+                                    "@pid": "194/4822",
+                                    "text": "Tushar Maheshwari"
+                                },
+                                {
+                                    "@pid": "65/2136-2",
+                                    "text": "Tanmoy Chakraborty 0002"
+                                },
+                                {
+                                    "@pid": "55/5032",
+                                    "text": "Bj\u00f6rn Gamb\u00e4ck"
+                                },
+                                {
+                                    "@pid": "75/5002",
+                                    "text": "Amitava Das"
+                                }
+                            ]
+                        },
+                        "title": "Inducing Personalities and Values from Language Use in Social Network Communities.",
+                        "venue": "Inf. Syst. Frontiers",
+                        "volume": "20",
+                        "number": "6",
+                        "pages": "1219-1240",
+                        "year": "2018",
+                        "type": "Journal Articles",
+                        "access": "closed",
+                        "key": "journals/isf/KumarRMCGD18",
+                        "doi": "10.1007/S10796-017-9793-8",
+                        "ee": "https://doi.org/10.1007/s10796-017-9793-8",
+                        "url": "https://dblp.org/rec/journals/isf/KumarRMCGD18"
+                    },
+                    "url": "URL#2686827"
+                },
+                {
+                    "@score": "6",
+                    "@id": "2890347",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "49/3538",
+                                    "text": "Ritesh Kumar"
+                                },
+                                {
+                                    "@pid": "194/4692",
+                                    "text": "Aishwarya N. Reganti"
+                                },
+                                {
+                                    "@pid": "190/1796",
+                                    "text": "Akshit Bhatia"
+                                },
+                                {
+                                    "@pid": "194/4822",
+                                    "text": "Tushar Maheshwari"
+                                }
+                            ]
+                        },
+                        "title": "Aggression-annotated Corpus of Hindi-English Code-mixed Data.",
+                        "venue": "LREC",
+                        "year": "2018",
+                        "type": "Conference and Workshop Papers",
+                        "access": "open",
+                        "key": "conf/lrec/KumarRBM18",
+                        "ee": "http://www.lrec-conf.org/proceedings/lrec2018/summaries/861.html",
+                        "url": "https://dblp.org/rec/conf/lrec/KumarRBM18"
+                    },
+                    "url": "URL#2890347"
+                },
+                {
+                    "@score": "6",
+                    "@id": "2955522",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "49/3538",
+                                    "text": "Ritesh Kumar"
+                                },
+                                {
+                                    "@pid": "194/4692",
+                                    "text": "Aishwarya N. Reganti"
+                                },
+                                {
+                                    "@pid": "190/1796",
+                                    "text": "Akshit Bhatia"
+                                },
+                                {
+                                    "@pid": "194/4822",
+                                    "text": "Tushar Maheshwari"
+                                }
+                            ]
+                        },
+                        "title": "Aggression-annotated Corpus of Hindi-English Code-mixed Data.",
+                        "venue": "CoRR",
+                        "volume": "abs/1803.09402",
+                        "year": "2018",
+                        "type": "Informal and Other Publications",
+                        "access": "open",
+                        "key": "journals/corr/abs-1803-09402",
+                        "ee": "http://arxiv.org/abs/1803.09402",
+                        "url": "https://dblp.org/rec/journals/corr/abs-1803-09402"
+                    },
+                    "url": "URL#2955522"
+                },
+                {
+                    "@score": "6",
+                    "@id": "3126278",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "194/4822",
+                                    "text": "Tushar Maheshwari"
+                                },
+                                {
+                                    "@pid": "194/4692",
+                                    "text": "Aishwarya N. Reganti"
+                                },
+                                {
+                                    "@pid": "13/10963",
+                                    "text": "Upendra Kumar"
+                                },
+                                {
+                                    "@pid": "65/2136-2",
+                                    "text": "Tanmoy Chakraborty 0002"
+                                },
+                                {
+                                    "@pid": "75/5002",
+                                    "text": "Amitava Das"
+                                }
+                            ]
+                        },
+                        "title": "Semantic Interpretation of Social Network Communities.",
+                        "venue": "AAAI",
+                        "pages": "4967-4968",
+                        "year": "2017",
+                        "type": "Conference and Workshop Papers",
+                        "access": "open",
+                        "key": "conf/aaai/MaheshwariRKCD17",
+                        "doi": "10.1609/AAAI.V31I1.11078",
+                        "ee": "https://doi.org/10.1609/aaai.v31i1.11078",
+                        "url": "https://dblp.org/rec/conf/aaai/MaheshwariRKCD17"
+                    },
+                    "url": "URL#3126278"
+                },
+                {
+                    "@score": "6",
+                    "@id": "3138731",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "194/4692",
+                                    "text": "Aishwarya N. Reganti"
+                                },
+                                {
+                                    "@pid": "194/4822",
+                                    "text": "Tushar Maheshwari"
+                                },
+                                {
+                                    "@pid": "75/5002",
+                                    "text": "Amitava Das"
+                                },
+                                {
+                                    "@pid": "65/2136-2",
+                                    "text": "Tanmoy Chakraborty 0002"
+                                },
+                                {
+                                    "@pid": "97/5147",
+                                    "text": "Ponnurangam Kumaraguru"
+                                }
+                            ]
+                        },
+                        "title": "Understanding Psycho-Sociological Vulnerability of ISIS Patronizers in Twitter.",
+                        "venue": "ASONAM",
+                        "pages": "621-624",
+                        "year": "2017",
+                        "type": "Conference and Workshop Papers",
+                        "access": "closed",
+                        "key": "conf/asunam/RegantiMDCK17",
+                        "doi": "10.1145/3110025.3110060",
+                        "ee": "https://doi.org/10.1145/3110025.3110060",
+                        "url": "https://dblp.org/rec/conf/asunam/RegantiMDCK17"
+                    },
+                    "url": "URL#3138731"
+                },
+                {
+                    "@score": "6",
+                    "@id": "3159628",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "194/4822",
+                                    "text": "Tushar Maheshwari"
+                                },
+                                {
+                                    "@pid": "194/4692",
+                                    "text": "Aishwarya N. Reganti"
+                                },
+                                {
+                                    "@pid": "65/2136-2",
+                                    "text": "Tanmoy Chakraborty 0002"
+                                },
+                                {
+                                    "@pid": "75/5002",
+                                    "text": "Amitava Das"
+                                }
+                            ]
+                        },
+                        "title": "Socio-Ethnic Ingredients of Social Network Communities.",
+                        "venue": "CSCW Companion",
+                        "pages": "235-238",
+                        "year": "2017",
+                        "type": "Conference and Workshop Papers",
+                        "access": "closed",
+                        "key": "conf/cscw/MaheshwariRCD17",
+                        "doi": "10.1145/3022198.3026322",
+                        "ee": "https://doi.org/10.1145/3022198.3026322",
+                        "url": "https://dblp.org/rec/conf/cscw/MaheshwariRCD17"
+                    },
+                    "url": "URL#3159628"
+                },
+                {
+                    "@score": "6",
+                    "@id": "3159694",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "194/4692",
+                                    "text": "Aishwarya N. Reganti"
+                                },
+                                {
+                                    "@pid": "194/4822",
+                                    "text": "Tushar Maheshwari"
+                                },
+                                {
+                                    "@pid": "75/5002",
+                                    "text": "Amitava Das"
+                                },
+                                {
+                                    "@pid": "80/7421",
+                                    "text": "Erik Cambria"
+                                }
+                            ]
+                        },
+                        "title": "Open Secrets and Wrong Rights: Automatic Satire Detection in English Text.",
+                        "venue": "CSCW Companion",
+                        "pages": "291-294",
+                        "year": "2017",
+                        "type": "Conference and Workshop Papers",
+                        "access": "closed",
+                        "key": "conf/cscw/RegantiMDC17",
+                        "doi": "10.1145/3022198.3026344",
+                        "ee": "https://doi.org/10.1145/3022198.3026344",
+                        "url": "https://dblp.org/rec/conf/cscw/RegantiMDC17"
+                    },
+                    "url": "URL#3159694"
+                },
+                {
+                    "@score": "6",
+                    "@id": "3166551",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "194/4822",
+                                    "text": "Tushar Maheshwari"
+                                },
+                                {
+                                    "@pid": "194/4692",
+                                    "text": "Aishwarya N. Reganti"
+                                },
+                                {
+                                    "@pid": "204/1195",
+                                    "text": "Samiksha Gupta"
+                                },
+                                {
+                                    "@pid": "174/6702",
+                                    "text": "Anupam Jamatia"
+                                },
+                                {
+                                    "@pid": "13/10963",
+                                    "text": "Upendra Kumar"
+                                },
+                                {
+                                    "@pid": "55/5032",
+                                    "text": "Bj\u00f6rn Gamb\u00e4ck"
+                                },
+                                {
+                                    "@pid": "75/5002",
+                                    "text": "Amitava Das"
+                                }
+                            ]
+                        },
+                        "title": "A Societal Sentiment Analysis: Predicting the Values and Ethics of Individuals by Analysing Social Media Content.",
+                        "venue": "EACL",
+                        "pages": "731-741",
+                        "year": "2017",
+                        "type": "Conference and Workshop Papers",
+                        "access": "open",
+                        "key": "conf/eacl/DasGMRGJK17",
+                        "doi": "10.18653/V1/E17-1069",
+                        "ee": "https://doi.org/10.18653/v1/e17-1069",
+                        "url": "https://dblp.org/rec/conf/eacl/DasGMRGJK17"
+                    },
+                    "url": "URL#3166551"
+                },
+                {
+                    "@score": "6",
+                    "@id": "3526912",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "194/4692",
+                                    "text": "Aishwarya N. Reganti"
+                                },
+                                {
+                                    "@pid": "194/4822",
+                                    "text": "Tushar Maheshwari"
+                                },
+                                {
+                                    "@pid": "13/10963",
+                                    "text": "Upendra Kumar"
+                                },
+                                {
+                                    "@pid": "75/5002",
+                                    "text": "Amitava Das"
+                                },
+                                {
+                                    "@pid": "132/4528",
+                                    "text": "Rajiv Bajpai"
+                                }
+                            ]
+                        },
+                        "title": "Modeling Satire in English Text for Automatic Detection.",
+                        "venue": "ICDM Workshops",
+                        "pages": "970-977",
+                        "year": "2016",
+                        "type": "Conference and Workshop Papers",
+                        "access": "closed",
+                        "key": "conf/icdm/RegantiMKDB16",
+                        "doi": "10.1109/ICDMW.2016.0141",
+                        "ee": "https://doi.org/10.1109/ICDMW.2016.0141",
+                        "url": "https://dblp.org/rec/conf/icdm/RegantiMKDB16"
+                    },
+                    "url": "URL#3526912"
+                },
+                {
+                    "@score": "6",
+                    "@id": "3535278",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "194/4692",
+                                    "text": "Aishwarya N. Reganti"
+                                },
+                                {
+                                    "@pid": "194/4822",
+                                    "text": "Tushar Maheshwari"
+                                },
+                                {
+                                    "@pid": "13/10963",
+                                    "text": "Upendra Kumar"
+                                },
+                                {
+                                    "@pid": "75/5002",
+                                    "text": "Amitava Das"
+                                }
+                            ]
+                        },
+                        "title": "Cosmopolitan Mumbai, Orthodox Delhi, Techcity Bangalore: Understanding City Specific Societal Sentiment.",
+                        "venue": "ICON",
+                        "pages": "167-176",
+                        "year": "2016",
+                        "type": "Conference and Workshop Papers",
+                        "access": "open",
+                        "key": "conf/icon-nlp/RegantiMKD16",
+                        "ee": "https://aclanthology.org/W16-6322/",
+                        "url": "https://dblp.org/rec/conf/icon-nlp/RegantiMKD16"
+                    },
+                    "url": "URL#3535278"
+                },
+                {
+                    "@score": "3",
+                    "@id": "741078",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "51/8525",
+                                    "text": "Jiong Zhu"
+                                },
+                                {
+                                    "@pid": "328/0816",
+                                    "text": "Aishwarya Reganti"
+                                },
+                                {
+                                    "@pid": "192/2417",
+                                    "text": "Edward W. Huang"
+                                },
+                                {
+                                    "@pid": "274/7015",
+                                    "text": "Charles Dickens"
+                                },
+                                {
+                                    "@pid": "57/9513",
+                                    "text": "Nikhil Rao 0001"
+                                },
+                                {
+                                    "@pid": "32/5843",
+                                    "text": "Karthik Subbian"
+                                },
+                                {
+                                    "@pid": "91/9987",
+                                    "text": "Danai Koutra"
+                                }
+                            ]
+                        },
+                        "title": "Simplifying Distributed Neural Network Training on Massive Graphs: Randomized Partitions Improve Model Aggregation.",
+                        "venue": "CoRR",
+                        "volume": "abs/2305.09887",
+                        "year": "2023",
+                        "type": "Informal and Other Publications",
+                        "access": "open",
+                        "key": "journals/corr/abs-2305-09887",
+                        "doi": "10.48550/ARXIV.2305.09887",
+                        "ee": "https://doi.org/10.48550/arXiv.2305.09887",
+                        "url": "https://dblp.org/rec/journals/corr/abs-2305-09887"
+                    },
+                    "url": "URL#741078"
+                }
+            ]
+        }
+    }
+}
