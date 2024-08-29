@@ -57,7 +57,7 @@ export default function UploadDocumentModal({
           {tableData.length !== 0 && (
             <>
               <p className="dark:text-neutral-500 -mb-2 mt-2">Preview only</p>
-              <Table data={tableData} headers={tableData[0]} />
+              <Table data={tableData} headers={tableData[0]} footer={tableData.length === 0 ? "No data found in the file." : ""} />
             </>
           )}
           <div className="flex flex-grow flex-col gap-4">

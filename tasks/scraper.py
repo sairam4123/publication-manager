@@ -5,6 +5,8 @@ import pandas
 import asyncio
 import datetime
 
+from celery import current_app as celery
+
 def get_publication_type(publication_type):
     publication_type = publication_type.lower()
     if publication_type.startswith('journal'):
@@ -81,6 +83,14 @@ def post_process_publications(author_dataset, publications: list[list]):
             ])
     return result
 
+async def process_and_output_to_celery(dataset, author_pubs):
+    result = {
+        author_data.get("Name", author_data.get("author_name", None)): [publication for publication in author_pubs[idx]] for idx, author_data in enumerate(dataset)
+    }
+    task = celery.send_task("app.process_model", args=[result])
+    return task.id
+    
+
 async def main(input_file, output_file):
     dataset = pandas.read_excel(input_file, 'Sheet1').to_dict('records')
     tasks: list[asyncio.Task] = []
@@ -93,9 +103,11 @@ async def main(input_file, output_file):
         await asyncio.sleep(sleep_time) # to avoid getting blocked by the server
     
     author_publications = await asyncio.gather(*tasks)
+    task = await process_and_output_to_celery(dataset, author_publications)
 
     result = pandas.DataFrame(post_process_publications(dataset, author_publications))
     result.to_excel(output_file, index=False, header=False)
+    return task
  
 async def process_single(query: dict):
     name, publication_type, from_year, to_year = query['author_name'], get_publication_type(query.get('publication_type', 'all')), query.get('from_year', 1970), query.get('to_year', datetime.datetime.now().year)

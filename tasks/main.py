@@ -33,7 +33,7 @@ def process_excel(in_file: str):
 @celery.task
 def process_customized_query(query: dict):
     import asyncio
-    cur_time = int(time.time())
+    # cur_time = int(time.time())
     # out_file = f"output-{cur_time}.xlsx"
 
     print(f"Fetching cuztomized {query}")

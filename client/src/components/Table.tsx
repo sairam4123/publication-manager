@@ -1,4 +1,4 @@
-export default function Table({headers, data}:{headers: string[], data: string[][]}) {
+export default function Table({headers, data, footer}:{headers: string[], data: string[][], footer: string}) {
     return (
         <div className="flex bg-neutral-200 dark:bg-neutral-900 rounded-3xl outline outline-2 outline-neutral-800 text-black dark:outline-neutral-400 gap-4 dark:text-white">
             <div className="overflow-x-auto">
@@ -17,6 +17,9 @@ export default function Table({headers, data}:{headers: string[], data: string[]
                             }
                             </tr>
                         ))}
+                        <tr className="divide-x-2 divide-neutral-700 dark:divide-neutral-400">
+                            <td className="px-4 py-2">{footer}</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>

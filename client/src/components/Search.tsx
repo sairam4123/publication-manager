@@ -21,12 +21,12 @@ export default function Search({
 }) {
   return (
     <div
-      className={`flex h-10 w-1/2 bg-neutral-100 dark:bg-neutral-900 hover:ring-1 dark:hover:ring-neutral-400 hover:ring-neutral-800 focus-within:outline focus-within:outline-2 text-white rounded-3xl flex-row px-4 ${className}`}
+      className={`flex h-10 w-1/2 bg-neutral-100 dark:bg-neutral-900 hover:ring-1 dark:hover:ring-neutral-400 hover:ring-neutral-800 focus-within:outline focus-within:outline-2 dark:focus-within:outline-white focus-within:outline-black text-white rounded-3xl flex-row px-4 ${className}`}
     >
       <input
         value={query}
         onChange={(e) => setQuery(e.target.value)}
-        className="h-full flex-1 bg-transparent text-black dark:text-white outline-none dark:placeholder:text-neutral-400 placeholder:text-neutral-800"
+        className="h-full flex-1 bg-transparent text-black dark:text-white outline-none dark:placeholder:text-neutral-400 placeholder:text-neutral-600"
         type="search"
         placeholder="Search for a person..."
       />

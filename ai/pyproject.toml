@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "ai"
+version = "0.1.0"
+description = ""
+authors = ["Sairam M <sairam.m.2005.65@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+celery = "^5.4.0"
+mistralai = "^1.0.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

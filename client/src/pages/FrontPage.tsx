@@ -82,10 +82,10 @@ export default function FrontPage() {
         goIconPressed={() => {console.log("Go pressed");}}
       />
       <div className="flex max-h-96 overflow-y-auto mx-2 overflow-x-visible flex-col w-1/2 bg-neutral-100 dark:bg-neutral-900 rounded-2xl">
-        {!Array.isArray(searchResult) && (
+        { searchQuery && !Array.isArray(searchResult) && (
           <LoadingSpinner
             message={
-              loadingTask || loadingSearch
+              loadingTask || loadingSearch || !searchResult
                 ? "Loading..."
                 : "Waiting for input..."
             }
@@ -99,7 +99,7 @@ export default function FrontPage() {
                   setSearchQuery(result); 
                    }
                 }
-                className=" p-2 select-none hover:bg-neutral-50 active:bg-neutral-200 dark:hover:bg-neutral-800 dark:active:bg-neutral-950 w-full cursor-pointer"
+                className="p-2 select-none hover:bg-neutral-50 active:bg-neutral-200 dark:hover:bg-neutral-800 dark:active:bg-neutral-950 w-full cursor-pointer"
               >
                 {result}
               </p>
@@ -108,13 +108,13 @@ export default function FrontPage() {
       </div>
 
       <div className="flex flex-col justify-center items-center w-11/12">
-        {Array.isArray(details) && <Table headers={details[0]} data={details.slice(1, -1)}/>}
-        {loadingDetails && <LoadingSpinner message="Loading..."/>}
+        {Array.isArray(details) && <Table headers={details[0]} data={details.slice(1, -1)} footer={details.length <= 1 ? "No publication record found." : ""}/>}
+        {(loadingDetails || !details) && <LoadingSpinner message="Loading..."/>}
         {error && <ErrorPage error="Error loading the details.." />}
       </div>
 
       <div className="flex flex-col gap-4">
-        {loadingTask && <p className="text-white">Loading...</p>}
+        {(loadingTask) && <p className="text-white">Loading...</p>}
         {(errorTask || errorSearch) && (
           <p className="text-white">
             Error: {errorTask?.message || errorSearch?.message}

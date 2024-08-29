@@ -150,7 +150,7 @@ export default function ResultPage() {
       </div>
       <p className="text-neutral-500 -mb-4 -mt-4">Preview only</p>
       <div className="w-11/12 p-4">
-        {data.length !== 0 && <Table data={data} headers={headers}></Table>}
+        {<Table data={data} headers={headers} footer={data.length === 0 ? "No publication records found.": ""} />}
       </div>
     </div>
   );
