@@ -89,7 +89,7 @@ async def main(input_file, output_file):
 
         author_publications = asyncio.create_task(get_author_publications_dblp(name, publication_type, from_year, to_year))
         tasks.append(author_publications)
-        sleep_time = abs(0.1 + random.uniform(-0.2, 0.5))
+        sleep_time = abs(0.1 + random.uniform(-0.1, 0.2))
         await asyncio.sleep(sleep_time) # to avoid getting blocked by the server
     
     author_publications = await asyncio.gather(*tasks)

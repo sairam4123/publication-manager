@@ -13,11 +13,11 @@ export default function FilterByRecordModal({ visible, setVisible, onFilter }: {
         visible && (
             <div
                 onClick={() => setVisible(false)}
-                className="transition-all backdrop-blur-md fixed inset-0 text-white bg-black bg-opacity-40 flex justify-center items-center"
+                className="transition-all backdrop-blur-md fixed inset-0 bg-white text-black dark:text-white dark:bg-black bg-opacity-40 flex justify-center items-center"
             >
                 <div
                     onClick={(e) => e.stopPropagation()}
-                    className="bg-neutral-950 rounded-3xl w-1/3 h-1/2 flex flex-col justify-center items-center gap-4"
+                    className="bg-neutral-50 dark:bg-neutral-950 rounded-3xl w-1/3 h-1/2 flex flex-col justify-center items-center gap-4"
                 >
                     <div className="flex flex-grow items-center">
                         <p className="text-2xl font-bold">Filter By Record Type</p>
@@ -28,7 +28,7 @@ export default function FilterByRecordModal({ visible, setVisible, onFilter }: {
                         <div className="flex gap-2">
                         <button
                                 onClick={() => setFilter({journal: false, conference: false, all: true})}
-                                className={`flex-1 bg-neutral-800 hover:bg-neutral-700 active:bg-neutral-900 text-white px-4 py-2 select-none rounded-md ${filter.all ? 'bg-neutral-700' : ''}`}
+                                className={`flex-1 bg-neutral-200 hover:bg-neutral-300 active:bg-neutral-100 dark:bg-neutral-800 dark:hover:bg-neutral-700 dark:active:bg-neutral-900 px-4 py-2 select-none rounded-md ${filter.all ? 'bg-neutral-700' : ''}`}
                             >
                                 All
                             </button>

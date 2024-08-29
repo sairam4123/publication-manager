@@ -7,7 +7,7 @@ import useFetch from "../hooks/useFetch";
 import { API_SERVER } from "../config/config";
 import { useDebounced } from "../hooks/useDebounced";
 import usePolling from "../hooks/usePolling";
-import LoadingSpinner from "../icons/LoadingSpinner";
+import LoadingSpinner from "../components/LoadingSpinner";
 import useMutation from "../hooks/useMutation";
 import Table from "../components/Table";
 import ErrorPage from "./ErrorPage";
@@ -65,11 +65,11 @@ export default function FrontPage() {
   }, [debouncedSearchQuery, filterBy])
   console.log(result_data?.task_id, debouncedSearchQuery.trim().length !== 0)
   return (
-    <div className="flex text-white bg-black overflow-y-scroll h-full p-10 pt-36 w-screen justify-center items-center flex-col gap-4">
-      <p className="text-5xl text-white font-bold text-center select-none">
+    <div className="flex text-black bg-white min-h-screen dark:text-white dark:bg-black overflow-y-scroll h-full p-10 pt-36 w-screen justify-center items-center flex-col gap-4">
+      <p className="text-5xl font-bold text-center select-none">
         PUBLICATION DATA EXTRACTOR
       </p>
-      <p className="text-xl text-white text-center p-4 -mt-4 mb-4 select-none">
+      <p className="text-xl text-center p-4 -mt-4 mb-4 select-none">
         Get the publication records you need in minutes
       </p>
 
@@ -81,7 +81,7 @@ export default function FrontPage() {
         uploadIconPressed={() => setDocumentModalIsVisible(true)}
         goIconPressed={() => {console.log("Go pressed");}}
       />
-      <div className="flex max-h-96 overflow-y-auto mx-2 overflow-x-visible flex-col w-1/2 bg-neutral-900 rounded-2xl">
+      <div className="flex max-h-96 overflow-y-auto mx-2 overflow-x-visible flex-col w-1/2 bg-neutral-100 dark:bg-neutral-900 rounded-2xl">
         {!Array.isArray(searchResult) && (
           <LoadingSpinner
             message={
@@ -91,15 +91,15 @@ export default function FrontPage() {
             }
           />
         )}
-        {Array.isArray(searchResult) && searchResult.length !== 1 && searchResult[0] !== searchQuery &&
+        {searchQuery && Array.isArray(searchResult) && searchResult.length !== 1 && searchResult[0] !== searchQuery &&
           searchResult.map((result, idx) => (
-            <div key={idx} className="flex bg-neutral-900">
+            <div key={idx} className="flex bg-neutral-100 dark:bg-neutral-900">
               <p
                 onClick={() => {
                   setSearchQuery(result); 
                    }
                 }
-                className="text-white p-2 select-none hover:bg-neutral-800 active:bg-neutral-950 w-full cursor-pointer"
+                className=" p-2 select-none hover:bg-neutral-50 active:bg-neutral-200 dark:hover:bg-neutral-800 dark:active:bg-neutral-950 w-full cursor-pointer"
               >
                 {result}
               </p>

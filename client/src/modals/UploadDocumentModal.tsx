@@ -45,18 +45,18 @@ export default function UploadDocumentModal({
         onClick={() => {setVisible(false)
             setTableData([])
         }}
-        className="transition-all backdrop-blur-md fixed inset-0 text-white flex justify-center items-center"
+        className="transition-all backdrop-blur-md bg-opacity-40 fixed inset-0 text-black dark:text-white flex justify-center items-center"
       >
         <div
           onClick={(e) => e.stopPropagation()}
-          className="bg-neutral-950 rounded-3xl w-1/3 h-2/3 flex flex-col justify-center items-center gap-4"
+          className="bg-neutral-50 dark:bg-neutral-950 rounded-3xl w-1/3 h-2/3 flex flex-col justify-center items-center gap-4"
         >
           <div className="flex flex-grow items-center">
             <p className="text-2xl font-bold">Upload Document</p>
           </div>
           {tableData.length !== 0 && (
             <>
-              <p className="text-neutral-500 -mb-2 mt-2">Preview only</p>
+              <p className="dark:text-neutral-500 -mb-2 mt-2">Preview only</p>
               <Table data={tableData} headers={tableData[0]} />
             </>
           )}

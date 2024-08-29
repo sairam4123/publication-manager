@@ -28,8 +28,8 @@ export default function Slider({
   return (
     <div className="flex w-2/3 rounded-full">
       <p className="w-4 p-4">{values[0]}</p>
-      <div className="relative bg-neutral-900 w-full h-3 rounded-full">
-        <div ref={progressRef} className="absolute h-full bg-neutral-800 rounded-full" />
+      <div className="relative bg-neutral-500 dark:bg-neutral-900 w-full h-3 rounded-full">
+        <div ref={progressRef} className="absolute h-full bg-neutral-200 dark:bg-neutral-800 rounded-full" />
         <span>
           <input
             type="range"

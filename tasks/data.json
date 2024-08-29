@@ -1,1740 +1,1909 @@
 {
     "result": {
-        "query": "Aishwarya* N Reganti*",
+        "query": "Francesco* Testa*",
         "status": {
             "@code": "200",
             "text": "OK"
         },
         "time": {
             "@unit": "msecs",
-            "text": "23.01"
+            "text": "10.25"
         },
         "completions": {
-            "@total": "1",
-            "@computed": "1",
-            "@sent": "1",
-            "c": {
-                "@sc": "65",
-                "@dc": "33",
-                "@oc": "65",
-                "@id": "56775288",
-                "text": "reganti"
-            }
+            "@total": "5",
+            "@computed": "5",
+            "@sent": "5",
+            "c": [
+                {
+                    "@sc": "32",
+                    "@dc": "32",
+                    "@oc": "32",
+                    "@id": "57034639",
+                    "text": "testa"
+                },
+                {
+                    "@sc": "2",
+                    "@dc": "2",
+                    "@oc": "2",
+                    "@id": "57034644",
+                    "text": "testability"
+                },
+                {
+                    "@sc": "1",
+                    "@dc": "1",
+                    "@oc": "1",
+                    "@id": "57034686",
+                    "text": "testarelli"
+                },
+                {
+                    "@sc": "1",
+                    "@dc": "1",
+                    "@oc": "1",
+                    "@id": "57034689",
+                    "text": "testart"
+                },
+                {
+                    "@sc": "1",
+                    "@dc": "1",
+                    "@oc": "1",
+                    "@id": "57034670",
+                    "text": "testament"
+                }
+            ]
         },
         "hits": {
-            "@total": "33",
-            "@computed": "33",
-            "@sent": "33",
+            "@total": "37",
+            "@computed": "37",
+            "@sent": "37",
             "@first": "0",
             "hit": [
                 {
-                    "@score": "6",
-                    "@id": "170195",
+                    "@score": "4",
+                    "@id": "448359",
                     "info": {
                         "authors": {
                             "author": [
                                 {
-                                    "@pid": "272/9066",
-                                    "text": "Thilini Wijesiriwardene"
+                                    "@pid": "366/5238",
+                                    "text": "Loris Cacciatore"
                                 },
                                 {
-                                    "@pid": "87/6880",
-                                    "text": "Ruwan Wickramarachchi"
+                                    "@pid": "366/7964",
+                                    "text": "Manuela Costantini"
                                 },
                                 {
-                                    "@pid": "194/4692",
-                                    "text": "Aishwarya Naresh Reganti"
+                                    "@pid": "03/9749",
+                                    "text": "Francesco Tedesco"
                                 },
                                 {
-                                    "@pid": "298/1294",
-                                    "text": "Vinija Jain"
+                                    "@pid": "366/4268",
+                                    "text": "Francesco Prata"
                                 },
                                 {
-                                    "@pid": "55/10360",
-                                    "text": "Aman Chadha"
+                                    "@pid": "366/8180",
+                                    "text": "Fabio Machiella"
                                 },
                                 {
-                                    "@pid": "s/AmitPSheth",
-                                    "text": "Amit P. Sheth"
+                                    "@pid": "366/5249",
+                                    "text": "Andrea Iannuzzi"
                                 },
                                 {
-                                    "@pid": "75/5002",
-                                    "text": "Amitava Das"
+                                    "@pid": "366/5493",
+                                    "text": "Alberto Ragusa"
+                                },
+                                {
+                                    "@pid": "366/8135",
+                                    "text": "Noemi Deanesi"
+                                },
+                                {
+                                    "@pid": "366/7980",
+                                    "text": "Yussef Rashed Qaddourah"
+                                },
+                                {
+                                    "@pid": "366/4947",
+                                    "text": "Aldo Brassetti"
+                                },
+                                {
+                                    "@pid": "366/5431",
+                                    "text": "Umberto Anceschi"
+                                },
+                                {
+                                    "@pid": "351/0195",
+                                    "text": "Alfredo Maria Bove"
+                                },
+                                {
+                                    "@pid": "130/4945",
+                                    "text": "Antonio Testa"
+                                },
+                                {
+                                    "@pid": "366/4313",
+                                    "text": "Giuseppe Simone"
+                                },
+                                {
+                                    "@pid": "366/7960",
+                                    "text": "Roberto Mario Scarpa"
+                                },
+                                {
+                                    "@pid": "366/8126",
+                                    "text": "Francesco Esperto"
+                                },
+                                {
+                                    "@pid": "202/5401",
+                                    "text": "Rocco Papalia"
                                 }
                             ]
                         },
-                        "title": "On the Relationship between Sentence Analogy Identification and Sentence Structure Encoding in Large Language Models.",
-                        "venue": "EACL",
-                        "pages": "451-457",
-                        "year": "2024",
-                        "type": "Conference and Workshop Papers",
-                        "access": "open",
-                        "key": "conf/eacl/WijesiriwardeneWRJCSD24",
-                        "ee": "https://aclanthology.org/2024.findings-eacl.31",
-                        "url": "https://dblp.org/rec/conf/eacl/WijesiriwardeneWRJCSD24"
-                    },
-                    "url": "URL#170195"
-                },
-                {
-                    "@score": "6",
-                    "@id": "514701",
-                    "info": {
-                        "authors": {
-                            "author": [
-                                {
-                                    "@pid": "272/9066",
-                                    "text": "Thilini Wijesiriwardene"
-                                },
-                                {
-                                    "@pid": "87/6880",
-                                    "text": "Ruwan Wickramarachchi"
-                                },
-                                {
-                                    "@pid": "346/8218",
-                                    "text": "Bimal G. Gajera"
-                                },
-                                {
-                                    "@pid": "346/9157",
-                                    "text": "Shreeyash Mukul Gowaikar"
-                                },
-                                {
-                                    "@pid": "346/8794",
-                                    "text": "Chandan Gupta"
-                                },
-                                {
-                                    "@pid": "55/10360",
-                                    "text": "Aman Chadha"
-                                },
-                                {
-                                    "@pid": "194/4692",
-                                    "text": "Aishwarya Naresh Reganti"
-                                },
-                                {
-                                    "@pid": "s/AmitPSheth",
-                                    "text": "Amit P. Sheth"
-                                },
-                                {
-                                    "@pid": "75/5002",
-                                    "text": "Amitava Das"
-                                }
-                            ]
-                        },
-                        "title": "ANALOGICAL - A Novel Benchmark for Long Text Analogy Evaluation in Large Language Models.",
-                        "venue": "ACL",
-                        "pages": "3534-3549",
+                        "title": "Robotic Medtronic Hugo\u2122 RAS System Is Now Reality: Introduction to a New Simulation Platform for Training Residents.",
+                        "venue": "Sensors",
+                        "volume": "23",
+                        "number": "17",
+                        "pages": "7348",
                         "year": "2023",
-                        "type": "Conference and Workshop Papers",
-                        "access": "open",
-                        "key": "conf/acl/Wijesiriwardene23",
-                        "doi": "10.18653/V1/2023.FINDINGS-ACL.218",
-                        "ee": "https://doi.org/10.18653/v1/2023.findings-acl.218",
-                        "url": "https://dblp.org/rec/conf/acl/Wijesiriwardene23"
-                    },
-                    "url": "URL#514701"
-                },
-                {
-                    "@score": "6",
-                    "@id": "554764",
-                    "info": {
-                        "authors": {
-                            "author": [
-                                {
-                                    "@pid": "328/0996",
-                                    "text": "Shreyash Mishra"
-                                },
-                                {
-                                    "@pid": "328/0765",
-                                    "text": "S. Suryavardan"
-                                },
-                                {
-                                    "@pid": "342/8093",
-                                    "text": "Megha Chakraborty"
-                                },
-                                {
-                                    "@pid": "260/9345",
-                                    "text": "Parth Patwa"
-                                },
-                                {
-                                    "@pid": "294/5245",
-                                    "text": "Anku Rani"
-                                },
-                                {
-                                    "@pid": "55/10360",
-                                    "text": "Aman Chadha"
-                                },
-                                {
-                                    "@pid": "194/4692",
-                                    "text": "Aishwarya Naresh Reganti"
-                                },
-                                {
-                                    "@pid": "75/5002",
-                                    "text": "Amitava Das"
-                                },
-                                {
-                                    "@pid": "s/AmitPSheth",
-                                    "text": "Amit P. Sheth"
-                                },
-                                {
-                                    "@pid": "222/9379",
-                                    "text": "Manoj Chinnakotla"
-                                },
-                                {
-                                    "@pid": "11/3590",
-                                    "text": "Asif Ekbal"
-                                },
-                                {
-                                    "@pid": "131/9628",
-                                    "text": "Srijan Kumar"
-                                }
-                            ]
-                        },
-                        "title": "Overview of Memotion 3: Sentiment and Emotion Analysis of Codemixed Hinglish Memes.",
-                        "venue": "DE-FACTIFY@AAAI",
-                        "year": "2023",
-                        "type": "Conference and Workshop Papers",
-                        "access": "open",
-                        "key": "conf/defactify/MishraSCPRCRDSC23",
-                        "ee": "https://ceur-ws.org/Vol-3555/paper5.pdf",
-                        "url": "https://dblp.org/rec/conf/defactify/MishraSCPRCRDSC23"
-                    },
-                    "url": "URL#554764"
-                },
-                {
-                    "@score": "6",
-                    "@id": "554765",
-                    "info": {
-                        "authors": {
-                            "author": [
-                                {
-                                    "@pid": "328/0996",
-                                    "text": "Shreyash Mishra"
-                                },
-                                {
-                                    "@pid": "328/0765",
-                                    "text": "S. Suryavardan"
-                                },
-                                {
-                                    "@pid": "260/9345",
-                                    "text": "Parth Patwa"
-                                },
-                                {
-                                    "@pid": "342/8093",
-                                    "text": "Megha Chakraborty"
-                                },
-                                {
-                                    "@pid": "294/5245",
-                                    "text": "Anku Rani"
-                                },
-                                {
-                                    "@pid": "194/4692",
-                                    "text": "Aishwarya Naresh Reganti"
-                                },
-                                {
-                                    "@pid": "55/10360",
-                                    "text": "Aman Chadha"
-                                },
-                                {
-                                    "@pid": "75/5002",
-                                    "text": "Amitava Das"
-                                },
-                                {
-                                    "@pid": "s/AmitPSheth",
-                                    "text": "Amit P. Sheth"
-                                },
-                                {
-                                    "@pid": "222/9379",
-                                    "text": "Manoj Chinnakotla"
-                                },
-                                {
-                                    "@pid": "11/3590",
-                                    "text": "Asif Ekbal"
-                                },
-                                {
-                                    "@pid": "131/9628",
-                                    "text": "Srijan Kumar"
-                                }
-                            ]
-                        },
-                        "title": "Memotion 3: Dataset on sentiment and emotion analysis of codemixed Hindi-English Memes.",
-                        "venue": "DE-FACTIFY@AAAI",
-                        "year": "2023",
-                        "type": "Conference and Workshop Papers",
-                        "access": "open",
-                        "key": "conf/defactify/MishraSPCRRCDSC23",
-                        "ee": "https://ceur-ws.org/Vol-3555/paper4.pdf",
-                        "url": "https://dblp.org/rec/conf/defactify/MishraSPCRRCDSC23"
-                    },
-                    "url": "URL#554765"
-                },
-                {
-                    "@score": "6",
-                    "@id": "554766",
-                    "info": {
-                        "authors": {
-                            "author": [
-                                {
-                                    "@pid": "328/0765",
-                                    "text": "S. Suryavardan"
-                                },
-                                {
-                                    "@pid": "328/0996",
-                                    "text": "Shreyash Mishra"
-                                },
-                                {
-                                    "@pid": "342/8093",
-                                    "text": "Megha Chakraborty"
-                                },
-                                {
-                                    "@pid": "260/9345",
-                                    "text": "Parth Patwa"
-                                },
-                                {
-                                    "@pid": "294/5245",
-                                    "text": "Anku Rani"
-                                },
-                                {
-                                    "@pid": "55/10360",
-                                    "text": "Aman Chadha"
-                                },
-                                {
-                                    "@pid": "194/4692",
-                                    "text": "Aishwarya Naresh Reganti"
-                                },
-                                {
-                                    "@pid": "75/5002",
-                                    "text": "Amitava Das"
-                                },
-                                {
-                                    "@pid": "s/AmitPSheth",
-                                    "text": "Amit P. Sheth"
-                                },
-                                {
-                                    "@pid": "222/9379",
-                                    "text": "Manoj Chinnakotla"
-                                },
-                                {
-                                    "@pid": "11/3590",
-                                    "text": "Asif Ekbal"
-                                },
-                                {
-                                    "@pid": "131/9628",
-                                    "text": "Srijan Kumar"
-                                }
-                            ]
-                        },
-                        "title": "Findings of factify 2: multimodal fake news detection.",
-                        "venue": "DE-FACTIFY@AAAI",
-                        "year": "2023",
-                        "type": "Conference and Workshop Papers",
-                        "access": "open",
-                        "key": "conf/defactify/SuryavardanMCPR23",
-                        "ee": "https://ceur-ws.org/Vol-3555/paper11.pdf",
-                        "url": "https://dblp.org/rec/conf/defactify/SuryavardanMCPR23"
-                    },
-                    "url": "URL#554766"
-                },
-                {
-                    "@score": "6",
-                    "@id": "554767",
-                    "info": {
-                        "authors": {
-                            "author": [
-                                {
-                                    "@pid": "328/0765",
-                                    "text": "S. Suryavardan"
-                                },
-                                {
-                                    "@pid": "328/0996",
-                                    "text": "Shreyash Mishra"
-                                },
-                                {
-                                    "@pid": "260/9345",
-                                    "text": "Parth Patwa"
-                                },
-                                {
-                                    "@pid": "342/8093",
-                                    "text": "Megha Chakraborty"
-                                },
-                                {
-                                    "@pid": "294/5245",
-                                    "text": "Anku Rani"
-                                },
-                                {
-                                    "@pid": "194/4692",
-                                    "text": "Aishwarya Naresh Reganti"
-                                },
-                                {
-                                    "@pid": "55/10360",
-                                    "text": "Aman Chadha"
-                                },
-                                {
-                                    "@pid": "75/5002",
-                                    "text": "Amitava Das"
-                                },
-                                {
-                                    "@pid": "s/AmitPSheth",
-                                    "text": "Amit P. Sheth"
-                                },
-                                {
-                                    "@pid": "222/9379",
-                                    "text": "Manoj Chinnakotla"
-                                },
-                                {
-                                    "@pid": "11/3590",
-                                    "text": "Asif Ekbal"
-                                },
-                                {
-                                    "@pid": "131/9628",
-                                    "text": "Srijan Kumar"
-                                }
-                            ]
-                        },
-                        "title": "Factify 2: A multimodal fake news and satire news dataset.",
-                        "venue": "DE-FACTIFY@AAAI",
-                        "year": "2023",
-                        "type": "Conference and Workshop Papers",
-                        "access": "open",
-                        "key": "conf/defactify/SuryavardanMPCR23",
-                        "ee": "https://ceur-ws.org/Vol-3555/paper10.pdf",
-                        "url": "https://dblp.org/rec/conf/defactify/SuryavardanMPCR23"
-                    },
-                    "url": "URL#554767"
-                },
-                {
-                    "@score": "6",
-                    "@id": "725390",
-                    "info": {
-                        "authors": {
-                            "author": [
-                                {
-                                    "@pid": "328/0996",
-                                    "text": "Shreyash Mishra"
-                                },
-                                {
-                                    "@pid": "328/0765",
-                                    "text": "Suryavardan S"
-                                },
-                                {
-                                    "@pid": "260/9345",
-                                    "text": "Parth Patwa"
-                                },
-                                {
-                                    "@pid": "342/8093",
-                                    "text": "Megha Chakraborty"
-                                },
-                                {
-                                    "@pid": "294/5245",
-                                    "text": "Anku Rani"
-                                },
-                                {
-                                    "@pid": "194/4692",
-                                    "text": "Aishwarya Naresh Reganti"
-                                },
-                                {
-                                    "@pid": "55/10360",
-                                    "text": "Aman Chadha"
-                                },
-                                {
-                                    "@pid": "75/5002",
-                                    "text": "Amitava Das"
-                                },
-                                {
-                                    "@pid": "s/AmitPSheth",
-                                    "text": "Amit P. Sheth"
-                                },
-                                {
-                                    "@pid": "222/9379",
-                                    "text": "Manoj Chinnakotla"
-                                },
-                                {
-                                    "@pid": "11/3590",
-                                    "text": "Asif Ekbal"
-                                },
-                                {
-                                    "@pid": "131/9628",
-                                    "text": "Srijan Kumar"
-                                }
-                            ]
-                        },
-                        "title": "Memotion 3: Dataset on Sentiment and Emotion Analysis of Codemixed Hindi-English Memes.",
-                        "venue": "CoRR",
-                        "volume": "abs/2303.09892",
-                        "year": "2023",
-                        "type": "Informal and Other Publications",
-                        "access": "open",
-                        "key": "journals/corr/abs-2303-09892",
-                        "doi": "10.48550/ARXIV.2303.09892",
-                        "ee": "https://doi.org/10.48550/arXiv.2303.09892",
-                        "url": "https://dblp.org/rec/journals/corr/abs-2303-09892"
-                    },
-                    "url": "URL#725390"
-                },
-                {
-                    "@score": "6",
-                    "@id": "731143",
-                    "info": {
-                        "authors": {
-                            "author": [
-                                {
-                                    "@pid": "328/0765",
-                                    "text": "Suryavardan S"
-                                },
-                                {
-                                    "@pid": "328/0996",
-                                    "text": "Shreyash Mishra"
-                                },
-                                {
-                                    "@pid": "260/9345",
-                                    "text": "Parth Patwa"
-                                },
-                                {
-                                    "@pid": "342/8093",
-                                    "text": "Megha Chakraborty"
-                                },
-                                {
-                                    "@pid": "294/5245",
-                                    "text": "Anku Rani"
-                                },
-                                {
-                                    "@pid": "194/4692",
-                                    "text": "Aishwarya Naresh Reganti"
-                                },
-                                {
-                                    "@pid": "55/10360",
-                                    "text": "Aman Chadha"
-                                },
-                                {
-                                    "@pid": "75/5002",
-                                    "text": "Amitava Das"
-                                },
-                                {
-                                    "@pid": "s/AmitPSheth",
-                                    "text": "Amit P. Sheth"
-                                },
-                                {
-                                    "@pid": "222/9379",
-                                    "text": "Manoj Chinnakotla"
-                                },
-                                {
-                                    "@pid": "11/3590",
-                                    "text": "Asif Ekbal"
-                                },
-                                {
-                                    "@pid": "131/9628",
-                                    "text": "Srijan Kumar"
-                                }
-                            ]
-                        },
-                        "title": "Factify 2: A Multimodal Fake News and Satire News Dataset.",
-                        "venue": "CoRR",
-                        "volume": "abs/2304.03897",
-                        "year": "2023",
-                        "type": "Informal and Other Publications",
-                        "access": "open",
-                        "key": "journals/corr/abs-2304-03897",
-                        "doi": "10.48550/ARXIV.2304.03897",
-                        "ee": "https://doi.org/10.48550/arXiv.2304.03897",
-                        "url": "https://dblp.org/rec/journals/corr/abs-2304-03897"
-                    },
-                    "url": "URL#731143"
-                },
-                {
-                    "@score": "6",
-                    "@id": "738787",
-                    "info": {
-                        "authors": {
-                            "author": [
-                                {
-                                    "@pid": "272/9066",
-                                    "text": "Thilini Wijesiriwardene"
-                                },
-                                {
-                                    "@pid": "87/6880",
-                                    "text": "Ruwan Wickramarachchi"
-                                },
-                                {
-                                    "@pid": "346/8218",
-                                    "text": "Bimal G. Gajera"
-                                },
-                                {
-                                    "@pid": "346/9157",
-                                    "text": "Shreeyash Mukul Gowaikar"
-                                },
-                                {
-                                    "@pid": "346/8794",
-                                    "text": "Chandan Gupta"
-                                },
-                                {
-                                    "@pid": "55/10360",
-                                    "text": "Aman Chadha"
-                                },
-                                {
-                                    "@pid": "194/4692",
-                                    "text": "Aishwarya Naresh Reganti"
-                                },
-                                {
-                                    "@pid": "s/AmitPSheth",
-                                    "text": "Amit P. Sheth"
-                                },
-                                {
-                                    "@pid": "75/5002",
-                                    "text": "Amitava Das"
-                                }
-                            ]
-                        },
-                        "title": "ANALOGICAL - A Novel Benchmark for Long Text Analogy Evaluation in Large Language Models.",
-                        "venue": "CoRR",
-                        "volume": "abs/2305.05050",
-                        "year": "2023",
-                        "type": "Informal and Other Publications",
-                        "access": "open",
-                        "key": "journals/corr/abs-2305-05050",
-                        "doi": "10.48550/ARXIV.2305.05050",
-                        "ee": "https://doi.org/10.48550/arXiv.2305.05050",
-                        "url": "https://dblp.org/rec/journals/corr/abs-2305-05050"
-                    },
-                    "url": "URL#738787"
-                },
-                {
-                    "@score": "6",
-                    "@id": "760222",
-                    "info": {
-                        "authors": {
-                            "author": [
-                                {
-                                    "@pid": "328/0765",
-                                    "text": "S. Suryavardan"
-                                },
-                                {
-                                    "@pid": "328/0996",
-                                    "text": "Shreyash Mishra"
-                                },
-                                {
-                                    "@pid": "342/8093",
-                                    "text": "Megha Chakraborty"
-                                },
-                                {
-                                    "@pid": "260/9345",
-                                    "text": "Parth Patwa"
-                                },
-                                {
-                                    "@pid": "294/5245",
-                                    "text": "Anku Rani"
-                                },
-                                {
-                                    "@pid": "55/10360",
-                                    "text": "Aman Chadha"
-                                },
-                                {
-                                    "@pid": "194/4692",
-                                    "text": "Aishwarya Naresh Reganti"
-                                },
-                                {
-                                    "@pid": "75/5002",
-                                    "text": "Amitava Das"
-                                },
-                                {
-                                    "@pid": "s/AmitPSheth",
-                                    "text": "Amit P. Sheth"
-                                },
-                                {
-                                    "@pid": "222/9379",
-                                    "text": "Manoj Chinnakotla"
-                                },
-                                {
-                                    "@pid": "11/3590",
-                                    "text": "Asif Ekbal"
-                                },
-                                {
-                                    "@pid": "131/9628",
-                                    "text": "Srijan Kumar"
-                                }
-                            ]
-                        },
-                        "title": "Findings of Factify 2: Multimodal Fake News Detection.",
-                        "venue": "CoRR",
-                        "volume": "abs/2307.10475",
-                        "year": "2023",
-                        "type": "Informal and Other Publications",
-                        "access": "open",
-                        "key": "journals/corr/abs-2307-10475",
-                        "doi": "10.48550/ARXIV.2307.10475",
-                        "ee": "https://doi.org/10.48550/arXiv.2307.10475",
-                        "url": "https://dblp.org/rec/journals/corr/abs-2307-10475"
-                    },
-                    "url": "URL#760222"
-                },
-                {
-                    "@score": "6",
-                    "@id": "773931",
-                    "info": {
-                        "authors": {
-                            "author": [
-                                {
-                                    "@pid": "328/0996",
-                                    "text": "Shreyash Mishra"
-                                },
-                                {
-                                    "@pid": "328/0765",
-                                    "text": "S. Suryavardan"
-                                },
-                                {
-                                    "@pid": "342/8093",
-                                    "text": "Megha Chakraborty"
-                                },
-                                {
-                                    "@pid": "260/9345",
-                                    "text": "Parth Patwa"
-                                },
-                                {
-                                    "@pid": "294/5245",
-                                    "text": "Anku Rani"
-                                },
-                                {
-                                    "@pid": "55/10360",
-                                    "text": "Aman Chadha"
-                                },
-                                {
-                                    "@pid": "194/4692",
-                                    "text": "Aishwarya Naresh Reganti"
-                                },
-                                {
-                                    "@pid": "75/5002",
-                                    "text": "Amitava Das"
-                                },
-                                {
-                                    "@pid": "s/AmitPSheth",
-                                    "text": "Amit P. Sheth"
-                                },
-                                {
-                                    "@pid": "222/9379",
-                                    "text": "Manoj Chinnakotla"
-                                },
-                                {
-                                    "@pid": "11/3590",
-                                    "text": "Asif Ekbal"
-                                },
-                                {
-                                    "@pid": "131/9628",
-                                    "text": "Srijan Kumar"
-                                }
-                            ]
-                        },
-                        "title": "Overview of Memotion 3: Sentiment and Emotion Analysis of Codemixed Hinglish Memes.",
-                        "venue": "CoRR",
-                        "volume": "abs/2309.06517",
-                        "year": "2023",
-                        "type": "Informal and Other Publications",
-                        "access": "open",
-                        "key": "journals/corr/abs-2309-06517",
-                        "doi": "10.48550/ARXIV.2309.06517",
-                        "ee": "https://doi.org/10.48550/arXiv.2309.06517",
-                        "url": "https://dblp.org/rec/journals/corr/abs-2309-06517"
-                    },
-                    "url": "URL#773931"
-                },
-                {
-                    "@score": "6",
-                    "@id": "1027503",
-                    "info": {
-                        "authors": {
-                            "author": [
-                                {
-                                    "@pid": "328/0996",
-                                    "text": "Shreyash Mishra"
-                                },
-                                {
-                                    "@pid": "328/0765",
-                                    "text": "Suryavardan S"
-                                },
-                                {
-                                    "@pid": "328/0776",
-                                    "text": "Amrit Bhaskar"
-                                },
-                                {
-                                    "@pid": "238/4919",
-                                    "text": "Parul Chopra"
-                                },
-                                {
-                                    "@pid": "194/4692",
-                                    "text": "Aishwarya N. Reganti"
-                                },
-                                {
-                                    "@pid": "260/9345",
-                                    "text": "Parth Patwa"
-                                },
-                                {
-                                    "@pid": "75/5002",
-                                    "text": "Amitava Das"
-                                },
-                                {
-                                    "@pid": "65/2136-2",
-                                    "text": "Tanmoy Chakraborty 0002"
-                                },
-                                {
-                                    "@pid": "s/AmitPSheth",
-                                    "text": "Amit P. Sheth"
-                                },
-                                {
-                                    "@pid": "11/3590",
-                                    "text": "Asif Ekbal"
-                                }
-                            ]
-                        },
-                        "title": "FACTIFY: A Multi-Modal Fact Verification Dataset.",
-                        "venue": "DE-FACTIFY@AAAI",
-                        "year": "2022",
-                        "type": "Conference and Workshop Papers",
-                        "access": "open",
-                        "key": "conf/aaai/MishraSBCRPD0SE22",
-                        "ee": "https://ceur-ws.org/Vol-3199/paper18.pdf",
-                        "url": "https://dblp.org/rec/conf/aaai/MishraSBCRPD0SE22"
-                    },
-                    "url": "URL#1027503"
-                },
-                {
-                    "@score": "6",
-                    "@id": "1027581",
-                    "info": {
-                        "authors": {
-                            "author": [
-                                {
-                                    "@pid": "260/9345",
-                                    "text": "Parth Patwa"
-                                },
-                                {
-                                    "@pid": "328/0996",
-                                    "text": "Shreyash Mishra"
-                                },
-                                {
-                                    "@pid": "328/0765",
-                                    "text": "Suryavardan S"
-                                },
-                                {
-                                    "@pid": "328/0776",
-                                    "text": "Amrit Bhaskar"
-                                },
-                                {
-                                    "@pid": "238/4919",
-                                    "text": "Parul Chopra"
-                                },
-                                {
-                                    "@pid": "194/4692",
-                                    "text": "Aishwarya Naresh Reganti"
-                                },
-                                {
-                                    "@pid": "75/5002",
-                                    "text": "Amitava Das"
-                                },
-                                {
-                                    "@pid": "65/2136-2",
-                                    "text": "Tanmoy Chakraborty 0002"
-                                },
-                                {
-                                    "@pid": "s/AmitPSheth",
-                                    "text": "Amit P. Sheth"
-                                },
-                                {
-                                    "@pid": "11/3590",
-                                    "text": "Asif Ekbal"
-                                },
-                                {
-                                    "@pid": "148/9894",
-                                    "text": "Chaitanya Ahuja"
-                                }
-                            ]
-                        },
-                        "title": "Benchmarking Multi-Modal Entailment for Fact Verification (short paper).",
-                        "venue": "DE-FACTIFY@AAAI",
-                        "year": "2022",
-                        "type": "Conference and Workshop Papers",
-                        "access": "open",
-                        "key": "conf/aaai/PatwaMSBCRDCSEA22",
-                        "ee": "https://ceur-ws.org/Vol-3199/paper19.pdf",
-                        "url": "https://dblp.org/rec/conf/aaai/PatwaMSBCRDCSEA22"
-                    },
-                    "url": "URL#1027581"
-                },
-                {
-                    "@score": "6",
-                    "@id": "1027582",
-                    "info": {
-                        "authors": {
-                            "author": [
-                                {
-                                    "@pid": "260/9345",
-                                    "text": "Parth Patwa"
-                                },
-                                {
-                                    "@pid": "306/1293",
-                                    "text": "Sathyanarayanan Ramamoorthy"
-                                },
-                                {
-                                    "@pid": "306/1433",
-                                    "text": "Nethra Gunti"
-                                },
-                                {
-                                    "@pid": "328/0996",
-                                    "text": "Shreyash Mishra"
-                                },
-                                {
-                                    "@pid": "328/0765",
-                                    "text": "Suryavardan S"
-                                },
-                                {
-                                    "@pid": "194/4692",
-                                    "text": "Aishwarya N. Reganti"
-                                },
-                                {
-                                    "@pid": "75/5002",
-                                    "text": "Amitava Das"
-                                },
-                                {
-                                    "@pid": "65/2136-2",
-                                    "text": "Tanmoy Chakraborty 0002"
-                                },
-                                {
-                                    "@pid": "s/AmitPSheth",
-                                    "text": "Amit P. Sheth"
-                                },
-                                {
-                                    "@pid": "11/3590",
-                                    "text": "Asif Ekbal"
-                                },
-                                {
-                                    "@pid": "148/9894",
-                                    "text": "Chaitanya Ahuja"
-                                }
-                            ]
-                        },
-                        "title": "Findings of Memotion 2: Sentiment and Emotion Analysis of Memes (short paper).",
-                        "venue": "DE-FACTIFY@AAAI",
-                        "year": "2022",
-                        "type": "Conference and Workshop Papers",
-                        "access": "open",
-                        "key": "conf/aaai/PatwaRGMSRD0SEA22",
-                        "ee": "https://ceur-ws.org/Vol-3199/paper21.pdf",
-                        "url": "https://dblp.org/rec/conf/aaai/PatwaRGMSRD0SEA22"
-                    },
-                    "url": "URL#1027582"
-                },
-                {
-                    "@score": "6",
-                    "@id": "1027624",
-                    "info": {
-                        "authors": {
-                            "author": [
-                                {
-                                    "@pid": "306/1293",
-                                    "text": "Sathyanarayanan Ramamoorthy"
-                                },
-                                {
-                                    "@pid": "306/1433",
-                                    "text": "Nethra Gunti"
-                                },
-                                {
-                                    "@pid": "328/0996",
-                                    "text": "Shreyash Mishra"
-                                },
-                                {
-                                    "@pid": "328/0765",
-                                    "text": "Suryavardan S"
-                                },
-                                {
-                                    "@pid": "194/4692",
-                                    "text": "Aishwarya N. Reganti"
-                                },
-                                {
-                                    "@pid": "260/9345",
-                                    "text": "Parth Patwa"
-                                },
-                                {
-                                    "@pid": "75/5002",
-                                    "text": "Amitava Das"
-                                },
-                                {
-                                    "@pid": "65/2136-2",
-                                    "text": "Tanmoy Chakraborty 0002"
-                                },
-                                {
-                                    "@pid": "s/AmitPSheth",
-                                    "text": "Amit P. Sheth"
-                                },
-                                {
-                                    "@pid": "11/3590",
-                                    "text": "Asif Ekbal"
-                                },
-                                {
-                                    "@pid": "148/9894",
-                                    "text": "Chaitanya Ahuja"
-                                }
-                            ]
-                        },
-                        "title": "Memotion 2: Dataset on Sentiment and Emotion Analysis of Memes (short paper).",
-                        "venue": "DE-FACTIFY@AAAI",
-                        "year": "2022",
-                        "type": "Conference and Workshop Papers",
-                        "access": "open",
-                        "key": "conf/aaai/RamamoorthyGMSR22",
-                        "ee": "https://ceur-ws.org/Vol-3199/paper20.pdf",
-                        "url": "https://dblp.org/rec/conf/aaai/RamamoorthyGMSR22"
-                    },
-                    "url": "URL#1027624"
-                },
-                {
-                    "@score": "6",
-                    "@id": "1063490",
-                    "info": {
-                        "authors": {
-                            "author": [
-                                {
-                                    "@pid": "10/2674-13",
-                                    "text": "Feng Gao 0013"
-                                },
-                                {
-                                    "@pid": "160/1577",
-                                    "text": "Qing Ping"
-                                },
-                                {
-                                    "@pid": "279/2880",
-                                    "text": "Govind Thattai"
-                                },
-                                {
-                                    "@pid": "194/4692",
-                                    "text": "Aishwarya N. Reganti"
-                                },
-                                {
-                                    "@pid": "18/568",
-                                    "text": "Ying Nian Wu"
-                                },
-                                {
-                                    "@pid": "40/2362",
-                                    "text": "Prem Natarajan"
-                                }
-                            ]
-                        },
-                        "title": "Transform-Retrieve-Generate: Natural Language-Centric Outside-Knowledge Visual Question Answering.",
-                        "venue": "CVPR",
-                        "pages": "5057-5067",
-                        "year": "2022",
-                        "type": "Conference and Workshop Papers",
-                        "access": "closed",
-                        "key": "conf/cvpr/0013PTRWN22",
-                        "doi": "10.1109/CVPR52688.2022.00501",
-                        "ee": "https://doi.org/10.1109/CVPR52688.2022.00501",
-                        "url": "https://dblp.org/rec/conf/cvpr/0013PTRWN22"
-                    },
-                    "url": "URL#1063490"
-                },
-                {
-                    "@score": "6",
-                    "@id": "1209025",
-                    "info": {
-                        "authors": {
-                            "author": [
-                                {
-                                    "@pid": "239/4098",
-                                    "text": "Shane Storks"
-                                },
-                                {
-                                    "@pid": "173/1986",
-                                    "text": "Qiaozi Gao"
-                                },
-                                {
-                                    "@pid": "194/4692",
-                                    "text": "Aishwarya N. Reganti"
-                                },
-                                {
-                                    "@pid": "279/2880",
-                                    "text": "Govind Thattai"
-                                }
-                            ]
-                        },
-                        "title": "Best of Both Worlds: A Hybrid Approach for Multi-Hop Explanation with Declarative Facts.",
-                        "venue": "CoRR",
-                        "volume": "abs/2201.02740",
-                        "year": "2022",
-                        "type": "Informal and Other Publications",
-                        "access": "open",
-                        "key": "journals/corr/abs-2201-02740",
-                        "ee": "https://arxiv.org/abs/2201.02740",
-                        "url": "https://dblp.org/rec/journals/corr/abs-2201-02740"
-                    },
-                    "url": "URL#1209025"
-                },
-                {
-                    "@score": "6",
-                    "@id": "1209982",
-                    "info": {
-                        "authors": {
-                            "author": [
-                                {
-                                    "@pid": "10/2674-13",
-                                    "text": "Feng Gao 0013"
-                                },
-                                {
-                                    "@pid": "160/1577",
-                                    "text": "Qing Ping"
-                                },
-                                {
-                                    "@pid": "279/2880",
-                                    "text": "Govind Thattai"
-                                },
-                                {
-                                    "@pid": "194/4692",
-                                    "text": "Aishwarya N. Reganti"
-                                },
-                                {
-                                    "@pid": "18/568",
-                                    "text": "Ying Nian Wu"
-                                },
-                                {
-                                    "@pid": "40/2362",
-                                    "text": "Prem Natarajan"
-                                }
-                            ]
-                        },
-                        "title": "A Thousand Words Are Worth More Than a Picture: Natural Language-Centric Outside-Knowledge Visual Question Answering.",
-                        "venue": "CoRR",
-                        "volume": "abs/2201.05299",
-                        "year": "2022",
-                        "type": "Informal and Other Publications",
-                        "access": "open",
-                        "key": "journals/corr/abs-2201-05299",
-                        "ee": "https://arxiv.org/abs/2201.05299",
-                        "url": "https://dblp.org/rec/journals/corr/abs-2201-05299"
-                    },
-                    "url": "URL#1209982"
-                },
-                {
-                    "@score": "6",
-                    "@id": "2182827",
-                    "info": {
-                        "authors": {
-                            "author": [
-                                {
-                                    "@pid": "231/1803",
-                                    "text": "Weixin Liang"
-                                },
-                                {
-                                    "@pid": "279/3254",
-                                    "text": "Feiyang Niu"
-                                },
-                                {
-                                    "@pid": "194/4692",
-                                    "text": "Aishwarya N. Reganti"
-                                },
-                                {
-                                    "@pid": "279/2880",
-                                    "text": "Govind Thattai"
-                                },
-                                {
-                                    "@pid": "24/4469",
-                                    "text": "G\u00f6khan T\u00fcr"
-                                }
-                            ]
-                        },
-                        "title": "LRTA: A Transparent Neural-Symbolic Reasoning Framework with Modular Supervision for Visual Question Answering.",
-                        "venue": "CoRR",
-                        "volume": "abs/2011.10731",
-                        "year": "2020",
-                        "type": "Informal and Other Publications",
-                        "access": "open",
-                        "key": "journals/corr/abs-2011-10731",
-                        "ee": "https://arxiv.org/abs/2011.10731",
-                        "url": "https://dblp.org/rec/journals/corr/abs-2011-10731"
-                    },
-                    "url": "URL#2182827"
-                },
-                {
-                    "@score": "6",
-                    "@id": "2184965",
-                    "info": {
-                        "authors": {
-                            "author": [
-                                {
-                                    "@pid": "160/1577",
-                                    "text": "Qing Ping"
-                                },
-                                {
-                                    "@pid": "279/3254",
-                                    "text": "Feiyang Niu"
-                                },
-                                {
-                                    "@pid": "279/2880",
-                                    "text": "Govind Thattai"
-                                },
-                                {
-                                    "@pid": "280/0379",
-                                    "text": "Joel Chengottusseriyil"
-                                },
-                                {
-                                    "@pid": "173/1986",
-                                    "text": "Qiaozi Gao"
-                                },
-                                {
-                                    "@pid": "194/4692",
-                                    "text": "Aishwarya N. Reganti"
-                                },
-                                {
-                                    "@pid": "280/0497",
-                                    "text": "Prashanth Rajagopal"
-                                },
-                                {
-                                    "@pid": "24/4469",
-                                    "text": "G\u00f6khan T\u00fcr"
-                                },
-                                {
-                                    "@pid": "h/DilekZHakkaniTur",
-                                    "text": "Dilek Hakkani-T\u00fcr"
-                                },
-                                {
-                                    "@pid": "40/2362",
-                                    "text": "Prem Natarajan"
-                                }
-                            ]
-                        },
-                        "title": "Interactive Teaching for Conversational AI.",
-                        "venue": "CoRR",
-                        "volume": "abs/2012.00958",
-                        "year": "2020",
-                        "type": "Informal and Other Publications",
-                        "access": "open",
-                        "key": "journals/corr/abs-2012-00958",
-                        "ee": "https://arxiv.org/abs/2012.00958",
-                        "url": "https://dblp.org/rec/journals/corr/abs-2012-00958"
-                    },
-                    "url": "URL#2184965"
-                },
-                {
-                    "@score": "6",
-                    "@id": "2208767",
-                    "info": {
-                        "authors": {
-                            "author": [
-                                {
-                                    "@pid": "194/4822",
-                                    "text": "Tushar Maheshwari"
-                                },
-                                {
-                                    "@pid": "194/4692",
-                                    "text": "Aishwarya N. Reganti"
-                                },
-                                {
-                                    "@pid": "116/4904",
-                                    "text": "Soujanya Poria"
-                                },
-                                {
-                                    "@pid": "m/RadaMihalcea",
-                                    "text": "Rada Mihalcea"
-                                }
-                            ]
-                        },
-                        "title": "The Nitty-GRITties of Success: Computational Analysis of Grit From Language.",
-                        "venue": "IEEE Access",
-                        "volume": "7",
-                        "pages": "179364-179372",
-                        "year": "2019",
                         "type": "Journal Articles",
                         "access": "open",
-                        "key": "journals/access/MaheshwariRPM19",
-                        "doi": "10.1109/ACCESS.2019.2951683",
-                        "ee": "https://doi.org/10.1109/ACCESS.2019.2951683",
-                        "url": "https://dblp.org/rec/journals/access/MaheshwariRPM19"
+                        "key": "journals/sensors/CacciatoreCTPMIRDQBABTSSEP23",
+                        "doi": "10.3390/S23177348",
+                        "ee": "https://doi.org/10.3390/s23177348",
+                        "url": "https://dblp.org/rec/journals/sensors/CacciatoreCTPMIRDQBABTSSEP23"
                     },
-                    "url": "URL#2208767"
+                    "url": "URL#448359"
                 },
                 {
-                    "@score": "6",
-                    "@id": "2661600",
+                    "@score": "4",
+                    "@id": "3188591",
                     "info": {
                         "authors": {
                             "author": [
                                 {
-                                    "@pid": "194/4822",
-                                    "text": "Tushar Maheshwari"
+                                    "@pid": "189/2735",
+                                    "text": "Mario Christian Falconi"
                                 },
                                 {
-                                    "@pid": "194/4692",
-                                    "text": "Aishwarya N. Reganti"
+                                    "@pid": "138/3812",
+                                    "text": "Giuseppe Palma"
                                 },
                                 {
-                                    "@pid": "13/10963",
-                                    "text": "Upendra Kumar"
+                                    "@pid": "249/4602",
+                                    "text": "A. Ameruoso"
                                 },
                                 {
-                                    "@pid": "65/2136-2",
-                                    "text": "Tanmoy Chakraborty 0002"
+                                    "@pid": "249/4603",
+                                    "text": "C. Laterza"
                                 },
                                 {
-                                    "@pid": "75/5002",
-                                    "text": "Amitava Das"
+                                    "@pid": "249/4674",
+                                    "text": "S. Popolizio"
+                                },
+                                {
+                                    "@pid": "213/9081",
+                                    "text": "Luca Rinaldi"
+                                },
+                                {
+                                    "@pid": "249/4583",
+                                    "text": "A. Rizzi"
+                                },
+                                {
+                                    "@pid": "177/7324",
+                                    "text": "Genni Testa"
+                                },
+                                {
+                                    "@pid": "249/4787",
+                                    "text": "F. Tragni"
+                                },
+                                {
+                                    "@pid": "186/2774",
+                                    "text": "Francesco Chiavaioli"
+                                },
+                                {
+                                    "@pid": "171/2425",
+                                    "text": "Francesco Baldini"
+                                },
+                                {
+                                    "@pid": "187/2721",
+                                    "text": "Daniele Farnesi"
+                                },
+                                {
+                                    "@pid": "67/10232",
+                                    "text": "Gualtiero Nunzi Conti"
+                                },
+                                {
+                                    "@pid": "78/10227",
+                                    "text": "Stefano Pelli"
+                                },
+                                {
+                                    "@pid": "01/10228",
+                                    "text": "Giancarlo Cesare Righini"
+                                },
+                                {
+                                    "@pid": "187/0294",
+                                    "text": "Silvia Soria"
+                                },
+                                {
+                                    "@pid": "171/2471",
+                                    "text": "Cosimo Trono"
+                                },
+                                {
+                                    "@pid": "189/2675",
+                                    "text": "Francesco Prudenzano"
                                 }
                             ]
                         },
-                        "title": "Revealing Psycholinguistic Dimensions of Communities in Social Networks.",
-                        "venue": "IEEE Intell. Syst.",
-                        "volume": "33",
-                        "number": "4",
-                        "pages": "36-48",
-                        "year": "2018",
-                        "type": "Journal Articles",
-                        "access": "closed",
-                        "key": "journals/expert/MaheshwariRKCD18",
-                        "doi": "10.1109/MIS.2018.111144400",
-                        "ee": "https://doi.org/10.1109/MIS.2018.111144400",
-                        "url": "https://dblp.org/rec/journals/expert/MaheshwariRKCD18"
-                    },
-                    "url": "URL#2661600"
-                },
-                {
-                    "@score": "6",
-                    "@id": "2686827",
-                    "info": {
-                        "authors": {
-                            "author": [
-                                {
-                                    "@pid": "13/10963",
-                                    "text": "Upendra Kumar"
-                                },
-                                {
-                                    "@pid": "194/4692",
-                                    "text": "Aishwarya N. Reganti"
-                                },
-                                {
-                                    "@pid": "194/4822",
-                                    "text": "Tushar Maheshwari"
-                                },
-                                {
-                                    "@pid": "65/2136-2",
-                                    "text": "Tanmoy Chakraborty 0002"
-                                },
-                                {
-                                    "@pid": "55/5032",
-                                    "text": "Bj\u00f6rn Gamb\u00e4ck"
-                                },
-                                {
-                                    "@pid": "75/5002",
-                                    "text": "Amitava Das"
-                                }
-                            ]
-                        },
-                        "title": "Inducing Personalities and Values from Language Use in Social Network Communities.",
-                        "venue": "Inf. Syst. Frontiers",
-                        "volume": "20",
-                        "number": "6",
-                        "pages": "1219-1240",
-                        "year": "2018",
-                        "type": "Journal Articles",
-                        "access": "closed",
-                        "key": "journals/isf/KumarRMCGD18",
-                        "doi": "10.1007/S10796-017-9793-8",
-                        "ee": "https://doi.org/10.1007/s10796-017-9793-8",
-                        "url": "https://dblp.org/rec/journals/isf/KumarRMCGD18"
-                    },
-                    "url": "URL#2686827"
-                },
-                {
-                    "@score": "6",
-                    "@id": "2890347",
-                    "info": {
-                        "authors": {
-                            "author": [
-                                {
-                                    "@pid": "49/3538",
-                                    "text": "Ritesh Kumar"
-                                },
-                                {
-                                    "@pid": "194/4692",
-                                    "text": "Aishwarya N. Reganti"
-                                },
-                                {
-                                    "@pid": "190/1796",
-                                    "text": "Akshit Bhatia"
-                                },
-                                {
-                                    "@pid": "194/4822",
-                                    "text": "Tushar Maheshwari"
-                                }
-                            ]
-                        },
-                        "title": "Aggression-annotated Corpus of Hindi-English Code-mixed Data.",
-                        "venue": "LREC",
-                        "year": "2018",
-                        "type": "Conference and Workshop Papers",
-                        "access": "open",
-                        "key": "conf/lrec/KumarRBM18",
-                        "ee": "http://www.lrec-conf.org/proceedings/lrec2018/summaries/861.html",
-                        "url": "https://dblp.org/rec/conf/lrec/KumarRBM18"
-                    },
-                    "url": "URL#2890347"
-                },
-                {
-                    "@score": "6",
-                    "@id": "2955522",
-                    "info": {
-                        "authors": {
-                            "author": [
-                                {
-                                    "@pid": "49/3538",
-                                    "text": "Ritesh Kumar"
-                                },
-                                {
-                                    "@pid": "194/4692",
-                                    "text": "Aishwarya N. Reganti"
-                                },
-                                {
-                                    "@pid": "190/1796",
-                                    "text": "Akshit Bhatia"
-                                },
-                                {
-                                    "@pid": "194/4822",
-                                    "text": "Tushar Maheshwari"
-                                }
-                            ]
-                        },
-                        "title": "Aggression-annotated Corpus of Hindi-English Code-mixed Data.",
-                        "venue": "CoRR",
-                        "volume": "abs/1803.09402",
-                        "year": "2018",
-                        "type": "Informal and Other Publications",
-                        "access": "open",
-                        "key": "journals/corr/abs-1803-09402",
-                        "ee": "http://arxiv.org/abs/1803.09402",
-                        "url": "https://dblp.org/rec/journals/corr/abs-1803-09402"
-                    },
-                    "url": "URL#2955522"
-                },
-                {
-                    "@score": "6",
-                    "@id": "3126278",
-                    "info": {
-                        "authors": {
-                            "author": [
-                                {
-                                    "@pid": "194/4822",
-                                    "text": "Tushar Maheshwari"
-                                },
-                                {
-                                    "@pid": "194/4692",
-                                    "text": "Aishwarya N. Reganti"
-                                },
-                                {
-                                    "@pid": "13/10963",
-                                    "text": "Upendra Kumar"
-                                },
-                                {
-                                    "@pid": "65/2136-2",
-                                    "text": "Tanmoy Chakraborty 0002"
-                                },
-                                {
-                                    "@pid": "75/5002",
-                                    "text": "Amitava Das"
-                                }
-                            ]
-                        },
-                        "title": "Semantic Interpretation of Social Network Communities.",
-                        "venue": "AAAI",
-                        "pages": "4967-4968",
-                        "year": "2017",
-                        "type": "Conference and Workshop Papers",
-                        "access": "open",
-                        "key": "conf/aaai/MaheshwariRKCD17",
-                        "doi": "10.1609/AAAI.V31I1.11078",
-                        "ee": "https://doi.org/10.1609/aaai.v31i1.11078",
-                        "url": "https://dblp.org/rec/conf/aaai/MaheshwariRKCD17"
-                    },
-                    "url": "URL#3126278"
-                },
-                {
-                    "@score": "6",
-                    "@id": "3138731",
-                    "info": {
-                        "authors": {
-                            "author": [
-                                {
-                                    "@pid": "194/4692",
-                                    "text": "Aishwarya N. Reganti"
-                                },
-                                {
-                                    "@pid": "194/4822",
-                                    "text": "Tushar Maheshwari"
-                                },
-                                {
-                                    "@pid": "75/5002",
-                                    "text": "Amitava Das"
-                                },
-                                {
-                                    "@pid": "65/2136-2",
-                                    "text": "Tanmoy Chakraborty 0002"
-                                },
-                                {
-                                    "@pid": "97/5147",
-                                    "text": "Ponnurangam Kumaraguru"
-                                }
-                            ]
-                        },
-                        "title": "Understanding Psycho-Sociological Vulnerability of ISIS Patronizers in Twitter.",
-                        "venue": "ASONAM",
-                        "pages": "621-624",
+                        "title": "Design of microspheres and microbubbles for environmental chemical/biological optical sensing.",
+                        "venue": "I2MTC",
+                        "pages": "1-6",
                         "year": "2017",
                         "type": "Conference and Workshop Papers",
                         "access": "closed",
-                        "key": "conf/asunam/RegantiMDCK17",
-                        "doi": "10.1145/3110025.3110060",
-                        "ee": "https://doi.org/10.1145/3110025.3110060",
-                        "url": "https://dblp.org/rec/conf/asunam/RegantiMDCK17"
+                        "key": "conf/i2mtc/FalconiPALPRRTT17",
+                        "doi": "10.1109/I2MTC.2017.7969868",
+                        "ee": "https://doi.org/10.1109/I2MTC.2017.7969868",
+                        "url": "https://dblp.org/rec/conf/i2mtc/FalconiPALPRRTT17"
                     },
-                    "url": "URL#3138731"
-                },
-                {
-                    "@score": "6",
-                    "@id": "3159628",
-                    "info": {
-                        "authors": {
-                            "author": [
-                                {
-                                    "@pid": "194/4822",
-                                    "text": "Tushar Maheshwari"
-                                },
-                                {
-                                    "@pid": "194/4692",
-                                    "text": "Aishwarya N. Reganti"
-                                },
-                                {
-                                    "@pid": "65/2136-2",
-                                    "text": "Tanmoy Chakraborty 0002"
-                                },
-                                {
-                                    "@pid": "75/5002",
-                                    "text": "Amitava Das"
-                                }
-                            ]
-                        },
-                        "title": "Socio-Ethnic Ingredients of Social Network Communities.",
-                        "venue": "CSCW Companion",
-                        "pages": "235-238",
-                        "year": "2017",
-                        "type": "Conference and Workshop Papers",
-                        "access": "closed",
-                        "key": "conf/cscw/MaheshwariRCD17",
-                        "doi": "10.1145/3022198.3026322",
-                        "ee": "https://doi.org/10.1145/3022198.3026322",
-                        "url": "https://dblp.org/rec/conf/cscw/MaheshwariRCD17"
-                    },
-                    "url": "URL#3159628"
-                },
-                {
-                    "@score": "6",
-                    "@id": "3159694",
-                    "info": {
-                        "authors": {
-                            "author": [
-                                {
-                                    "@pid": "194/4692",
-                                    "text": "Aishwarya N. Reganti"
-                                },
-                                {
-                                    "@pid": "194/4822",
-                                    "text": "Tushar Maheshwari"
-                                },
-                                {
-                                    "@pid": "75/5002",
-                                    "text": "Amitava Das"
-                                },
-                                {
-                                    "@pid": "80/7421",
-                                    "text": "Erik Cambria"
-                                }
-                            ]
-                        },
-                        "title": "Open Secrets and Wrong Rights: Automatic Satire Detection in English Text.",
-                        "venue": "CSCW Companion",
-                        "pages": "291-294",
-                        "year": "2017",
-                        "type": "Conference and Workshop Papers",
-                        "access": "closed",
-                        "key": "conf/cscw/RegantiMDC17",
-                        "doi": "10.1145/3022198.3026344",
-                        "ee": "https://doi.org/10.1145/3022198.3026344",
-                        "url": "https://dblp.org/rec/conf/cscw/RegantiMDC17"
-                    },
-                    "url": "URL#3159694"
-                },
-                {
-                    "@score": "6",
-                    "@id": "3166551",
-                    "info": {
-                        "authors": {
-                            "author": [
-                                {
-                                    "@pid": "194/4822",
-                                    "text": "Tushar Maheshwari"
-                                },
-                                {
-                                    "@pid": "194/4692",
-                                    "text": "Aishwarya N. Reganti"
-                                },
-                                {
-                                    "@pid": "204/1195",
-                                    "text": "Samiksha Gupta"
-                                },
-                                {
-                                    "@pid": "174/6702",
-                                    "text": "Anupam Jamatia"
-                                },
-                                {
-                                    "@pid": "13/10963",
-                                    "text": "Upendra Kumar"
-                                },
-                                {
-                                    "@pid": "55/5032",
-                                    "text": "Bj\u00f6rn Gamb\u00e4ck"
-                                },
-                                {
-                                    "@pid": "75/5002",
-                                    "text": "Amitava Das"
-                                }
-                            ]
-                        },
-                        "title": "A Societal Sentiment Analysis: Predicting the Values and Ethics of Individuals by Analysing Social Media Content.",
-                        "venue": "EACL",
-                        "pages": "731-741",
-                        "year": "2017",
-                        "type": "Conference and Workshop Papers",
-                        "access": "open",
-                        "key": "conf/eacl/DasGMRGJK17",
-                        "doi": "10.18653/V1/E17-1069",
-                        "ee": "https://doi.org/10.18653/v1/e17-1069",
-                        "url": "https://dblp.org/rec/conf/eacl/DasGMRGJK17"
-                    },
-                    "url": "URL#3166551"
-                },
-                {
-                    "@score": "6",
-                    "@id": "3526912",
-                    "info": {
-                        "authors": {
-                            "author": [
-                                {
-                                    "@pid": "194/4692",
-                                    "text": "Aishwarya N. Reganti"
-                                },
-                                {
-                                    "@pid": "194/4822",
-                                    "text": "Tushar Maheshwari"
-                                },
-                                {
-                                    "@pid": "13/10963",
-                                    "text": "Upendra Kumar"
-                                },
-                                {
-                                    "@pid": "75/5002",
-                                    "text": "Amitava Das"
-                                },
-                                {
-                                    "@pid": "132/4528",
-                                    "text": "Rajiv Bajpai"
-                                }
-                            ]
-                        },
-                        "title": "Modeling Satire in English Text for Automatic Detection.",
-                        "venue": "ICDM Workshops",
-                        "pages": "970-977",
-                        "year": "2016",
-                        "type": "Conference and Workshop Papers",
-                        "access": "closed",
-                        "key": "conf/icdm/RegantiMKDB16",
-                        "doi": "10.1109/ICDMW.2016.0141",
-                        "ee": "https://doi.org/10.1109/ICDMW.2016.0141",
-                        "url": "https://dblp.org/rec/conf/icdm/RegantiMKDB16"
-                    },
-                    "url": "URL#3526912"
-                },
-                {
-                    "@score": "6",
-                    "@id": "3535278",
-                    "info": {
-                        "authors": {
-                            "author": [
-                                {
-                                    "@pid": "194/4692",
-                                    "text": "Aishwarya N. Reganti"
-                                },
-                                {
-                                    "@pid": "194/4822",
-                                    "text": "Tushar Maheshwari"
-                                },
-                                {
-                                    "@pid": "13/10963",
-                                    "text": "Upendra Kumar"
-                                },
-                                {
-                                    "@pid": "75/5002",
-                                    "text": "Amitava Das"
-                                }
-                            ]
-                        },
-                        "title": "Cosmopolitan Mumbai, Orthodox Delhi, Techcity Bangalore: Understanding City Specific Societal Sentiment.",
-                        "venue": "ICON",
-                        "pages": "167-176",
-                        "year": "2016",
-                        "type": "Conference and Workshop Papers",
-                        "access": "open",
-                        "key": "conf/icon-nlp/RegantiMKD16",
-                        "ee": "https://aclanthology.org/W16-6322/",
-                        "url": "https://dblp.org/rec/conf/icon-nlp/RegantiMKD16"
-                    },
-                    "url": "URL#3535278"
+                    "url": "URL#3188591"
                 },
                 {
                     "@score": "3",
-                    "@id": "741078",
+                    "@id": "2860494",
                     "info": {
                         "authors": {
                             "author": [
                                 {
-                                    "@pid": "51/8525",
-                                    "text": "Jiong Zhu"
+                                    "@pid": "218/6328",
+                                    "text": "Francesco Rampazzo"
                                 },
                                 {
-                                    "@pid": "328/0816",
-                                    "text": "Aishwarya Reganti"
+                                    "@pid": "78/11011",
+                                    "text": "Emilio Zagheni"
                                 },
                                 {
-                                    "@pid": "192/2417",
-                                    "text": "Edward W. Huang"
+                                    "@pid": "w/IngmarWeber",
+                                    "text": "Ingmar Weber"
                                 },
                                 {
-                                    "@pid": "274/7015",
-                                    "text": "Charles Dickens"
+                                    "@pid": "218/6589",
+                                    "text": "Maria Rita Testa"
                                 },
                                 {
-                                    "@pid": "57/9513",
-                                    "text": "Nikhil Rao 0001"
-                                },
-                                {
-                                    "@pid": "32/5843",
-                                    "text": "Karthik Subbian"
-                                },
-                                {
-                                    "@pid": "91/9987",
-                                    "text": "Danai Koutra"
+                                    "@pid": "63/485",
+                                    "text": "Francesco C. Billari"
                                 }
                             ]
                         },
-                        "title": "Simplifying Distributed Neural Network Training on Massive Graphs: Randomized Partitions Improve Model Aggregation.",
+                        "title": "Mater Certa Est, Pater Numquam: What Can Facebook Advertising Data Tell Us about Male Fertility Rates?",
+                        "venue": "ICWSM",
+                        "pages": "672-675",
+                        "year": "2018",
+                        "type": "Conference and Workshop Papers",
+                        "access": "open",
+                        "key": "conf/icwsm/RampazzoZWTB18",
+                        "ee": "https://aaai.org/ocs/index.php/ICWSM/ICWSM18/paper/view/17891",
+                        "url": "https://dblp.org/rec/conf/icwsm/RampazzoZWTB18"
+                    },
+                    "url": "URL#2860494"
+                },
+                {
+                    "@score": "3",
+                    "@id": "2957513",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "218/6328",
+                                    "text": "Francesco Rampazzo"
+                                },
+                                {
+                                    "@pid": "78/11011",
+                                    "text": "Emilio Zagheni"
+                                },
+                                {
+                                    "@pid": "w/IngmarWeber",
+                                    "text": "Ingmar Weber"
+                                },
+                                {
+                                    "@pid": "218/6589",
+                                    "text": "Maria Rita Testa"
+                                },
+                                {
+                                    "@pid": "63/485",
+                                    "text": "Francesco C. Billari"
+                                }
+                            ]
+                        },
+                        "title": "Mater certa est, pater numquam: What can Facebook Advertising Data Tell Us about Male Fertility Rates?",
                         "venue": "CoRR",
-                        "volume": "abs/2305.09887",
-                        "year": "2023",
+                        "volume": "abs/1804.04632",
+                        "year": "2018",
                         "type": "Informal and Other Publications",
                         "access": "open",
-                        "key": "journals/corr/abs-2305-09887",
-                        "doi": "10.48550/ARXIV.2305.09887",
-                        "ee": "https://doi.org/10.48550/arXiv.2305.09887",
-                        "url": "https://dblp.org/rec/journals/corr/abs-2305-09887"
+                        "key": "journals/corr/abs-1804-04632",
+                        "ee": "http://arxiv.org/abs/1804.04632",
+                        "url": "https://dblp.org/rec/journals/corr/abs-1804-04632"
                     },
-                    "url": "URL#741078"
+                    "url": "URL#2957513"
+                },
+                {
+                    "@score": "3",
+                    "@id": "3716592",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "40/3809",
+                                    "text": "Vincenzo Eramo"
+                                },
+                                {
+                                    "@pid": "88/1887",
+                                    "text": "Marco Listanti"
+                                },
+                                {
+                                    "@pid": "164/3483",
+                                    "text": "Francesco Giacinto Lavacca"
+                                },
+                                {
+                                    "@pid": "38/11489",
+                                    "text": "Francesco Testa"
+                                },
+                                {
+                                    "@pid": "71/6139",
+                                    "text": "Roberto Sabella"
+                                }
+                            ]
+                        },
+                        "title": "Performance Evaluation of Integrated OTN/WDM Metropolitan Networks in Static and Dynamic Traffic Scenarios.",
+                        "venue": "JOCN",
+                        "volume": "7",
+                        "number": "8",
+                        "pages": "761-775",
+                        "year": "2015",
+                        "type": "Journal Articles",
+                        "access": "closed",
+                        "key": "journals/jocnet/EramoLLTS15",
+                        "doi": "10.1364/JOCN.7.000761",
+                        "ee": "https://doi.org/10.1364/jocn.7.000761",
+                        "url": "https://dblp.org/rec/journals/jocnet/EramoLLTS15"
+                    },
+                    "url": "URL#3716592"
+                },
+                {
+                    "@score": "3",
+                    "@id": "3853188",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "40/3809",
+                                    "text": "Vincenzo Eramo"
+                                },
+                                {
+                                    "@pid": "88/1887",
+                                    "text": "Marco Listanti"
+                                },
+                                {
+                                    "@pid": "164/3483",
+                                    "text": "Francesco Giacinto Lavacca"
+                                },
+                                {
+                                    "@pid": "38/11489",
+                                    "text": "Francesco Testa"
+                                },
+                                {
+                                    "@pid": "71/6139",
+                                    "text": "Roberto Sabella"
+                                }
+                            ]
+                        },
+                        "title": "Performance improvement evaluation of OTN/WDM metropolitan nodes provided with spatial speed-up.",
+                        "venue": "ICTON",
+                        "pages": "1-4",
+                        "year": "2015",
+                        "type": "Conference and Workshop Papers",
+                        "access": "closed",
+                        "key": "conf/icton/EramoLLTS15",
+                        "doi": "10.1109/ICTON.2015.7193517",
+                        "ee": "https://doi.org/10.1109/ICTON.2015.7193517",
+                        "url": "https://dblp.org/rec/conf/icton/EramoLLTS15"
+                    },
+                    "url": "URL#3853188"
+                },
+                {
+                    "@score": "3",
+                    "@id": "3892205",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "40/3809",
+                                    "text": "Vincenzo Eramo"
+                                },
+                                {
+                                    "@pid": "88/1887",
+                                    "text": "Marco Listanti"
+                                },
+                                {
+                                    "@pid": "164/3483",
+                                    "text": "Francesco Giacinto Lavacca"
+                                },
+                                {
+                                    "@pid": "71/6139",
+                                    "text": "Roberto Sabella"
+                                },
+                                {
+                                    "@pid": "38/11489",
+                                    "text": "Francesco Testa"
+                                }
+                            ]
+                        },
+                        "title": "Blocking performance of cost efficient integrated OTN/WDM metropolitan networks in static traffic scenario.",
+                        "venue": "ONDM",
+                        "pages": "204-209",
+                        "year": "2015",
+                        "type": "Conference and Workshop Papers",
+                        "access": "closed",
+                        "key": "conf/ondm/EramoLLST15",
+                        "doi": "10.1109/ONDM.2015.7127299",
+                        "ee": "https://doi.org/10.1109/ONDM.2015.7127299",
+                        "url": "https://dblp.org/rec/conf/ondm/EramoLLST15"
+                    },
+                    "url": "URL#3892205"
+                },
+                {
+                    "@score": "3",
+                    "@id": "4149159",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "40/3809",
+                                    "text": "Vincenzo Eramo"
+                                },
+                                {
+                                    "@pid": "88/1887",
+                                    "text": "Marco Listanti"
+                                },
+                                {
+                                    "@pid": "164/3483",
+                                    "text": "Francesco Giacinto Lavacca"
+                                },
+                                {
+                                    "@pid": "38/11489",
+                                    "text": "Francesco Testa"
+                                },
+                                {
+                                    "@pid": "71/6139",
+                                    "text": "Roberto Sabella"
+                                }
+                            ]
+                        },
+                        "title": "Blocking performance of metropolitan optical networks equipped with low complexity integrated OTN/WDM switches.",
+                        "venue": "ICTON",
+                        "pages": "1-4",
+                        "year": "2014",
+                        "type": "Conference and Workshop Papers",
+                        "access": "closed",
+                        "key": "conf/icton/EramoLLTS14",
+                        "doi": "10.1109/ICTON.2014.6876547",
+                        "ee": "https://doi.org/10.1109/ICTON.2014.6876547",
+                        "url": "https://dblp.org/rec/conf/icton/EramoLLTS14"
+                    },
+                    "url": "URL#4149159"
+                },
+                {
+                    "@score": "2",
+                    "@id": "74483",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "297/2827",
+                                    "text": "Rodolfo Reda"
+                                },
+                                {
+                                    "@pid": "297/2751",
+                                    "text": "Dario Di Nardo"
+                                },
+                                {
+                                    "@pid": "297/2587",
+                                    "text": "Alessio Zanza"
+                                },
+                                {
+                                    "@pid": "371/2175",
+                                    "text": "Valentina Bellanova"
+                                },
+                                {
+                                    "@pid": "371/1890",
+                                    "text": "Rosemary Abbagnale"
+                                },
+                                {
+                                    "@pid": "371/2209",
+                                    "text": "Francesco Pagnoni"
+                                },
+                                {
+                                    "@pid": "371/2163",
+                                    "text": "Maurilio D&apos;Angelo"
+                                },
+                                {
+                                    "@pid": "371/2009",
+                                    "text": "Ajinkya M. Pawar"
+                                },
+                                {
+                                    "@pid": "371/2226",
+                                    "text": "Massimo Galli"
+                                },
+                                {
+                                    "@pid": "297/2646",
+                                    "text": "Luca Testarelli"
+                                }
+                            ]
+                        },
+                        "title": "Upper First and Second Molar Pulp Chamber Endodontic Anatomy Evaluation According to a Recent Classification: A Cone Beam Computed Tomography Study.",
+                        "venue": "J. Imaging",
+                        "volume": "10",
+                        "number": "1",
+                        "pages": "9",
+                        "year": "2024",
+                        "type": "Journal Articles",
+                        "access": "open",
+                        "key": "journals/jimaging/RedaNZBAPDPGT24",
+                        "doi": "10.3390/JIMAGING10010009",
+                        "ee": "https://doi.org/10.3390/jimaging10010009",
+                        "url": "https://dblp.org/rec/journals/jimaging/RedaNZBAPDPGT24"
+                    },
+                    "url": "URL#74483"
+                },
+                {
+                    "@score": "2",
+                    "@id": "76050",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "27/181",
+                                    "text": "Paola Iovanna"
+                                },
+                                {
+                                    "@pid": "83/4282",
+                                    "text": "Alberto Bianchi"
+                                },
+                                {
+                                    "@pid": "354/1771",
+                                    "text": "Alessandra Bigongiari"
+                                },
+                                {
+                                    "@pid": "84/10819",
+                                    "text": "Giulio Bottari"
+                                },
+                                {
+                                    "@pid": "134/5252",
+                                    "text": "Luca Giorgi"
+                                },
+                                {
+                                    "@pid": "381/7224",
+                                    "text": "Simone Marconi"
+                                },
+                                {
+                                    "@pid": "167/9433",
+                                    "text": "Marzio Puleri"
+                                },
+                                {
+                                    "@pid": "201/9766",
+                                    "text": "Stefano Stracca"
+                                },
+                                {
+                                    "@pid": "38/11489",
+                                    "text": "Francesco Testa"
+                                },
+                                {
+                                    "@pid": "52/2964",
+                                    "text": "Fabio Ubaldi"
+                                },
+                                {
+                                    "@pid": "71/6139",
+                                    "text": "Roberto Sabella"
+                                }
+                            ]
+                        },
+                        "title": "Packet-optical transport network for future radio infrastructure.",
+                        "venue": "J. Opt. Commun. Netw.",
+                        "volume": "16",
+                        "number": "8",
+                        "pages": "96-",
+                        "year": "2024",
+                        "type": "Journal Articles",
+                        "access": "closed",
+                        "key": "journals/jocnet/IovannaBBBGMPSTUS24",
+                        "doi": "10.1364/JOCN.522775",
+                        "ee": "https://doi.org/10.1364/JOCN.522775",
+                        "url": "https://dblp.org/rec/journals/jocnet/IovannaBBBGMPSTUS24"
+                    },
+                    "url": "URL#76050"
+                },
+                {
+                    "@score": "2",
+                    "@id": "258113",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "53/5913",
+                                    "text": "Alessandro Rizzo"
+                                },
+                                {
+                                    "@pid": "322/8358",
+                                    "text": "Nicol\u00f2 Parmiggiani"
+                                },
+                                {
+                                    "@pid": "95/5587",
+                                    "text": "Andrea Bulgarelli"
+                                },
+                                {
+                                    "@pid": "266/2670",
+                                    "text": "Antonio Macaluso"
+                                },
+                                {
+                                    "@pid": "322/8512",
+                                    "text": "Valentina Fioretti"
+                                },
+                                {
+                                    "@pid": "376/5481",
+                                    "text": "L. Castaldini"
+                                },
+                                {
+                                    "@pid": "322/8468",
+                                    "text": "Ambra Di Piano"
+                                },
+                                {
+                                    "@pid": "356/4491",
+                                    "text": "Gabriele Panebianco"
+                                },
+                                {
+                                    "@pid": "322/8757",
+                                    "text": "Carlotta Pittori"
+                                },
+                                {
+                                    "@pid": "287/8095",
+                                    "text": "Marco Tavani"
+                                },
+                                {
+                                    "@pid": "376/5986",
+                                    "text": "C. Sartori"
+                                },
+                                {
+                                    "@pid": "376/6205",
+                                    "text": "C. Burigana"
+                                },
+                                {
+                                    "@pid": "376/6095",
+                                    "text": "V. Cardone"
+                                },
+                                {
+                                    "@pid": "376/6570",
+                                    "text": "F. Farsian"
+                                },
+                                {
+                                    "@pid": "376/5790",
+                                    "text": "M. Meneghetti"
+                                },
+                                {
+                                    "@pid": "376/5422",
+                                    "text": "G. Murante"
+                                },
+                                {
+                                    "@pid": "376/5921",
+                                    "text": "R. Scaramella"
+                                },
+                                {
+                                    "@pid": "342/2934",
+                                    "text": "Francesco Schillir\u00f2"
+                                },
+                                {
+                                    "@pid": "376/6379",
+                                    "text": "V. Testa"
+                                },
+                                {
+                                    "@pid": "376/5538",
+                                    "text": "T. Trombetti"
+                                }
+                            ]
+                        },
+                        "title": "Quantum Convolutional Neural Networks for the detection of Gamma-Ray Bursts in the AGILE space mission data.",
+                        "venue": "CoRR",
+                        "volume": "abs/2404.14133",
+                        "year": "2024",
+                        "type": "Informal and Other Publications",
+                        "access": "open",
+                        "key": "journals/corr/abs-2404-14133",
+                        "doi": "10.48550/ARXIV.2404.14133",
+                        "ee": "https://doi.org/10.48550/arXiv.2404.14133",
+                        "url": "https://dblp.org/rec/journals/corr/abs-2404-14133"
+                    },
+                    "url": "URL#258113"
+                },
+                {
+                    "@score": "2",
+                    "@id": "631052",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "139/3635",
+                                    "text": "Loris Roveda"
+                                },
+                                {
+                                    "@pid": "153/4518",
+                                    "text": "Andrea Testa"
+                                },
+                                {
+                                    "@pid": "282/3545",
+                                    "text": "Asad Ali Shahid"
+                                },
+                                {
+                                    "@pid": "151/7646",
+                                    "text": "Francesco Braghin"
+                                },
+                                {
+                                    "@pid": "08/8134",
+                                    "text": "Dario Piga"
+                                }
+                            ]
+                        },
+                        "title": "Q-Learning-Based Model Predictive Variable Impedance Control for Physical Human-Robot Collaboration (Extended Abstract).",
+                        "venue": "IJCAI",
+                        "pages": "6959-6963",
+                        "year": "2023",
+                        "type": "Conference and Workshop Papers",
+                        "access": "open",
+                        "key": "conf/ijcai/RovedaTSBP23",
+                        "doi": "10.24963/IJCAI.2023/790",
+                        "ee": "https://doi.org/10.24963/ijcai.2023/790",
+                        "url": "https://dblp.org/rec/conf/ijcai/RovedaTSBP23"
+                    },
+                    "url": "URL#631052"
+                },
+                {
+                    "@score": "2",
+                    "@id": "828499",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "139/3635",
+                                    "text": "Loris Roveda"
+                                },
+                                {
+                                    "@pid": "153/4518",
+                                    "text": "Andrea Testa"
+                                },
+                                {
+                                    "@pid": "282/3545",
+                                    "text": "Asad Ali Shahid"
+                                },
+                                {
+                                    "@pid": "151/7646",
+                                    "text": "Francesco Braghin"
+                                },
+                                {
+                                    "@pid": "08/8134",
+                                    "text": "Dario Piga"
+                                }
+                            ]
+                        },
+                        "title": "Q-Learning-based model predictive variable impedance control for physical human-robot collaboration.",
+                        "venue": "Artif. Intell.",
+                        "volume": "312",
+                        "pages": "103771",
+                        "year": "2022",
+                        "type": "Journal Articles",
+                        "access": "open",
+                        "key": "journals/ai/RovedaTSBP22",
+                        "doi": "10.1016/J.ARTINT.2022.103771",
+                        "ee": "https://doi.org/10.1016/j.artint.2022.103771",
+                        "url": "https://dblp.org/rec/journals/ai/RovedaTSBP22"
+                    },
+                    "url": "URL#828499"
+                },
+                {
+                    "@score": "2",
+                    "@id": "833858",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "248/7834",
+                                    "text": "Alice Segato"
+                                },
+                                {
+                                    "@pid": "c/FrancescoCalimeri",
+                                    "text": "Francesco Calimeri"
+                                },
+                                {
+                                    "@pid": "323/0014",
+                                    "text": "Irene Testa"
+                                },
+                                {
+                                    "@pid": "304/4141",
+                                    "text": "Valentina Corbetta"
+                                },
+                                {
+                                    "@pid": "28/2186",
+                                    "text": "Marco Riva"
+                                },
+                                {
+                                    "@pid": "08/9969",
+                                    "text": "Elena De Momi"
+                                }
+                            ]
+                        },
+                        "title": "A hybrid inductive learning-based and deductive reasoning-based 3-D path planning method in complex environments.",
+                        "venue": "Auton. Robots",
+                        "volume": "46",
+                        "number": "5",
+                        "pages": "645-666",
+                        "year": "2022",
+                        "type": "Journal Articles",
+                        "access": "open",
+                        "key": "journals/arobots/SegatoCTCRM22",
+                        "doi": "10.1007/S10514-022-10042-Z",
+                        "ee": "https://doi.org/10.1007/s10514-022-10042-z",
+                        "url": "https://dblp.org/rec/journals/arobots/SegatoCTCRM22"
+                    },
+                    "url": "URL#833858"
+                },
+                {
+                    "@score": "2",
+                    "@id": "1117832",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "322/2861",
+                                    "text": "Mason Jones"
+                                },
+                                {
+                                    "@pid": "31/748",
+                                    "text": "Francesco Romano"
+                                },
+                                {
+                                    "@pid": "322/2879",
+                                    "text": "Abidalrahman Mohd"
+                                }
+                            ]
+                        },
+                        "title": "Machine Learning in Textual Criticism: An examination of the performance of supervised machine learning algorithms in reconstructing the text of the Greek New Testament.",
+                        "venue": "ICMLT",
+                        "pages": "1-5",
+                        "year": "2022",
+                        "type": "Conference and Workshop Papers",
+                        "access": "closed",
+                        "key": "conf/icmlt/JonesRM22",
+                        "doi": "10.1145/3529399.3529400",
+                        "ee": "https://doi.org/10.1145/3529399.3529400",
+                        "url": "https://dblp.org/rec/conf/icmlt/JonesRM22"
+                    },
+                    "url": "URL#1117832"
+                },
+                {
+                    "@score": "2",
+                    "@id": "1604802",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "245/4357",
+                                    "text": "Eugenio Nerio Nemmi"
+                                },
+                                {
+                                    "@pid": "265/6089",
+                                    "text": "Francesco Sassi"
+                                },
+                                {
+                                    "@pid": "223/6903",
+                                    "text": "Massimo La Morgia"
+                                },
+                                {
+                                    "@pid": "234/7672",
+                                    "text": "Cecilia Testart"
+                                },
+                                {
+                                    "@pid": "m/AlessandroMai",
+                                    "text": "Alessandro Mei"
+                                },
+                                {
+                                    "@pid": "28/5074",
+                                    "text": "Alberto Dainotti"
+                                }
+                            ]
+                        },
+                        "title": "The parallel lives of autonomous systems: ASN allocations vs. BGP.",
+                        "venue": "Internet Measurement Conference",
+                        "pages": "593-611",
+                        "year": "2021",
+                        "type": "Conference and Workshop Papers",
+                        "access": "closed",
+                        "key": "conf/imc/NemmiSMTMD21",
+                        "doi": "10.1145/3487552.3487838",
+                        "ee": "https://doi.org/10.1145/3487552.3487838",
+                        "url": "https://dblp.org/rec/conf/imc/NemmiSMTMD21"
+                    },
+                    "url": "URL#1604802"
+                },
+                {
+                    "@score": "2",
+                    "@id": "1824520",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "98/9106",
+                                    "text": "Stefania Testa"
+                                },
+                                {
+                                    "@pid": "30/6180",
+                                    "text": "Silvia Massa"
+                                },
+                                {
+                                    "@pid": "66/6517",
+                                    "text": "Antonella Martini"
+                                },
+                                {
+                                    "@pid": "135/7528",
+                                    "text": "Francesco Paolo Appio"
+                                }
+                            ]
+                        },
+                        "title": "Social media-based innovation: A review of trends and a research agenda.",
+                        "venue": "Inf. Manag.",
+                        "volume": "57",
+                        "number": "3",
+                        "pages": "103196",
+                        "year": "2020",
+                        "type": "Journal Articles",
+                        "access": "closed",
+                        "key": "journals/iam/TestaMMA20",
+                        "doi": "10.1016/J.IM.2019.103196",
+                        "ee": "https://doi.org/10.1016/j.im.2019.103196",
+                        "url": "https://dblp.org/rec/journals/iam/TestaMMA20"
+                    },
+                    "url": "URL#1824520"
+                },
+                {
+                    "@score": "2",
+                    "@id": "2282555",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "48/1038",
+                                    "text": "Elisabetta Bianchini"
+                                },
+                                {
+                                    "@pid": "171/7413",
+                                    "text": "Martina Francesconi"
+                                },
+                                {
+                                    "@pid": "240/6200",
+                                    "text": "Marisa Testa"
+                                },
+                                {
+                                    "@pid": "240/6224",
+                                    "text": "Maya Tanase"
+                                },
+                                {
+                                    "@pid": "90/6178",
+                                    "text": "Vincenzo Gemignani"
+                                }
+                            ]
+                        },
+                        "title": "Unique device identification and traceability for medical software: A major challenge for manufacturers in an ever-evolving marketplace.",
+                        "venue": "J. Biomed. Informatics",
+                        "volume": "93",
+                        "year": "2019",
+                        "type": "Journal Articles",
+                        "access": "open",
+                        "key": "journals/jbi/BianchiniFTTG19",
+                        "doi": "10.1016/J.JBI.2019.103150",
+                        "ee": "https://doi.org/10.1016/j.jbi.2019.103150",
+                        "url": "https://dblp.org/rec/journals/jbi/BianchiniFTTG19"
+                    },
+                    "url": "URL#2282555"
+                },
+                {
+                    "@score": "2",
+                    "@id": "2523170",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "44/6678",
+                                    "text": "Igor N. Aizenberg"
+                                },
+                                {
+                                    "@pid": "168/8623",
+                                    "text": "Marco Bindi"
+                                },
+                                {
+                                    "@pid": "25/8458",
+                                    "text": "Francesco Grasso"
+                                },
+                                {
+                                    "@pid": "81/5260",
+                                    "text": "Antonio Luchetta"
+                                },
+                                {
+                                    "@pid": "57/0",
+                                    "text": "Stefano Manetti"
+                                },
+                                {
+                                    "@pid": "31/4725",
+                                    "text": "Maria Cristina Piccirilli"
+                                }
+                            ]
+                        },
+                        "title": "Testability Analysis in Neural Network Based Fault Diagnosis of DC-DC Converter.",
+                        "venue": "RTSI",
+                        "pages": "265-268",
+                        "year": "2019",
+                        "type": "Conference and Workshop Papers",
+                        "access": "closed",
+                        "key": "conf/rtsi/AizenbergBGLMP19",
+                        "doi": "10.1109/RTSI.2019.8895583",
+                        "ee": "https://doi.org/10.1109/RTSI.2019.8895583",
+                        "url": "https://dblp.org/rec/conf/rtsi/AizenbergBGLMP19"
+                    },
+                    "url": "URL#2523170"
+                },
+                {
+                    "@score": "2",
+                    "@id": "2577083",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "163/0664",
+                                    "text": "Francesco Farina"
+                                },
+                                {
+                                    "@pid": "153/4518",
+                                    "text": "Andrea Testa"
+                                },
+                                {
+                                    "@pid": "73/7143",
+                                    "text": "Giuseppe Notarstefano"
+                                }
+                            ]
+                        },
+                        "title": "Distributed Submodular Minimization via Block-Wise Updates and Communications.",
+                        "venue": "CoRR",
+                        "volume": "abs/1905.13682",
+                        "year": "2019",
+                        "type": "Informal and Other Publications",
+                        "access": "open",
+                        "key": "journals/corr/abs-1905-13682",
+                        "ee": "http://arxiv.org/abs/1905.13682",
+                        "url": "https://dblp.org/rec/journals/corr/abs-1905-13682"
+                    },
+                    "url": "URL#2577083"
+                },
+                {
+                    "@score": "2",
+                    "@id": "2602330",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "163/0664",
+                                    "text": "Francesco Farina"
+                                },
+                                {
+                                    "@pid": "230/3877",
+                                    "text": "Andrea Camisa"
+                                },
+                                {
+                                    "@pid": "153/4518",
+                                    "text": "Andrea Testa"
+                                },
+                                {
+                                    "@pid": "168/8621",
+                                    "text": "Ivano Notarnicola"
+                                },
+                                {
+                                    "@pid": "73/7143",
+                                    "text": "Giuseppe Notarstefano"
+                                }
+                            ]
+                        },
+                        "title": "DISROPT: a Python Framework for Distributed Optimization.",
+                        "venue": "CoRR",
+                        "volume": "abs/1911.02410",
+                        "year": "2019",
+                        "type": "Informal and Other Publications",
+                        "access": "open",
+                        "key": "journals/corr/abs-1911-02410",
+                        "ee": "http://arxiv.org/abs/1911.02410",
+                        "url": "https://dblp.org/rec/journals/corr/abs-1911-02410"
+                    },
+                    "url": "URL#2602330"
+                },
+                {
+                    "@score": "2",
+                    "@id": "2903455",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "265/6909",
+                                    "text": "Stefano Tondini"
+                                },
+                                {
+                                    "@pid": "265/7197",
+                                    "text": "Astghik Chalyan"
+                                },
+                                {
+                                    "@pid": "26/4614",
+                                    "text": "Giorgio Fontana"
+                                },
+                                {
+                                    "@pid": "10/4741",
+                                    "text": "Lorenzo Pavesi"
+                                },
+                                {
+                                    "@pid": "265/7164",
+                                    "text": "Nikola Zecevic"
+                                },
+                                {
+                                    "@pid": "119/4059",
+                                    "text": "Michael Hofbauer"
+                                },
+                                {
+                                    "@pid": "99/10284",
+                                    "text": "Bernhard Goll"
+                                },
+                                {
+                                    "@pid": "04/6431",
+                                    "text": "Horst Zimmermann"
+                                },
+                                {
+                                    "@pid": "201/9766",
+                                    "text": "Stefano Stracca"
+                                },
+                                {
+                                    "@pid": "83/4282",
+                                    "text": "Alberto Bianchi"
+                                },
+                                {
+                                    "@pid": "265/7132",
+                                    "text": "Costanza Manganelli"
+                                },
+                                {
+                                    "@pid": "265/0745",
+                                    "text": "Philippe Velha"
+                                },
+                                {
+                                    "@pid": "57/9919",
+                                    "text": "Paolo Pintus"
+                                },
+                                {
+                                    "@pid": "46/1681",
+                                    "text": "Fabrizio Di Pasquale"
+                                },
+                                {
+                                    "@pid": "226/7842",
+                                    "text": "Claudio J. Oton"
+                                },
+                                {
+                                    "@pid": "265/7166",
+                                    "text": "Christophe Kopp"
+                                },
+                                {
+                                    "@pid": "265/6796",
+                                    "text": "Laetitia Adelmini"
+                                },
+                                {
+                                    "@pid": "265/6999",
+                                    "text": "Olivier Lemonnier"
+                                },
+                                {
+                                    "@pid": "216/3645",
+                                    "text": "Gabriel Pares"
+                                },
+                                {
+                                    "@pid": "60/2590",
+                                    "text": "Guido Chiaretti"
+                                },
+                                {
+                                    "@pid": "265/6770",
+                                    "text": "Aina Serrano"
+                                },
+                                {
+                                    "@pid": "265/6798",
+                                    "text": "Jose Angel Ayucar"
+                                },
+                                {
+                                    "@pid": "135/7046",
+                                    "text": "Giovani Battista Preve"
+                                },
+                                {
+                                    "@pid": "25/6052",
+                                    "text": "Minsu Kim"
+                                },
+                                {
+                                    "@pid": "252/6975",
+                                    "text": "Jong Moo Lee"
+                                },
+                                {
+                                    "@pid": "38/11489",
+                                    "text": "Francesco Testa"
+                                }
+                            ]
+                        },
+                        "title": "Integrated, Scalable and Reconfigurable Silicon Photonics Based Optical Switch for Colorless, Directionless and Contentionless Operation.",
+                        "venue": "OFC",
+                        "pages": "1-3",
+                        "year": "2018",
+                        "type": "Conference and Workshop Papers",
+                        "access": "closed",
+                        "key": "conf/ofc/TondiniCFPZHGZS18",
+                        "ee": "https://ieeexplore.ieee.org/document/8386232",
+                        "url": "https://dblp.org/rec/conf/ofc/TondiniCFPZHGZS18"
+                    },
+                    "url": "URL#2903455"
+                },
+                {
+                    "@score": "2",
+                    "@id": "2920246",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "130/5255",
+                                    "text": "Giuseppe Fontana 0001"
+                                },
+                                {
+                                    "@pid": "25/8458",
+                                    "text": "Francesco Grasso"
+                                },
+                                {
+                                    "@pid": "81/5260",
+                                    "text": "Antonio Luchetta"
+                                },
+                                {
+                                    "@pid": "57/0",
+                                    "text": "Stefano Manetti"
+                                },
+                                {
+                                    "@pid": "31/4725",
+                                    "text": "Maria Cristina Piccirilli"
+                                },
+                                {
+                                    "@pid": "26/6357",
+                                    "text": "Alberto Reatti"
+                                }
+                            ]
+                        },
+                        "title": "Testability Analysis Based on Complex-Field Fault Modeling.",
+                        "venue": "SMACD",
+                        "pages": "33-36",
+                        "year": "2018",
+                        "type": "Conference and Workshop Papers",
+                        "access": "closed",
+                        "key": "conf/smacd/0001GLMPR18",
+                        "doi": "10.1109/SMACD.2018.8434864",
+                        "ee": "https://doi.org/10.1109/SMACD.2018.8434864",
+                        "url": "https://dblp.org/rec/conf/smacd/0001GLMPR18"
+                    },
+                    "url": "URL#2920246"
+                },
+                {
+                    "@score": "2",
+                    "@id": "2928299",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "225/7309",
+                                    "text": "Francesco Picetti"
+                                },
+                                {
+                                    "@pid": "225/7324",
+                                    "text": "Giuseppe Testa"
+                                },
+                                {
+                                    "@pid": "20/9130",
+                                    "text": "Federico Lombardi"
+                                },
+                                {
+                                    "@pid": "53/11030",
+                                    "text": "Paolo Bestagini"
+                                },
+                                {
+                                    "@pid": "81/9171",
+                                    "text": "Maurizio Lualdi"
+                                },
+                                {
+                                    "@pid": "52/3820",
+                                    "text": "Stefano Tubaro"
+                                }
+                            ]
+                        },
+                        "title": "Convolutional Autoencoder for Landmine Detection on GPR Scans.",
+                        "venue": "TSP",
+                        "pages": "1-4",
+                        "year": "2018",
+                        "type": "Conference and Workshop Papers",
+                        "access": "closed",
+                        "key": "conf/tsp/PicettiTLBLT18",
+                        "doi": "10.1109/TSP.2018.8441206",
+                        "ee": "https://doi.org/10.1109/TSP.2018.8441206",
+                        "url": "https://dblp.org/rec/conf/tsp/PicettiTLBLT18"
+                    },
+                    "url": "URL#2928299"
+                },
+                {
+                    "@score": "2",
+                    "@id": "3049211",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "135/7528",
+                                    "text": "Francesco Paolo Appio"
+                                },
+                                {
+                                    "@pid": "66/6517",
+                                    "text": "Antonella Martini"
+                                },
+                                {
+                                    "@pid": "30/6180",
+                                    "text": "Silvia Massa"
+                                },
+                                {
+                                    "@pid": "98/9106",
+                                    "text": "Stefania Testa"
+                                }
+                            ]
+                        },
+                        "title": "Collaborative network of firms: antecedents and state-of-the-art properties.",
+                        "venue": "Int. J. Prod. Res.",
+                        "volume": "55",
+                        "number": "7",
+                        "pages": "2121-2134",
+                        "year": "2017",
+                        "type": "Journal Articles",
+                        "access": "closed",
+                        "key": "journals/ijpr/AppioMMT17",
+                        "doi": "10.1080/00207543.2016.1262083",
+                        "ee": "https://doi.org/10.1080/00207543.2016.1262083",
+                        "url": "https://dblp.org/rec/journals/ijpr/AppioMMT17"
+                    },
+                    "url": "URL#3049211"
+                },
+                {
+                    "@score": "2",
+                    "@id": "3403380",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "27/181",
+                                    "text": "Paola Iovanna"
+                                },
+                                {
+                                    "@pid": "154/6492",
+                                    "text": "Fabio Cavaliere"
+                                },
+                                {
+                                    "@pid": "38/11489",
+                                    "text": "Francesco Testa"
+                                },
+                                {
+                                    "@pid": "201/9766",
+                                    "text": "Stefano Stracca"
+                                },
+                                {
+                                    "@pid": "84/10819",
+                                    "text": "Giulio Bottari"
+                                },
+                                {
+                                    "@pid": "134/5286",
+                                    "text": "Filippo Ponzini"
+                                },
+                                {
+                                    "@pid": "83/4282",
+                                    "text": "Alberto Bianchi"
+                                },
+                                {
+                                    "@pid": "71/6139",
+                                    "text": "Roberto Sabella"
+                                }
+                            ]
+                        },
+                        "title": "Future Proof Optical Network Infrastructure for 5G Transport.",
+                        "venue": "JOCN",
+                        "volume": "8",
+                        "number": "12",
+                        "pages": "B80-B92",
+                        "year": "2016",
+                        "type": "Journal Articles",
+                        "access": "closed",
+                        "key": "journals/jocnet/IovannaCTSBPBS16",
+                        "doi": "10.1364/JOCN.8.000B80",
+                        "ee": "https://doi.org/10.1364/jocn.8.000b80",
+                        "url": "https://dblp.org/rec/journals/jocnet/IovannaCTSBPBS16"
+                    },
+                    "url": "URL#3403380"
+                },
+                {
+                    "@score": "2",
+                    "@id": "3425980",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "135/7528",
+                                    "text": "Francesco Paolo Appio"
+                                },
+                                {
+                                    "@pid": "66/6517",
+                                    "text": "Antonella Martini"
+                                },
+                                {
+                                    "@pid": "30/6180",
+                                    "text": "Silvia Massa"
+                                },
+                                {
+                                    "@pid": "98/9106",
+                                    "text": "Stefania Testa"
+                                }
+                            ]
+                        },
+                        "title": "Unveiling the intellectual origins of Social Media-based innovation: insights from a bibliometric approach.",
+                        "venue": "Scientometrics",
+                        "volume": "108",
+                        "number": "1",
+                        "pages": "355-388",
+                        "year": "2016",
+                        "type": "Journal Articles",
+                        "access": "closed",
+                        "key": "journals/scientometrics/AppioMMT16",
+                        "doi": "10.1007/S11192-016-1955-9",
+                        "ee": "https://doi.org/10.1007/s11192-016-1955-9",
+                        "url": "https://dblp.org/rec/journals/scientometrics/AppioMMT16"
+                    },
+                    "url": "URL#3425980"
+                },
+                {
+                    "@score": "2",
+                    "@id": "3581036",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "252/6975",
+                                    "text": "Jong Moo Lee"
+                                },
+                                {
+                                    "@pid": "25/6052",
+                                    "text": "Minsu Kim"
+                                },
+                                {
+                                    "@pid": "166/4036",
+                                    "text": "Maryse Fournier"
+                                },
+                                {
+                                    "@pid": "266/6294",
+                                    "text": "Pierre Labeye"
+                                },
+                                {
+                                    "@pid": "226/7842",
+                                    "text": "Claudio J. Oton"
+                                },
+                                {
+                                    "@pid": "38/11489",
+                                    "text": "Francesco Testa"
+                                }
+                            ]
+                        },
+                        "title": "Athermal and wavelength-trimmable silicon MZI.",
+                        "venue": "OFC",
+                        "pages": "1-3",
+                        "year": "2016",
+                        "type": "Conference and Workshop Papers",
+                        "access": "closed",
+                        "key": "conf/ofc/LeeKFLOT16",
+                        "ee": "https://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=7537276",
+                        "url": "https://dblp.org/rec/conf/ofc/LeeKFLOT16"
+                    },
+                    "url": "URL#3581036"
+                },
+                {
+                    "@score": "2",
+                    "@id": "3724611",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "41/8942",
+                                    "text": "Paolo Melillo"
+                                },
+                                {
+                                    "@pid": "167/3284",
+                                    "text": "Ada Orrico"
+                                },
+                                {
+                                    "@pid": "346/3284",
+                                    "text": "M. Attanasio"
+                                },
+                                {
+                                    "@pid": "23/10316",
+                                    "text": "S. Rossi"
+                                },
+                                {
+                                    "@pid": "07/8942",
+                                    "text": "Leandro Pecchia"
+                                },
+                                {
+                                    "@pid": "346/3396",
+                                    "text": "F. Chirico"
+                                },
+                                {
+                                    "@pid": "38/11489",
+                                    "text": "Francesco Testa"
+                                },
+                                {
+                                    "@pid": "221/4248",
+                                    "text": "Francesca Simonelli"
+                                }
+                            ]
+                        },
+                        "title": "A pilot study for development of a novel tool for clinical decision making to identify fallers among ophthalmic patients.",
+                        "venue": "BMC Medical Informatics Decis. Mak.",
+                        "volume": "15-S",
+                        "number": "3",
+                        "pages": "S6",
+                        "year": "2015",
+                        "type": "Journal Articles",
+                        "access": "open",
+                        "key": "journals/midm/MelilloOARPCTS15",
+                        "doi": "10.1186/1472-6947-15-S3-S6",
+                        "ee": "https://doi.org/10.1186/1472-6947-15-s3-s6",
+                        "url": "https://dblp.org/rec/journals/midm/MelilloOARPCTS15"
+                    },
+                    "url": "URL#3724611"
+                },
+                {
+                    "@score": "2",
+                    "@id": "3973130",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "71/6139",
+                                    "text": "Roberto Sabella"
+                                },
+                                {
+                                    "@pid": "38/11489",
+                                    "text": "Francesco Testa"
+                                },
+                                {
+                                    "@pid": "27/181",
+                                    "text": "Paola Iovanna"
+                                },
+                                {
+                                    "@pid": "84/10819",
+                                    "text": "Giulio Bottari"
+                                }
+                            ]
+                        },
+                        "title": "Flexible packet-optical integration in the cloud age: Challenges and opportunities for network delayering.",
+                        "venue": "IEEE Commun. Mag.",
+                        "volume": "52",
+                        "number": "1",
+                        "pages": "35-43",
+                        "year": "2014",
+                        "type": "Journal Articles",
+                        "access": "closed",
+                        "key": "journals/cm/SabellaTIB14",
+                        "doi": "10.1109/MCOM.2014.6710062",
+                        "ee": "https://doi.org/10.1109/MCOM.2014.6710062",
+                        "url": "https://dblp.org/rec/journals/cm/SabellaTIB14"
+                    },
+                    "url": "URL#3973130"
+                },
+                {
+                    "@score": "2",
+                    "@id": "4019997",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "40/3809",
+                                    "text": "Vincenzo Eramo"
+                                },
+                                {
+                                    "@pid": "88/1887",
+                                    "text": "Marco Listanti"
+                                },
+                                {
+                                    "@pid": "71/6139",
+                                    "text": "Roberto Sabella"
+                                },
+                                {
+                                    "@pid": "38/11489",
+                                    "text": "Francesco Testa"
+                                }
+                            ]
+                        },
+                        "title": "Integrated OTN/WDM Switching Architecture Equipped With the Minimum Number of OTN Switches.",
+                        "venue": "JOCN",
+                        "volume": "6",
+                        "number": "2",
+                        "pages": "138-151",
+                        "year": "2014",
+                        "type": "Journal Articles",
+                        "access": "closed",
+                        "key": "journals/jocnet/EramoLST14",
+                        "doi": "10.1364/JOCN.6.000138",
+                        "ee": "https://doi.org/10.1364/jocn.6.000138",
+                        "url": "https://dblp.org/rec/journals/jocnet/EramoLST14"
+                    },
+                    "url": "URL#4019997"
+                },
+                {
+                    "@score": "2",
+                    "@id": "4149402",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "71/6139",
+                                    "text": "Roberto Sabella"
+                                },
+                                {
+                                    "@pid": "83/4282",
+                                    "text": "Alberto Bianchi"
+                                },
+                                {
+                                    "@pid": "84/10819",
+                                    "text": "Giulio Bottari"
+                                },
+                                {
+                                    "@pid": "154/6492",
+                                    "text": "Fabio Cavaliere"
+                                },
+                                {
+                                    "@pid": "27/181",
+                                    "text": "Paola Iovanna"
+                                },
+                                {
+                                    "@pid": "38/11489",
+                                    "text": "Francesco Testa"
+                                }
+                            ]
+                        },
+                        "title": "Trends in optical transport networks and related technologies.",
+                        "venue": "ICTON",
+                        "pages": "1-4",
+                        "year": "2014",
+                        "type": "Conference and Workshop Papers",
+                        "access": "closed",
+                        "key": "conf/icton/SabellaBBCIT14",
+                        "doi": "10.1109/ICTON.2014.6876544",
+                        "ee": "https://doi.org/10.1109/ICTON.2014.6876544",
+                        "url": "https://dblp.org/rec/conf/icton/SabellaBBCIT14"
+                    },
+                    "url": "URL#4149402"
+                },
+                {
+                    "@score": "2",
+                    "@id": "4186457",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "265/0966",
+                                    "text": "Vito Sorianello"
+                                },
+                                {
+                                    "@pid": "38/11489",
+                                    "text": "Francesco Testa"
+                                },
+                                {
+                                    "@pid": "265/0745",
+                                    "text": "Philippe Velha"
+                                },
+                                {
+                                    "@pid": "267/3028",
+                                    "text": "S. Doneda"
+                                },
+                                {
+                                    "@pid": "61/2815",
+                                    "text": "Marco Romagnoli"
+                                }
+                            ]
+                        },
+                        "title": "Experimental evaluation of residual added signal crosstalk in a silicon photonics integrated ROADM.",
+                        "venue": "OFC",
+                        "pages": "1-3",
+                        "year": "2014",
+                        "type": "Conference and Workshop Papers",
+                        "access": "closed",
+                        "key": "conf/ofc/SorianelloTVDR14",
+                        "doi": "10.1364/OFC.2014.TH2A.30",
+                        "ee": "https://doi.org/10.1364/OFC.2014.Th2A.30",
+                        "url": "https://dblp.org/rec/conf/ofc/SorianelloTVDR14"
+                    },
+                    "url": "URL#4186457"
+                },
+                {
+                    "@score": "2",
+                    "@id": "4309218",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "27/181",
+                                    "text": "Paola Iovanna"
+                                },
+                                {
+                                    "@pid": "36/6242",
+                                    "text": "Angelo Germoni"
+                                },
+                                {
+                                    "@pid": "38/11489",
+                                    "text": "Francesco Testa"
+                                },
+                                {
+                                    "@pid": "96/10851",
+                                    "text": "G. Cossu"
+                                },
+                                {
+                                    "@pid": "169/4746",
+                                    "text": "V\u00edctor L\u00f3pez"
+                                },
+                                {
+                                    "@pid": "71/6139",
+                                    "text": "Roberto Sabella"
+                                }
+                            ]
+                        },
+                        "title": "Multilayer Control for Packet-Optical Networks [Invited].",
+                        "venue": "JOCN",
+                        "volume": "5",
+                        "number": "10",
+                        "pages": "A86-A99",
+                        "year": "2013",
+                        "type": "Journal Articles",
+                        "access": "closed",
+                        "key": "journals/jocnet/IovannaGTCLS13",
+                        "doi": "10.1364/JOCN.5.000A86",
+                        "ee": "https://doi.org/10.1364/jocn.5.000a86",
+                        "url": "https://dblp.org/rec/journals/jocnet/IovannaGTCLS13"
+                    },
+                    "url": "URL#4309218"
+                },
+                {
+                    "@score": "2",
+                    "@id": "4573761",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "38/11489",
+                                    "text": "Francesco Testa"
+                                },
+                                {
+                                    "@pid": "24/5341",
+                                    "text": "Massimo Battaglia"
+                                },
+                                {
+                                    "@pid": "06/11490",
+                                    "text": "Lara Bianchi"
+                                }
+                            ]
+                        },
+                        "title": "The diffusion of CSR initiatives among SMEs in industrial clusters: some findings from Italian experiences.",
+                        "venue": "Int. J. Technol. Manag.",
+                        "volume": "58",
+                        "number": "1/2",
+                        "pages": "152-170",
+                        "year": "2012",
+                        "type": "Journal Articles",
+                        "access": "closed",
+                        "key": "journals/ijtm/TestaBB12",
+                        "doi": "10.1504/IJTM.2012.045793",
+                        "ee": "https://doi.org/10.1504/IJTM.2012.045793",
+                        "url": "https://dblp.org/rec/journals/ijtm/TestaBB12"
+                    },
+                    "url": "URL#4573761"
+                },
+                {
+                    "@score": "2",
+                    "@id": "4588107",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "40/3809",
+                                    "text": "Vincenzo Eramo"
+                                },
+                                {
+                                    "@pid": "88/1887",
+                                    "text": "Marco Listanti"
+                                },
+                                {
+                                    "@pid": "71/6139",
+                                    "text": "Roberto Sabella"
+                                },
+                                {
+                                    "@pid": "38/11489",
+                                    "text": "Francesco Testa"
+                                }
+                            ]
+                        },
+                        "title": "Definition and Performance Evaluation of a Low-Cost/High-Capacity Scalable Integrated OTN/WDM Switch.",
+                        "venue": "JOCN",
+                        "volume": "4",
+                        "number": "12",
+                        "pages": "1033-1045",
+                        "year": "2012",
+                        "type": "Journal Articles",
+                        "access": "closed",
+                        "key": "journals/jocnet/EramoLST12",
+                        "doi": "10.1364/JOCN.4.001033",
+                        "ee": "https://doi.org/10.1364/jocn.4.001033",
+                        "url": "https://dblp.org/rec/journals/jocnet/EramoLST12"
+                    },
+                    "url": "URL#4588107"
+                },
+                {
+                    "@score": "2",
+                    "@id": "4588129",
+                    "info": {
+                        "authors": {
+                            "author": [
+                                {
+                                    "@pid": "27/181",
+                                    "text": "Paola Iovanna"
+                                },
+                                {
+                                    "@pid": "38/11489",
+                                    "text": "Francesco Testa"
+                                },
+                                {
+                                    "@pid": "71/6139",
+                                    "text": "Roberto Sabella"
+                                },
+                                {
+                                    "@pid": "83/4282",
+                                    "text": "Alberto Bianchi"
+                                },
+                                {
+                                    "@pid": "167/9433",
+                                    "text": "Marzio Puleri"
+                                },
+                                {
+                                    "@pid": "347/1485",
+                                    "text": "Mauro Rudi Casanova"
+                                },
+                                {
+                                    "@pid": "36/6242",
+                                    "text": "Angelo Germoni"
+                                }
+                            ]
+                        },
+                        "title": "Packet-Optical Integration Nodes for Next Generation Transport Networks.",
+                        "venue": "JOCN",
+                        "volume": "4",
+                        "number": "10",
+                        "pages": "821-835",
+                        "year": "2012",
+                        "type": "Journal Articles",
+                        "access": "closed",
+                        "key": "journals/jocnet/IovannaTSBPCG12",
+                        "doi": "10.1364/JOCN.4.000821",
+                        "ee": "https://doi.org/10.1364/jocn.4.000821",
+                        "url": "https://dblp.org/rec/journals/jocnet/IovannaTSBPCG12"
+                    },
+                    "url": "URL#4588129"
                 }
             ]
         }
