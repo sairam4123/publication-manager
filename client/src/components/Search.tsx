@@ -40,7 +40,7 @@ export default function Search({
         <button onClick={uploadIconPressed}>
           <ArrowUpTrayIcon className="h-full size-6 text-neutral-600 hover:text-black dark:text-neutral-400 dark:hover:text-white" />
         </button>
-        <button onClick={goIconPressed}>
+        <button className="hidden" onClick={goIconPressed}>
           <ArrowRightIcon className="h-full size-6 text-neutral-600 hover:text-black dark:text-neutral-400 dark:hover:text-white" />
         </button>
       </div>

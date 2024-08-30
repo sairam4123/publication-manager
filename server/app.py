@@ -12,6 +12,12 @@ from models import CustomizedQueryModel
 
 celery = Celery(__name__, broker="redis://localhost:6379/0", backend="redis://localhost:6379/0")
 celery.conf.broker_connection_retry_on_startup = True
+celery.conf.task_routes = {
+    'main.process_excel': {'queue': 'main'},
+    'main.process_author_search': {'queue': 'main'},
+    'main.process_customized_query': {'queue': 'main'},
+    'app.process_model': {'queue': 'ai'}
+}
 
 sp_client = create_client("https://xchmpfivomtlnslvbbbk.supabase.co", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhjaG1wZml2b210bG5zbHZiYmJrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjQ2MDI4MDYsImV4cCI6MjA0MDE3ODgwNn0.HBs-xlJW21awsjyS5mje25g3Wu5M_TGFc2T7Q6urXLw")
 sp_client.auth.sign_in_with_password({"email": "sairamkumar2022@gmail.com", "password": "123456"})
@@ -53,12 +59,15 @@ def task_status(task_id: str):
 def task_result(task_id: str):
     sp_client.auth.get_session()
     task = celery.AsyncResult(task_id)
-    out_file = task.result
-    file = sp_client.storage.from_("excel-storage") \
-        .download(out_file)
+    result = task.result
+    out_file = result["out_file"]
+    task_id = result["task_id"]
+    file = sp_client.storage.from_("excel-storage").download(out_file)
+    
+    extra_headers = {"X-Task-ID": task_id}
     
     # upload file
-    return Response(file, media_type="application/octet-stream", headers={"Content-Disposition": f"attachment; filename={out_file}"})
+    return Response(file, media_type="application/octet-stream", headers={"Content-Disposition": f"attachment; filename={out_file}"} | extra_headers)
 
 
 @app.post("/tasks/customized")
@@ -86,6 +95,12 @@ def search_author_query(task_id: str):
     print(task.result)
     return task.result
 
+@app.get("/tasks/ai/{task_id}/result")
+def get_ai_result(task_id: str):
+    task = celery.AsyncResult(task_id)
+    if task.status == "FAILED" or task.status == "PENDING":
+        return {'status': task.status}
+    return task.result
 
 
 if __name__ == "__main__":

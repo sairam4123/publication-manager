@@ -26,15 +26,13 @@ def process_excel(in_file: str):
 
     with io.BytesIO() as in_buffer, io.BytesIO() as out_buffer:
         in_buffer.write(sp_client.storage.from_("excel-storage").download(in_file))
-        asyncio.run(task_dblp(in_buffer, out_buffer))
+        task_id = asyncio.run(task_dblp(in_buffer, out_buffer))
         sp_client.storage.from_("excel-storage").upload(out_file, out_buffer.getvalue()) # upload requires bytes not bytesIO
-    return out_file
+    return {"out_file": out_file, "task_id": task_id}
 
 @celery.task
 def process_customized_query(query: dict):
     import asyncio
-    # cur_time = int(time.time())
-    # out_file = f"output-{cur_time}.xlsx"
 
     print(f"Fetching cuztomized {query}")
     return asyncio.run(task_dblp_single(query))

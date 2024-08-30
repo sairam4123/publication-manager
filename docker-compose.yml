@@ -29,4 +29,12 @@ services:
     build: ./tasks
     depends_on:
       - redis
-      
+  
+  ai_worker:
+    container_name: ai_worker
+    build: ./ai
+    depends_on:
+      - redis
+secrets:
+  mistral_key:
+    file: ./.secrets/mistral_key.secret

@@ -85,7 +85,7 @@ def post_process_publications(author_dataset, publications: list[list]):
 
 async def process_and_output_to_celery(dataset, author_pubs):
     result = {
-        author_data.get("Name", author_data.get("author_name", None)): [publication for publication in author_pubs[idx]] for idx, author_data in enumerate(dataset)
+        author_data.get("Name", author_data.get("author_name", None)): [{'title': publication['title'], 'venue': publication['venue'], 'year': publication['year'], 'type': publication['type']} for publication in author_pubs[idx]] for idx, author_data in enumerate(dataset)
     }
     task = celery.send_task("app.process_model", args=[result])
     return task.id

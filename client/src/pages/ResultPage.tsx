@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import Table from "../components/Table";
+
 import ArrowDownTray from "../icons/ArrowDownTray";
 import useFileContext from "../contexts/FileContext";
 import xlsx from "node-xlsx";
@@ -7,6 +7,8 @@ import LoadingPage from "./LoadingPage";
 import { API_SERVER } from "../config/config";
 import ErrorPage from "./ErrorPage";
 import HomeIcon from "../icons/Home";
+import usePolling from "../hooks/usePolling";
+import PreviewTable from "../components/PreviewTable";
 
 const loadingMessages = [
   "Uploading...",
@@ -22,6 +24,7 @@ export default function ResultPage() {
   const [selectedFile, setSelectedFile] = useState<Blob | null>(null);
   const [dataLoaded, setDataLoaded] = useState(false);
   const [isErrored, setIsErrored] = useState<boolean>(false);
+  const [aiTaskId, setAITaskId] = useState<string | null>(null);
   const { taskId } = useFileContext() ?? { taskId: null };
   const timerRef = useRef<NodeJS.Timeout | null>(null);
   const [loadingMessageIdx, setLoadingMessageIdx] = useState<number>(0);
@@ -48,7 +51,9 @@ export default function ResultPage() {
               } else {
                 console.log("Task not completed (working)");
                 setLoadingMessageIdx(
-                  (prev) => (prev + Math.ceil(Math.random() * 1.75)) % loadingMessages.length
+                  (prev) =>
+                    (prev + Math.ceil(Math.random() * 1.75)) %
+                    loadingMessages.length
                 );
               }
             });
@@ -76,6 +81,8 @@ export default function ResultPage() {
       .then((res) => {
         if (res.ok) {
           res.blob().then((data) => {
+            setAITaskId(res.headers.get("X-Task-ID"));
+
             console.log(data);
             setLoadingMessageIdx(loadingMessages.length - 2);
             setSelectedFile(data as Blob);
@@ -87,6 +94,14 @@ export default function ResultPage() {
         setDataLoaded(true);
       });
   }, [taskId, dataLoaded]);
+
+  const {
+    data: aiData,
+    loading,
+    error,
+  } = usePolling(`${API_SERVER}/tasks/${aiTaskId}/status`, 1500, {
+    enabled: aiTaskId?.length !== 0,
+  });
 
   useEffect(() => {
     if (selectedFile) {
@@ -128,29 +143,39 @@ export default function ResultPage() {
     window.location.href = "/";
   };
 
-  const headers = ["Author", "Title", "Venue", "Year", "Link", "Type"];
+  const headers = ["Author", "Title", "Venue (Type)", "Year"];
   return (
-    <div className="transition-all flex bg-black pt-24 h-full w-screen overflow-x-hidden overflow-y-scroll justify-center items-center flex-col gap-4">
-      <p className="text-5xl text-white font-bold text-center select-none">
+    <div className="transition-all flex bg-white dark:bg-black pt-24 h-full w-screen overflow-x-hidden overflow-y-scroll justify-center items-center flex-col gap-4">
+      <p className="text-5xl text-black dark:text-white font-bold text-center select-none">
         PUBLICATION RECORDS
       </p>
       <div className="flex h-10 w-11/12 justify-between">
         <button
           onClick={backToHome}
-          className="transition-all flex items-center gap-2 flex-row text-white rounded-xl outline outline-neutral-700 hover:outline-neutral-400 active:outline-neutral-600 active:bg-neutral-600 px-4"
+          className="transition-all flex items-center gap-2 flex-row text-neutral-600 hover:text-black active:outline-black active:text-white active:bg-neutral-950 dark:text-white rounded-xl outline outline-neutral-600 hover:outline-neutral-950 dark:hover:text-white dark:outline-neutral-700 dark:hover:outline-neutral-400 dark:active:outline-neutral-600 dark:active:bg-neutral-600 px-4"
         >
           <HomeIcon className="size-6" /> Home
         </button>
         <button
           onClick={downloadFile}
-          className="transition-all flex items-center gap-2 flex-row text-white rounded-xl outline outline-neutral-700 hover:outline-neutral-400 active:outline-neutral-600 active:bg-neutral-600 px-4"
+          className="transition-all flex items-center gap-2 flex-row text-neutral-600 hover:text-black active:outline-black active:text-white active:bg-neutral-950 dark:text-white rounded-xl outline outline-neutral-600 hover:outline-neutral-950 dark:hover:text-white dark:outline-neutral-700 dark:hover:outline-neutral-400 dark:active:outline-neutral-600 dark:active:bg-neutral-600 px-4"
         >
           <ArrowDownTray className="size-6" /> Download as Excel
         </button>
       </div>
-      <p className="text-neutral-500 -mb-4 -mt-4">Preview only</p>
-      <div className="w-11/12 p-4">
-        {<Table data={data} headers={headers} footer={data.length === 0 ? "No publication records found.": ""} />}
+      <p className="text-neutral-700 dark:text-neutral-500 -mb-4 -mt-4">
+        Preview only
+      </p>
+      <div className="w-full flex flex-row items-start p-4">
+        <div className="w-1/2">
+          {
+            <PreviewTable
+              data={data}
+              headers={headers}
+              footer={data.length === 0 ? "No publication records found." : ""}
+            />
+          }
+        </div>
       </div>
     </div>
   );

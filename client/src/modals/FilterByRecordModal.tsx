@@ -28,19 +28,19 @@ export default function FilterByRecordModal({ visible, setVisible, onFilter }: {
                         <div className="flex gap-2">
                         <button
                                 onClick={() => setFilter({journal: false, conference: false, all: true})}
-                                className={`flex-1 bg-neutral-200 hover:bg-neutral-300 active:bg-neutral-100 dark:bg-neutral-800 dark:hover:bg-neutral-700 dark:active:bg-neutral-900 px-4 py-2 select-none rounded-md ${filter.all ? 'bg-neutral-700' : ''}`}
+                                className={`hover:bg-neutral-600 hover:text-white active:bg-neutral-700 text-white flex-1 px-4 py-2 select-none rounded-md ${filter.all ? 'bg-neutral-300 text-black' : 'bg-neutral-800'}`}
                             >
                                 All
                             </button>
                             <button
                                 onClick={() => setFilter({journal: true, conference: false, all: false})}
-                                className={`flex-1 bg-neutral-800 hover:bg-neutral-700 active:bg-neutral-900 text-white px-4 py-2 select-none rounded-md ${filter.journal ? 'bg-neutral-700' : ''}`}
+                                className={`hover:bg-neutral-600 hover:text-white active:bg-neutral-700 text-white flex-1 px-4 py-2 select-none rounded-md ${filter.journal ? 'bg-neutral-300 text-black' : 'bg-neutral-800'}`}
                             >
                                 Journal
                             </button>
                             <button
                                 onClick={() => setFilter({journal: false, conference: true, all: false})}
-                                className={`flex-1 bg-neutral-800 hover:bg-neutral-700 active:bg-neutral-900 text-white px-4 py-2 select-none rounded-md ${filter.conference ? 'bg-neutral-700' : ''}`}
+                                className={`hover:bg-neutral-600 hover:text-white active:bg-neutral-700 text-white flex-1 px-4 py-2 select-none rounded-md ${filter.conference ? 'bg-neutral-300 text-black' : 'bg-neutral-800'}`}
                             >
                                 Conference
                             </button>
