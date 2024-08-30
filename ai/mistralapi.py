@@ -9,7 +9,7 @@ load_dotenv()
 # Dictionary to store model options and their API names
 MODEL_OPTIONS = {
     "Mistral Nemo": "open-mistral-nemo-2407",
-    "Mistral Large 2": "mistral-large-2407",
+    # "Mistral Large 2": "mistral-large-2407",
     "Codestral": "codestral-2405",
     "Mistral Embed": "mistral-embed",
     "Mistral 7B": "open-mistral-7b",
@@ -45,12 +45,9 @@ def generate_summary(client, model, prompt):
     )
     return response.choices[0].message.content
 
-def save_summary_to_file(summary, output_file_path):
-    text_io.write_paragraph_to_file(summary, output_file_path)
-
 def main(in_buffer: StringIO, out_buffer: StringIO):
     # User can choose a model from MODEL_OPTIONS
-    selected_model_name = "Mistral Large 2"  # Change this to select a different model
+    selected_model_name = "Mistral Nemo"  # Change this to select a different model
     model_name = MODEL_OPTIONS[selected_model_name]
 
     api_key = get_api_key()
@@ -64,7 +61,6 @@ def main(in_buffer: StringIO, out_buffer: StringIO):
     
     # save_summary_to_file(summary, out_buffer)
     out_buffer.write(summary)
-    print("Generated Summary:\n", summary)
 
 if __name__ == "__main__":
     main()

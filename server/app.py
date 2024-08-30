@@ -64,7 +64,7 @@ def task_result(task_id: str):
     task_id = result["task_id"]
     file = sp_client.storage.from_("excel-storage").download(out_file)
     
-    extra_headers = {"X-Task-ID": task_id}
+    extra_headers = {"X-Task-ID": task_id, "Access-Control-Expose-Headers": "X-Task-ID"}
     
     # upload file
     return Response(file, media_type="application/octet-stream", headers={"Content-Disposition": f"attachment; filename={out_file}"} | extra_headers)

@@ -9,6 +9,7 @@ import ErrorPage from "./ErrorPage";
 import HomeIcon from "../icons/Home";
 import usePolling from "../hooks/usePolling";
 import PreviewTable from "../components/PreviewTable";
+import AIModel from "../components/AIModel";
 
 const loadingMessages = [
   "Uploading...",
@@ -81,7 +82,9 @@ export default function ResultPage() {
       .then((res) => {
         if (res.ok) {
           res.blob().then((data) => {
-            setAITaskId(res.headers.get("X-Task-ID"));
+            console.log(res.headers)
+            console.log(res.headers.get("X-Task-Id"));
+            setAITaskId(res.headers.get("X-Task-Id"));
 
             console.log(data);
             setLoadingMessageIdx(loadingMessages.length - 2);
@@ -94,14 +97,6 @@ export default function ResultPage() {
         setDataLoaded(true);
       });
   }, [taskId, dataLoaded]);
-
-  const {
-    data: aiData,
-    loading,
-    error,
-  } = usePolling(`${API_SERVER}/tasks/${aiTaskId}/status`, 1500, {
-    enabled: aiTaskId?.length !== 0,
-  });
 
   useEffect(() => {
     if (selectedFile) {
@@ -166,7 +161,7 @@ export default function ResultPage() {
       <p className="text-neutral-700 dark:text-neutral-500 -mb-4 -mt-4">
         Preview only
       </p>
-      <div className="w-full flex flex-row items-start p-4">
+      <div className="w-full flex flex-row items-start p-4 gap-2">
         <div className="w-1/2">
           {
             <PreviewTable
@@ -174,6 +169,11 @@ export default function ResultPage() {
               headers={headers}
               footer={data.length === 0 ? "No publication records found." : ""}
             />
+          }
+        </div>
+        <div className="w-1/2 flex flex-grow bg-neutral-700 text-white rounded-2xl p-4">
+          {
+            <AIModel aiTaskId={aiTaskId} />
           }
         </div>
       </div>

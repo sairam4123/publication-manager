@@ -7,7 +7,7 @@
         },
         "time": {
             "@unit": "msecs",
-            "text": "0.03"
+            "text": "0.02"
         },
         "completions": {
             "@total": "57264280",
