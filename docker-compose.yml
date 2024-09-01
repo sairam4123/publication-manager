@@ -12,6 +12,9 @@ services:
       - "8000:8000"
     depends_on:
       - redis
+    environment:
+      - REDIS_BACKEND=redis://redis:6379/0
+      - REDIS_BROKER=redis://redis:6379/0
   
   client:
     container_name: client
@@ -29,12 +32,21 @@ services:
     build: ./tasks
     depends_on:
       - redis
+    environment:
+      - REDIS_BACKEND=redis://redis:6379/0
+      - REDIS_BROKER=redis://redis:6379/0
   
   ai_worker:
     container_name: ai_worker
     build: ./ai
     depends_on:
       - redis
+    environment:
+      - REDIS_BACKEND=redis://redis:6379/0
+      - REDIS_BROKER=redis://redis:6379/0
+    secrets:
+      - mistral_ai_key
+
 secrets:
-  mistral_key:
-    file: ./.secrets/mistral_key.secret
+  mistral_ai_key:
+    file: ./.secrets/mistralai_key

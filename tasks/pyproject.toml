@@ -17,6 +17,7 @@ celery = "^5.4.0"
 redis = "^5.0.8"
 requests = "^2.32.3"
 supabase = {git = "https://github.com/supabase/supabase-py"}
+python-dotenv = "^1.0.1"
 
 
 [build-system]

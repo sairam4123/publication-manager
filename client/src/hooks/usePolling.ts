@@ -4,7 +4,7 @@ export default function usePolling<T>(
   url: string,
   delay_msec: number,
   pollingOpts: { enabled?: boolean } = { enabled: true }
-): { data: T | null; loading: boolean; error: Error | null, resetData: () => void } {
+): { data: T | null; loading: boolean; error: Error | null, resetData: () => void, headers: Headers | null } {
   // final constants
   const [data, setData] = useState<T | null>(null);
   const [loading, setLoading] = useState<boolean>(false);
@@ -13,6 +13,7 @@ export default function usePolling<T>(
   const [isErrored, setIsErrored] = useState<boolean>(false);
   const [dataLoaded, setDataLoaded] = useState<boolean>(false);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
+  const [headers, setHeaders] = useState<Headers | null>(null);
 
   const fetchData = useCallback(async () => {
     if (!pollingOpts.enabled) {
@@ -27,6 +28,7 @@ export default function usePolling<T>(
         setData(json);
         setLoading(false);
         clearInterval(timerRef.current ?? undefined);
+        setHeaders(res.headers);
         return;
       }
       if (json["status"] === "SUCCESS") {
@@ -64,5 +66,5 @@ export default function usePolling<T>(
     setData(null);
   }
 
-  return { loading, data, error, resetData };
+  return { loading, data, error, resetData, headers };
 }

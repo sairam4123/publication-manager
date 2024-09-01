@@ -7,7 +7,6 @@ import LoadingPage from "./LoadingPage";
 import { API_SERVER } from "../config/config";
 import ErrorPage from "./ErrorPage";
 import HomeIcon from "../icons/Home";
-import usePolling from "../hooks/usePolling";
 import PreviewTable from "../components/PreviewTable";
 import AIModel from "../components/AIModel";
 
@@ -171,7 +170,7 @@ export default function ResultPage() {
             />
           }
         </div>
-        <div className="w-1/2 flex flex-grow bg-neutral-700 text-white rounded-2xl p-4">
+        <div className="w-1/2 flex flex-grow bg-neutral-900 text-white rounded-2xl p-4">
           {
             <AIModel aiTaskId={aiTaskId} />
           }

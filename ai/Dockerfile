@@ -25,4 +25,4 @@ COPY . ./worker
 
 WORKDIR /worker
 
-ENTRYPOINT ["celery", "-A", "celery_app.celery", "worker", "--loglevel=info", "--pool=solo", "-Q", "main"]
+ENTRYPOINT ["celery", "-A", "celery_app.celery", "worker", "--loglevel=info", "--pool=solo", "-Q", "ai"]

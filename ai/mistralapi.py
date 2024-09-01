@@ -20,6 +20,9 @@ MODEL_OPTIONS = {
 }
 
 def get_api_key():
+    if not os.environ.get("MISTRAL_API_KEY", None):
+        with open("/run/secrets/mistral_ai_key", 'r') as f:
+            return f.read().strip()
     return os.environ.get("MISTRAL_API_KEY")
 
 def initialize_client(api_key):
@@ -30,7 +33,9 @@ def construct_prompt(publications_file_path):
         "Summarize the following publications of the authors. Analyze their expertise, "
         "the significance of the studies, and provide insights based on the titles and venues. "
         "The summary should be detailed, comprehensive, and suitable for presentation. "
-        "Use paragraphs and avoid repetition.\n\n"
+        "Use paragraphs and avoid repetition. "
+        "Use headings to separate the summaries of different authors. "
+        "\n\n"
     )
     
     publication_data = text_io.read_large_file(publications_file_path)
@@ -61,6 +66,29 @@ def main(in_buffer: StringIO, out_buffer: StringIO):
     
     # save_summary_to_file(summary, out_buffer)
     out_buffer.write(summary)
+
+def async_main(in_buffer: StringIO, out_buffer: StringIO):
+    selected_model_name = "Mistral Nemo"  # Change this to select a different model
+    model_name = MODEL_OPTIONS[selected_model_name]
+    
+    api_key = get_api_key()
+    if not api_key:
+        raise ValueError("MISTRAL_API_KEY not set in .env file.")
+    
+    client = Mistral(api_key=api_key)
+    prompt = construct_prompt(in_buffer)
+    completion = client.chat.stream(
+        max_tokens=2**32,
+        model=model_name,
+        messages=[
+            {"role": "user", "content": prompt}
+        ],
+    )
+    for chunk in completion:
+        content = chunk.data.choices[0].delta.content
+        out_buffer.write(content)
+        yield content
+    
 
 if __name__ == "__main__":
     main()

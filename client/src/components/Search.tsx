@@ -28,16 +28,17 @@ export default function Search({
         onChange={(e) => setQuery(e.target.value)}
         className="h-full flex-1 bg-transparent text-black dark:text-white outline-none dark:placeholder:text-neutral-400 placeholder:text-neutral-600"
         type="search"
+        aria-description="Search for a person..."
         placeholder="Search for a person..."
       />
       <div className="flex gap-2">
-        <button onClick={filterIconPressed}>
+        <button aria-description="Filter records" onClick={filterIconPressed}>
           <FilterIcon
             filled={filterEnabled}
             className="h-full size-6 text-neutral-600 hover:text-black dark:text-neutral-400 dark:hover:text-white"
           />
         </button>
-        <button onClick={uploadIconPressed}>
+        <button aria-description="Upload excel file" onClick={uploadIconPressed}>
           <ArrowUpTrayIcon className="h-full size-6 text-neutral-600 hover:text-black dark:text-neutral-400 dark:hover:text-white" />
         </button>
         <button className="hidden" onClick={goIconPressed}>

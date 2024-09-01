@@ -9,11 +9,16 @@ import { useDebounced } from "../hooks/useDebounced";
 import usePolling from "../hooks/usePolling";
 import LoadingSpinner from "../components/LoadingSpinner";
 import useMutation from "../hooks/useMutation";
-import Table from "../components/Table";
 import ErrorPage from "./ErrorPage";
+import PreviewTable from "../components/PreviewTable";
+import AIModel from "../components/AIModel";
+import Button from "../components/Button";
+import ArrowDownTray from "../icons/ArrowDownTray";
+import exportExcel from "../utils/exportExcel";
 
 export default function FrontPage() {
   const [searchQuery, setSearchQuery] = useState("");
+  const [aiTaskId, setAITaskId] = useState<string | null>(null);
   const debouncedSearchQuery = useDebounced(searchQuery, 1000);
 
   const {
@@ -35,11 +40,16 @@ export default function FrontPage() {
     error,
     loading: loadingDetails,
     resetData: resetDetailsData,
+    headers: resHeaders
   } = usePolling<string[][]>(
     API_SERVER + `/tasks/customized/${result_data?.task_id}/result`,
     1000,
-    { enabled: result_data?.task_id !== undefined }
+    { enabled: (result_data?.task_id) !== undefined }
   );
+
+  useEffect(() => {
+    setAITaskId(resHeaders?.get("X-Task-Id") ?? null);
+  }, [resHeaders])
 
   const {
     data: searchResult,
@@ -76,6 +86,9 @@ export default function FrontPage() {
   };
 
   useEffect(() => {
+    if (debouncedSearchQuery.trim().length === 0) {
+      return;
+    }
     mutation.mutate({
       author_name: debouncedSearchQuery,
       publication_type: filterBy["filterBy"],
@@ -83,16 +96,19 @@ export default function FrontPage() {
       to_year: filterBy.toYear,
     });
   }, [debouncedSearchQuery, filterBy]);
+
+  const headers = ["Author", "Title", "Venue (Type)", "Year"];
+
   console.log(result_data?.task_id, debouncedSearchQuery.trim().length !== 0);
   return (
-    <div className="flex text-black bg-white min-h-screen dark:text-white dark:bg-black overflow-y-scroll h-full p-10 pt-36 w-screen justify-center items-center flex-col gap-4">
+    <div className="flex transition-all text-black bg-white min-h-screen dark:text-white dark:bg-black overflow-y-scroll h-full p-10 pt-36 w-screen justify-center items-center flex-col gap-4">
       <p className="text-5xl font-bold text-center select-none">
         PUBLICATION DATA EXTRACTOR
       </p>
       <p className="text-xl text-center p-4 -mt-4 mb-4 select-none">
         Get the publication records you need in minutes
       </p>
-
+      <div className="flex flex-row items-center justify-center h-fit w-9/12 gap-4">
       <Search
         query={searchQuery}
         setQuery={setSearchQuery}
@@ -103,6 +119,10 @@ export default function FrontPage() {
           console.log("Go pressed");
         }}
       />
+      {
+        details && <Button onClick={() => exportExcel({headers: details[0], data: details?.slice(1)})()} className="py-2 px-4 rounded-3xl"><ArrowDownTray className="size-6" /> Download</Button>
+      }
+      </div>
       <div className="flex max-h-96 overflow-y-auto mx-2 overflow-x-visible flex-col w-1/2 bg-neutral-100 dark:bg-neutral-900 rounded-2xl">
         {searchQuery && !Array.isArray(searchResult) && (
           <LoadingSpinner
@@ -133,13 +153,24 @@ export default function FrontPage() {
 
       <div className="flex flex-col justify-center items-center w-11/12">
         {Array.isArray(details) && (
-          <Table
-            headers={details[0]}
-            data={details.slice(1, -1)}
-            footer={details.length <= 1 ? "No publication record found." : ""}
-          />
+          <div className="w-full flex flex-row items-start p-4 gap-4">
+          <div className="w-7/12 justify-center rounded-3xl items-center">
+            {
+              <PreviewTable
+                data={details.slice(1)}
+                headers={headers}
+                footer={details.length === 1 ? "No publication records found." : ""}
+              />
+            }
+          </div>
+          <div className="w-5/12 flex flex-grow bg-neutral-900 outline outline-neutral-400 text-white rounded-3xl p-4">
+            {
+              <AIModel aiTaskId={aiTaskId} />
+            }
+          </div>
+        </div>
         )}
-        {(loadingDetails || !details) && (
+        {(loadingDetails && (debouncedSearchQuery.trim().length !== 0 && !details)) && (
           <LoadingSpinner message="Loading..." />
         )}
         {error && <ErrorPage error="Error loading the details.." />}

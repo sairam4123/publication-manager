@@ -23,7 +23,13 @@ async def get_author_publications_dblp(name, publication_type, from_year, to_yea
     url = f'https://dblp.org/search/publ/api?q={name}{f'%20type{publication_type}' if publication_type != '' else ''}&h=1000&format=json'
     async with aiohttp.ClientSession() as session:
         async with session.get(url) as response:
-            data = json.loads(await response.text())
+            try:
+                data = json.loads(await response.text())
+            except json.JSONDecodeError:
+                print(await response.text())
+                print(response.headers)
+                print("Failed to fetch publications for", name, publication_type)
+                return []
     result = data['result']
     hits = int(result['hits']['@sent'])
     with open('data.json', 'w') as f:
@@ -87,7 +93,7 @@ async def process_and_output_to_celery(dataset, author_pubs):
     result = {
         author_data.get("Name", author_data.get("author_name", None)): [{'title': publication['title'], 'venue': publication['venue'], 'year': publication['year'], 'type': publication['type']} for publication in author_pubs[idx]] for idx, author_data in enumerate(dataset)
     }
-    task = celery.send_task("app.process_model", args=[result])
+    task = celery.send_task("app.process_model_two", args=[result])
     return task.id
     
 
@@ -99,7 +105,7 @@ async def main(input_file, output_file):
 
         author_publications = asyncio.create_task(get_author_publications_dblp(name, publication_type, from_year, to_year))
         tasks.append(author_publications)
-        sleep_time = abs(0.1 + random.uniform(-0.1, 0.2))
+        sleep_time = abs(0.1 + random.uniform(1.2, 2.4))
         await asyncio.sleep(sleep_time) # to avoid getting blocked by the server
     
     author_publications = await asyncio.gather(*tasks)
@@ -112,8 +118,10 @@ async def main(input_file, output_file):
 async def process_single(query: dict):
     name, publication_type, from_year, to_year = query['author_name'], get_publication_type(query.get('publication_type', 'all')), query.get('from_year', 1970), query.get('to_year', datetime.datetime.now().year)
     author_publications = await get_author_publications_dblp(name, publication_type, from_year, to_year)
+    task = await process_and_output_to_celery([query], [author_publications])
     result = post_process_publications([query], [author_publications])
-    return result
+
+    return {'result': result, 'task_id': task}
 
 async def process_search_author(query: str):
     return await search_author(query)

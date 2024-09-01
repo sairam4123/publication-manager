@@ -1,8 +1,11 @@
 from celery import Celery
 from app import *
 
+from dotenv import load_dotenv
+load_dotenv()
+import os
 
-celery = Celery("ai", broker="redis://localhost:6379/0", backend="redis://localhost:6379/0")
+celery = Celery("ai", broker=os.environ["REDIS_BROKER"], backend=os.environ["REDIS_BACKEND"])
 celery.conf.broker_connection_retry_on_startup = True
 celery.conf.task_routes = {
     'app.process_model': {'queue': 'ai'},

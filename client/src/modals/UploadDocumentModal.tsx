@@ -49,7 +49,7 @@ export default function UploadDocumentModal({
       >
         <div
           onClick={(e) => e.stopPropagation()}
-          className="bg-neutral-50 dark:bg-neutral-950 rounded-3xl w-1/3 h-2/3 flex flex-col justify-center items-center gap-4"
+          className="bg-neutral-50 dark:bg-neutral-950 rounded-3xl w-1/3 h-2/3 flex flex-col justify-center items-center outline outline-neutral-500 gap-4"
         >
           <div className="flex flex-grow items-center">
             <p className="text-2xl font-bold">Upload Document</p>
@@ -64,7 +64,7 @@ export default function UploadDocumentModal({
             <input
               onChange={(e) => setSelectedFile(e.target.files?.[0])}
               type="file"
-              className="border-2 border-black"
+              className="border-2 border-neutral-600 rounded-xl"
             />
             <button
               onClick={() => {
@@ -72,7 +72,7 @@ export default function UploadDocumentModal({
                 onFileSelected(selectedFile);
               }}
               className={
-                "bg-neutral-800 hover:bg-neutral-700 active:bg-neutral-900 text-white px-4 py-2 select-none rounded-md" +
+                "bg-neutral-800 hover:bg-neutral-700 active:bg-neutral-900 text-white px-4 py-2 select-none rounded-2xl " +
                 `${selectedFile ? "" : "ring-2 ring-red-500"}`
               }
             >
