@@ -78,7 +78,7 @@ def async_main(in_buffer: StringIO, out_buffer: StringIO):
     client = Mistral(api_key=api_key)
     prompt = construct_prompt(in_buffer)
     completion = client.chat.stream(
-        max_tokens=2**32,
+        # max_tokens=2**32,
         model=model_name,
         messages=[
             {"role": "user", "content": prompt}

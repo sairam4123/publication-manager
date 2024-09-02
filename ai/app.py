@@ -8,8 +8,9 @@ from celery import Task
 from mistralapi import main as task_ai
 from mistralapi import async_main as async_task_ai
 from redis import Redis
+import os
 
-redis = Redis(host='redis', port=6379, db=1)
+redis = Redis.from_url(url=os.environ["REDIS_URL"])
 
 @celery.task
 def process_model(data: dict):

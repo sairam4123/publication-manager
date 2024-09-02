@@ -23,7 +23,7 @@ class CustomizedQueryModel(BaseModel):
 
 
 celery = Celery(__name__, broker=os.environ["REDIS_BROKER"], backend=os.environ["REDIS_BACKEND"])
-redis_client = Redis(host="redis", port=6379, db=1)
+redis_client = Redis.from_url(url=os.environ["REDIS_URL"])
 celery.conf.broker_connection_retry_on_startup = True
 celery.conf.task_routes = {
     'main.process_excel': {'queue': 'main'},

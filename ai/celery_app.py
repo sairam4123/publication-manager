@@ -1,8 +1,8 @@
-from celery import Celery
-from app import *
-
 from dotenv import load_dotenv
 load_dotenv()
+
+from celery import Celery
+from app import *
 import os
 
 celery = Celery("ai", broker=os.environ["REDIS_BROKER"], backend=os.environ["REDIS_BACKEND"])
