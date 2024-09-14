@@ -131,7 +131,7 @@ def get_ai_result(task_id: str):
         while True:
             print("Trying to read messages")
             messages = redis_client.xread({f"ai_completions_{task_id}": last_message_id}, count=1, block=1000)
-            print(messages, )
+            print("Messages found..")
             if len(messages) == 0:
                 print("No messages found, should we close out?")
                 continue
